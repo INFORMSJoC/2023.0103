@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MDVRP &mdash; VRPSolverEasy 0.1.3 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Important notes" href="../Important%20notes/index.html" />
+    <link rel="prev" title="HFVRP" href="HFVRP.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> VRPSolverEasy
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Installation/index.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Example/index.html">Example</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Demos</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="CVRP.html">CVRP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CVRPTW.html">CVRPTW</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HFVRP.html">HFVRP</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">MDVRP</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#instance-formats">Instance formats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#run-instances">Run instances</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#command-line">Command line</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#demo-code">Demo code</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#get-data">Get data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#add-vehicle-types">Add vehicle types</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#add-depots-and-customers">Add depots and customers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#add-links">Add links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#set-parameters">Set parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#solve-model">Solve model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#print-solution">Print solution</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Important%20notes/index.html">Important notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Solver%20API/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src</span></code>:  solver API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">VRPSolverEasy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Demos</a></li>
+      <li class="breadcrumb-item active">MDVRP</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/Demos/MDVRP.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="mdvrp">
+<h1>MDVRP<a class="headerlink" href="#mdvrp" title="Permalink to this heading"></a></h1>
+<p>The Multi-Depot Vehicle Routing Problem (MDVRP) is a variant of the CVRP in which vehicles are based in different depots.</p>
+<section id="instance-formats">
+<h2>Instance formats<a class="headerlink" href="#instance-formats" title="Permalink to this heading"></a></h2>
+<p>The demo reads instances in the standard “Cordeaux” format. See <a class="reference external" href="https://github.com/fboliveira/MDVRP-Instances">this repository</a> for details.</p>
+<p>The first line contains the following information:</p>
+<p>type m n t</p>
+<ul class="simple">
+<li><p><strong>type</strong>: it’s equal to 2 for the MDVRP</p></li>
+<li><p><strong>m</strong>: number of vehicles</p></li>
+<li><p><strong>n</strong>: number of customers</p></li>
+<li><p><strong>t</strong>: number of depots</p></li>
+</ul>
+<p>The next <em>t</em> lines contain, for each depot , the following information:</p>
+<p>D Q:</p>
+<ul class="simple">
+<li><p><strong>D</strong>: maximum duration of a route (not supported in this demo)</p></li>
+<li><p><strong>Q</strong>: maximum load of a vehicle</p></li>
+</ul>
+<p>The next lines contain, for each customer, the following information:</p>
+<p>i x y d q f a list e l</p>
+<ul class="simple">
+<li><p><strong>i</strong>: customer id</p></li>
+<li><p><strong>x</strong>: x coordinate</p></li>
+<li><p><strong>y</strong>: y coordinate</p></li>
+<li><p><strong>d</strong>: service duration (not supported in this demo)</p></li>
+<li><p><strong>q</strong>: demand</p></li>
+<li><p><strong>f</strong>: frequency of visit (not used in MDVRP)</p></li>
+<li><p><strong>a</strong>: number of possible visit combinations (not used in MDVRP)</p></li>
+<li><p><strong>list</strong>: list of all possible visit combinations (not used in MDVRP)</p></li>
+<li><p><strong>e</strong>: beginning of time window (not supported in this demo)</p></li>
+<li><p><strong>l</strong>: end of time window (not supported in this demo)</p></li>
+</ul>
+</section>
+<section id="run-instances">
+<h2>Run instances<a class="headerlink" href="#run-instances" title="Permalink to this heading"></a></h2>
+<p>There are two ways to run a specific instance:</p>
+<section id="command-line">
+<h3>Command line<a class="headerlink" href="#command-line" title="Permalink to this heading"></a></h3>
+<p>You can solve an instance by specifying different parameters directly in the command line, like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">MDVRP</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">i</span> <span class="o">&lt;</span><span class="n">instance</span> <span class="n">path</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">t</span> <span class="o">&lt;</span><span class="n">time</span> <span class="n">limit</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">s</span> <span class="o">&lt;</span><span class="n">solver_name</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>CPLEX solver can be used only with the <a class="reference internal" href="../Installation/index.html"><span class="doc">academic version</span></a>. When using CPLEX solver on a Windows computer, one should give its path: <code class="code docutils literal notranslate"><span class="pre">-p</span> <span class="pre">&lt;path</span> <span class="pre">to</span> <span class="pre">CPLEX&gt;</span></code>.</p>
+</section>
+</section>
+<section id="demo-code">
+<h2>Demo code<a class="headerlink" href="#demo-code" title="Permalink to this heading"></a></h2>
+<section id="get-data">
+<h3>Get data<a class="headerlink" href="#get-data" title="Permalink to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">read_instance</span><span class="p">(</span><span class="n">instance_name</span><span class="p">,</span><span class="n">folder_data</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>An example of the contents of <code class="code docutils literal notranslate"><span class="pre">data</span></code> :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">nb_depots</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">nb_customers</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">vehicle_capacity</span> <span class="o">=</span> <span class="mi">60</span>
+<span class="n">cust_demands</span> <span class="o">=</span> <span class="p">[</span><span class="mi">15</span><span class="p">,</span><span class="mi">52</span><span class="p">,</span><span class="mi">65</span><span class="p">]</span>
+<span class="n">cust_coordinates</span> <span class="o">=</span> <span class="p">[[</span><span class="mf">55.21</span><span class="p">,</span><span class="mf">44.36</span><span class="p">],[</span><span class="mf">57.81</span><span class="p">,</span><span class="mf">53.27</span><span class="p">]]</span>
+<span class="n">depot_coordinates</span> <span class="o">=</span> <span class="p">[[</span><span class="mf">54.69</span><span class="p">,</span><span class="mf">57.36</span><span class="p">],[</span><span class="mf">54.31</span><span class="p">,</span><span class="mf">65.23</span><span class="p">]]</span>
+</pre></div>
+</div>
+</section>
+<section id="add-vehicle-types">
+<h3>Add vehicle types<a class="headerlink" href="#add-vehicle-types" title="Permalink to this heading"></a></h3>
+<p>Here we define a separate vehicle type for each depot. Each vehicle type is characterized by a depot where vehicles of this type start and end.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># add vehicle types</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">nb_depots</span><span class="p">):</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">add_vehicle_type</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span>
+                           <span class="n">start_point_id</span><span class="o">=</span><span class="n">i</span><span class="p">,</span>
+                           <span class="n">end_point_id</span><span class="o">=</span><span class="n">i</span><span class="p">,</span>
+                           <span class="n">capacity</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">vehicle_capacity</span><span class="p">,</span>
+                           <span class="n">max_number</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">nb_customers</span><span class="p">,</span>
+                           <span class="n">var_cost_dist</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Here the start point id and the end point id corresponds to the id of depot assigned. Moreover, the maximum number of vehicle cannot be less than number of customers.</p>
+</section>
+<section id="add-depots-and-customers">
+<h3>Add depots and customers<a class="headerlink" href="#add-depots-and-customers" title="Permalink to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># add depots</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">nb_depots</span><span class="p">):</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">add_depot</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="n">i</span><span class="p">)</span>
+
+<span class="c1"># add all customers</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">nb_customers</span><span class="p">):</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">add_customer</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="n">i</span> <span class="o">+</span> <span class="n">data</span><span class="o">.</span><span class="n">nb_depots</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span>
+                       <span class="n">demand</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">cust_demands</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>IDs of depots and customers should be different.</p>
+</div>
+</section>
+<section id="add-links">
+<h3>Add links<a class="headerlink" href="#add-links" title="Permalink to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Compute the links between depots and other points</span>
+<span class="k">for</span> <span class="n">depot_id</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">nb_depots</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">cust_i</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">cust_coordinates</span><span class="p">):</span>
+        <span class="n">dist</span> <span class="o">=</span> <span class="n">compute_euclidean_distance</span><span class="p">(</span>
+            <span class="n">cust_i</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+            <span class="n">cust_i</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+            <span class="n">data</span><span class="o">.</span><span class="n">depot_coordinates</span><span class="p">[</span><span class="n">depot_id</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span>
+            <span class="n">data</span><span class="o">.</span><span class="n">depot_coordinates</span><span class="p">[</span><span class="n">depot_id</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+
+        <span class="n">model</span><span class="o">.</span><span class="n">add_link</span><span class="p">(</span><span class="n">start_point_id</span><span class="o">=</span><span class="n">depot_id</span><span class="p">,</span>
+                       <span class="n">end_point_id</span><span class="o">=</span><span class="n">i</span> <span class="o">+</span> <span class="n">data</span><span class="o">.</span><span class="n">nb_depots</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span>
+                       <span class="n">distance</span><span class="o">=</span><span class="n">dist</span>
+                       <span class="p">)</span>
+
+<span class="c1"># Compute the links between points</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">cust_i</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">cust_coordinates</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">cust_coordinates</span><span class="p">)):</span>
+        <span class="n">dist</span> <span class="o">=</span> <span class="n">compute_euclidean_distance</span><span class="p">(</span><span class="n">cust_i</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+                                          <span class="n">cust_i</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+                                          <span class="n">data</span><span class="o">.</span><span class="n">cust_coordinates</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span>
+                                          <span class="n">data</span><span class="o">.</span><span class="n">cust_coordinates</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+
+        <span class="n">model</span><span class="o">.</span><span class="n">add_link</span><span class="p">(</span><span class="n">start_point_id</span><span class="o">=</span><span class="n">i</span> <span class="o">+</span> <span class="n">data</span><span class="o">.</span><span class="n">nb_depots</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span>
+                       <span class="n">end_point_id</span><span class="o">=</span><span class="n">j</span> <span class="o">+</span> <span class="n">data</span><span class="o">.</span><span class="n">nb_depots</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span>
+                       <span class="n">distance</span><span class="o">=</span><span class="n">dist</span>
+                       <span class="p">)</span>
+
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="set-parameters">
+<h3>Set parameters<a class="headerlink" href="#set-parameters" title="Permalink to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">set_parameters</span><span class="p">(</span><span class="n">time_limit</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">solver_name</span><span class="o">=</span><span class="s2">&quot;CLP&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="solve-model">
+<h3>Solve model<a class="headerlink" href="#solve-model" title="Permalink to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">solve</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="print-solution">
+<h3>Print solution<a class="headerlink" href="#print-solution" title="Permalink to this heading"></a></h3>
+<p>You can output the solution using the <code class="code docutils literal notranslate"><span class="pre">print()</span></code> function</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">solution</span><span class="o">.</span><span class="n">is_defined</span><span class="p">())</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">solution</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>or you can analyze the solution manually by retrieving each route. For and example, consult the last section of the demo <a class="reference internal" href="CVRP.html"><span class="doc">CVRP</span></a>.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="HFVRP.html" class="btn btn-neutral float-left" title="HFVRP" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Important%20notes/index.html" class="btn btn-neutral float-right" title="Important notes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, ERRAMI Najib SADYKOV Ruslan UCHOA Eduardo QUEIROGA Eduardo.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

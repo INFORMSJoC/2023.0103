@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Example &mdash; VRPSolverEasy 0.1.3 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Demos" href="../Demos/index.html" />
+    <link rel="prev" title="Installation" href="../Installation/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> VRPSolverEasy
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Installation/index.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Example</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#data">Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#model-vrpsolvereasy">Model VRPSolverEasy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#solving-model">Solving model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#results">Results</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Demos/index.html">Demos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Important%20notes/index.html">Important notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Solver%20API/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src</span></code>:  solver API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">VRPSolverEasy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Example</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/Example/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="example">
+<h1>Example<a class="headerlink" href="#example" title="Permalink to this heading"></a></h1>
+<p>We will show you how define the VRPSolverEasy model for the capacitated vehicle routing problem with time windows (VRPTW).</p>
+<section id="data">
+<h2>Data<a class="headerlink" href="#data" title="Permalink to this heading"></a></h2>
+<img alt="../_images/data.jpg" src="../_images/data.jpg" />
+<p>In the VRPTW, the objective is to minimize the total route length (traveled distance) such that each customer is served within his time window and the total demand delivered by each truck does not exceed its capacity.
+The distance between points are calculated using the Euclidean norm and the traveling time between points is equal to the distance.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># data</span>
+<span class="n">cost_per_distance</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">begin_time</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">end_time</span> <span class="o">=</span> <span class="mi">5000</span>
+<span class="n">nb_point</span> <span class="o">=</span> <span class="mi">7</span>
+
+<span class="c1"># map with names and coordinates</span>
+<span class="n">coordinates</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Wisconsin, USA&quot;</span><span class="p">:</span> <span class="p">(</span><span class="mf">44.50</span><span class="p">,</span> <span class="o">-</span><span class="mf">89.50</span><span class="p">),</span>  <span class="c1"># depot</span>
+               <span class="s2">&quot;West Virginia, USA&quot;</span><span class="p">:</span> <span class="p">(</span><span class="mf">39.000000</span><span class="p">,</span> <span class="o">-</span><span class="mf">80.500000</span><span class="p">),</span>
+               <span class="s2">&quot;Vermont, USA&quot;</span><span class="p">:</span> <span class="p">(</span><span class="mf">44.000000</span><span class="p">,</span> <span class="o">-</span><span class="mf">72.699997</span><span class="p">),</span>
+               <span class="s2">&quot;Texas, the USA&quot;</span><span class="p">:</span> <span class="p">(</span><span class="mf">31.000000</span><span class="p">,</span> <span class="o">-</span><span class="mf">100.000000</span><span class="p">),</span>
+               <span class="s2">&quot;South Dakota, the US&quot;</span><span class="p">:</span> <span class="p">(</span><span class="mf">44.500000</span><span class="p">,</span> <span class="o">-</span><span class="mf">100.000000</span><span class="p">),</span>
+               <span class="s2">&quot;Rhode Island, the US&quot;</span><span class="p">:</span> <span class="p">(</span><span class="mf">41.742325</span><span class="p">,</span> <span class="o">-</span><span class="mf">71.742332</span><span class="p">),</span>
+               <span class="s2">&quot;Oregon, the US&quot;</span><span class="p">:</span> <span class="p">(</span><span class="mf">44.000000</span><span class="p">,</span> <span class="o">-</span><span class="mf">120.500000</span><span class="p">)</span>
+               <span class="p">}</span>
+
+<span class="c1"># demands of points</span>
+<span class="n">demands</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">600</span><span class="p">,</span> <span class="mi">658</span><span class="p">,</span> <span class="mi">741</span><span class="p">,</span> <span class="mi">436</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>In this example, we solve a very small VRPTW instance in which time windows of customers are equal. This special case is called distance constrained vehicle routing problem (DCVRP).</p>
+</section>
+<section id="model-vrpsolvereasy">
+<h2>Model VRPSolverEasy<a class="headerlink" href="#model-vrpsolvereasy" title="Permalink to this heading"></a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Initialisation</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">solver</span><span class="o">.</span><span class="n">Model</span><span class="p">()</span>
+
+<span class="c1"># Add vehicle type</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add_vehicle_type</span><span class="p">(</span>
+    <span class="nb">id</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">start_point_id</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+    <span class="n">end_point_id</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;VEH1&quot;</span><span class="p">,</span>
+    <span class="n">capacity</span><span class="o">=</span><span class="mi">1100</span><span class="p">,</span>
+    <span class="n">max_number</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span>
+    <span class="n">var_cost_dist</span><span class="o">=</span><span class="n">cost_per_distance</span><span class="p">,</span>
+    <span class="n">tw_end</span><span class="o">=</span><span class="mi">5000</span><span class="p">)</span>
+
+<span class="c1"># Add depot</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add_depot</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;D1&quot;</span><span class="p">,</span> <span class="n">tw_begin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">tw_end</span><span class="o">=</span><span class="mi">5000</span><span class="p">)</span>
+
+<span class="n">coordinates_keys</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">coordinates</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="c1"># Add Customers</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">nb_point</span><span class="p">):</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">add_customer</span><span class="p">(</span>
+        <span class="nb">id</span><span class="o">=</span><span class="n">i</span><span class="p">,</span>
+        <span class="n">name</span><span class="o">=</span><span class="n">coordinates_keys</span><span class="p">[</span><span class="n">i</span><span class="p">],</span>
+        <span class="n">demand</span><span class="o">=</span><span class="n">demands</span><span class="p">[</span><span class="n">i</span><span class="p">],</span>
+        <span class="n">tw_begin</span><span class="o">=</span><span class="n">begin_time</span><span class="p">,</span>
+        <span class="n">tw_end</span><span class="o">=</span><span class="n">end_time</span><span class="p">)</span>
+
+<span class="c1"># Add links</span>
+<span class="n">coordinates_values</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">coordinates</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">7</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">):</span>
+        <span class="n">dist</span> <span class="o">=</span> <span class="n">compute_euclidean_distance</span><span class="p">(</span><span class="n">coordinates_values</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span>
+                                          <span class="n">coordinates_values</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span>
+                                          <span class="n">coordinates_values</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span>
+                                          <span class="n">coordinates_values</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">add_link</span><span class="p">(</span>
+            <span class="n">start_point_id</span><span class="o">=</span><span class="n">i</span><span class="p">,</span>
+            <span class="n">end_point_id</span><span class="o">=</span><span class="n">j</span><span class="p">,</span>
+            <span class="n">distance</span><span class="o">=</span><span class="n">dist</span><span class="p">,</span>
+            <span class="n">time</span><span class="o">=</span><span class="n">dist</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="solving-model">
+<h2>Solving model<a class="headerlink" href="#solving-model" title="Permalink to this heading"></a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">solve</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="results">
+<h2>Results<a class="headerlink" href="#results" title="Permalink to this heading"></a></h2>
+<img alt="../_images/Results.jpg" src="../_images/Results.jpg" />
+<p>After solving, we can print the solution if it found:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">model</span><span class="o">.</span><span class="n">solution</span><span class="o">.</span><span class="n">is_defined</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">solution</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You obtain the following output:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Route</span> <span class="k">for</span> <span class="n">vehicle</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="n">ID</span> <span class="p">:</span> <span class="mi">0</span> <span class="o">--&gt;</span> <span class="mi">2</span> <span class="o">--&gt;</span> <span class="mi">5</span> <span class="o">--&gt;</span> <span class="mi">0</span>
+    <span class="n">Name</span> <span class="p">:</span> <span class="n">DEPOT</span> <span class="o">--&gt;</span> <span class="n">Vermont</span><span class="p">,</span> <span class="n">USA</span> <span class="o">--&gt;</span> <span class="n">Rhode</span> <span class="n">Island</span><span class="p">,</span> <span class="n">the</span> <span class="n">US</span> <span class="o">--&gt;</span> <span class="n">DEPOT</span>
+    <span class="n">End</span> <span class="n">time</span> <span class="p">:</span> <span class="mf">0.0</span> <span class="o">--&gt;</span> <span class="mf">177.693</span> <span class="o">--&gt;</span> <span class="mf">340.47400000000005</span> <span class="o">--&gt;</span> <span class="mf">516.0720000000001</span>
+    <span class="n">Load</span> <span class="p">:</span> <span class="mf">0.0</span> <span class="o">--&gt;</span> <span class="mf">300.0</span> <span class="o">--&gt;</span> <span class="mf">1041.0</span> <span class="o">--&gt;</span> <span class="mf">1041.0</span>
+    <span class="n">Total</span> <span class="n">cost</span> <span class="p">:</span> <span class="mf">10321.439999999999</span>
+
+<span class="n">Route</span> <span class="k">for</span> <span class="n">vehicle</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="n">ID</span> <span class="p">:</span> <span class="mi">0</span> <span class="o">--&gt;</span> <span class="mi">1</span> <span class="o">--&gt;</span> <span class="mi">3</span> <span class="o">--&gt;</span> <span class="mi">0</span>
+    <span class="n">Name</span> <span class="p">:</span> <span class="n">DEPOT</span> <span class="o">--&gt;</span> <span class="n">West</span> <span class="n">Virginia</span><span class="p">,</span> <span class="n">USA</span> <span class="o">--&gt;</span> <span class="n">Texas</span><span class="p">,</span> <span class="n">the</span> <span class="n">USA</span> <span class="o">--&gt;</span> <span class="n">DEPOT</span>
+    <span class="n">End</span> <span class="n">time</span> <span class="p">:</span> <span class="mf">0.0</span> <span class="o">--&gt;</span> <span class="mf">179.545</span> <span class="o">--&gt;</span> <span class="mf">356.86199999999997</span> <span class="o">--&gt;</span> <span class="mf">544.257</span>
+    <span class="n">Load</span> <span class="p">:</span> <span class="mf">0.0</span> <span class="o">--&gt;</span> <span class="mf">500.0</span> <span class="o">--&gt;</span> <span class="mf">1100.0</span> <span class="o">--&gt;</span> <span class="mf">1100.0</span>
+    <span class="n">Total</span> <span class="n">cost</span> <span class="p">:</span> <span class="mf">10885.14</span>
+
+<span class="n">Route</span> <span class="k">for</span> <span class="n">vehicle</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="n">ID</span> <span class="p">:</span> <span class="mi">0</span> <span class="o">--&gt;</span> <span class="mi">6</span> <span class="o">--&gt;</span> <span class="mi">4</span> <span class="o">--&gt;</span> <span class="mi">0</span>
+    <span class="n">Name</span> <span class="p">:</span> <span class="n">DEPOT</span> <span class="o">--&gt;</span> <span class="n">Oregon</span><span class="p">,</span> <span class="n">the</span> <span class="n">US</span> <span class="o">--&gt;</span> <span class="n">South</span> <span class="n">Dakota</span><span class="p">,</span> <span class="n">the</span> <span class="n">US</span> <span class="o">--&gt;</span> <span class="n">DEPOT</span>
+    <span class="n">End</span> <span class="n">time</span> <span class="p">:</span> <span class="mf">0.0</span> <span class="o">--&gt;</span> <span class="mf">212.17</span> <span class="o">--&gt;</span> <span class="mf">431.123</span> <span class="o">--&gt;</span> <span class="mf">628.192</span>
+    <span class="n">Load</span> <span class="p">:</span> <span class="mf">0.0</span> <span class="o">--&gt;</span> <span class="mf">436.0</span> <span class="o">--&gt;</span> <span class="mf">1094.0</span> <span class="o">--&gt;</span> <span class="mf">1094.0</span>
+    <span class="n">Total</span> <span class="n">cost</span> <span class="p">:</span> <span class="mf">12563.84</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can also enumerate all feasible solutions by changing parameters before solving</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">action</span> <span class="o">=</span> <span class="s2">&quot;enumAllFeasibleRoutes&quot;</span>
+</pre></div>
+</div>
+<p>Enumeration works only for very small instances, and should be used only for debugging and demonstration/teaching purposes.</p>
+</div>
+<p>Full documentation of the VRPSolver API is given in <a class="reference internal" href="../Solver%20API/index.html"><span class="doc">src:  solver API</span></a>.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../Installation/index.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Demos/index.html" class="btn btn-neutral float-right" title="Demos" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, ERRAMI Najib SADYKOV Ruslan UCHOA Eduardo QUEIROGA Eduardo.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

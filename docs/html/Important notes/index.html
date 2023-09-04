@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Important notes &mdash; VRPSolverEasy 0.1.3 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="src: solver API" href="../Solver%20API/index.html" />
+    <link rel="prev" title="MDVRP" href="../Demos/MDVRP.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> VRPSolverEasy
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Installation/index.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Example/index.html">Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Demos/index.html">Demos</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Important notes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#solver-performance">Solver performance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#issues-and-debugging">Issues and debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#accompanying-paper">Accompanying paper</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Solver%20API/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src</span></code>:  solver API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">VRPSolverEasy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Important notes</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/Important notes/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="important-notes">
+<h1>Important notes<a class="headerlink" href="#important-notes" title="Permalink to this heading"></a></h1>
+<section id="solver-performance">
+<h2>Solver performance<a class="headerlink" href="#solver-performance" title="Permalink to this heading"></a></h2>
+<p>The solver is focused on improving <strong>lower bounds</strong> and <strong>proving optimality</strong> of a known feasible solution. Feasible solutions are obtained only when the solution of the linear programming (LP) relaxation becomes integer (after addition cuts and branching). Performance of the solver may be greatly improved by setting the upper bound parameter to the value of a known feasible solution:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">upper_bound</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">known_feasible_solution_value</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>The better is the known feasible solution, the better will be performance of the solver. Thus, we advice to run a (good) external heuristic before launching the solver. Here’s a list of Python packages we are aware of, which can be useful for computing an upper bound :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://developers.google.com/optimization/install/python">OR-Tools</a></p></li>
+<li><p><a class="reference external" href="https://github.com/N-Wouda/PyVRP">pyVRP</a></p></li>
+<li><p><a class="reference external" href="https://github.com/chkwon/PyHygese">pyHegese</a></p></li>
+<li><p><a class="reference external" href="https://github.com/reinterpretcat/vrp">vrp-cli</a></p></li>
+</ul>
+</div></blockquote>
+<p>When using the academic version of VRPSolverEasy, one can activate the built-in MIP-based heuristic. However, this heuristic is slow (launched the first time only at the end of the root node). Moreover, the performance of this heuristic may be not good for large instances and instances with long routes.</p>
+<p>One can reasonably expect to solve to optimality instances with up to 100 customers. Sometimes, optimal or good solutions may be found for instances with 200-250 customers, usually in long runs.</p>
+</section>
+<section id="issues-and-debugging">
+<h2>Issues and debugging<a class="headerlink" href="#issues-and-debugging" title="Permalink to this heading"></a></h2>
+<p>If the output of the solver is not as expected, you may need to verify that your model is correct for your instances. For that, you can use enumeration feature of the solver. To use this feature, take a very small instance (up to 5-10 customers), and activate the solver enumeration mode:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">action</span> <span class="o">=</span> <span class="s2">&quot;enumAllFeasibleRoutes&quot;</span>
+</pre></div>
+</div>
+<p>In this mode, the solver will return all feasible routes for your instance (or inform you that no feasible route exists). You then may analyze the routes to check whether your model is correct.</p>
+<p>If the solution status of the model is non-negative, then unexpected results generally come from non-correct model. If the solution status is negative then there might be an issue with the solver.</p>
+<p>To report an issue, you should export you model into a JSON file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">export</span><span class="p">(</span><span class="o">&lt;</span><span class="n">JSON</span> <span class="n">file</span> <span class="n">name</span><span class="o">&gt;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>and then open an issue on the <a class="reference external" href="https://github.com/inria-UFF/VRPSolverEasy">VRPSolverEasy Github repository</a> with the JSON file attached.</p>
+</section>
+<section id="accompanying-paper">
+<h2>Accompanying paper<a class="headerlink" href="#accompanying-paper" title="Permalink to this heading"></a></h2>
+<p>The paper presents the motivation to create VRPSolverEasy, the interface of
+the package, the solution approach (optional to read), the computational
+results for the three classic VRP variants (CVRP, VRPTW, HFVRP), and possible
+future extensions of the model.
+For the moment, the paper is available as a preprint :</p>
+<blockquote>
+<div><p>N. Errami, E. Queiroga, R. Sadykov, E. Uchoa. “VRPSolverEasy: a Python
+library for the exact solution of a rich vehicle routing problem”,
+<a class="reference external" href="https://hal.inria.fr/hal-04057985/document">Technical report HAL-04057985</a>, 2023.</p>
+</div></blockquote>
+<p>Please cite it if you use VRPSolverEasy in your research.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../Demos/MDVRP.html" class="btn btn-neutral float-left" title="MDVRP" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Solver%20API/index.html" class="btn btn-neutral float-right" title="src: solver API" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, ERRAMI Najib SADYKOV Ruslan UCHOA Eduardo QUEIROGA Eduardo.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
