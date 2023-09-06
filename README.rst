@@ -1,5 +1,3 @@
-.. image :: https://INFORMSJoC.github.io/logos/INFORMS_Journal_on_Computing_Header.jpg
-     :target: https://pubsonline.informs.org/journal/ijoc
 VRPSolverEasy 
 ==============================
 .. image:: https://github.com/inria-UFF/VRPSolverEasy/actions/workflows/python-package.yml/badge.svg
@@ -8,10 +6,7 @@ VRPSolverEasy
 VRPSolverEasy is a Python package which provides a **simple interface
 for** `VRPSolver <https://vrpsolver.math.u-bordeaux.fr/>`__, which is a
 state-of-the-art Branch-Cut-and-Price exact solver for vehicle routing
-problems (VRPs). The original directory used to generate the package is at the following address:
-VRPSolverEasy `<https://github.com/inria-UFF/VRPSolverEasy/>`.
-
-The simplified interface is accessible for **users
+problems (VRPs). The simplified interface is accessible for **users
 without operations research background**, i.e., you do not need to know
 how to model your problem as an Integer Programming problem. As a price
 to pay for the simplicity, this interface is restricted to some standard
@@ -118,9 +113,10 @@ A simple example that shows how to use the VRPSolverEasy package:
    import VRPSolverEasy as vrpse
    import math
 
-   def compute_euclidean_distance(x_i, y_i, x_j, y_j):
-       """compute the euclidean distance between 2 points from graph"""
-       return round(math.sqrt((x_i - x_j)**2 + (y_i - y_j)**2), 3)
+   def compute_euclidean_distance(x_i, x_j, y_i, y_j):
+     """compute the euclidean distance between 2 points from graph"""
+        return round(math.sqrt((x_i - x_j)**2 +
+                               (y_i - y_j)**2), 3)
 
    # Data
    cost_per_distance = 10
@@ -192,7 +188,7 @@ A simple example that shows how to use the VRPSolverEasy package:
 Documentation
 -------------
 
-Documentation, explanation of demos (CVRP, VRPTW, HFVRP, MDVRP and richVRP), and
+Documentation, explanation of demos (CVRP, VRPTW, HFVRP, and MDVRP), and
 the solver API are accessible here: https://vrpsolvereasy.readthedocs.io/en/latest/.
 
 You can also build the documentation locally by following this
@@ -205,13 +201,3 @@ instructions from the source folder : ::
 
 The HTML pages will be in the folder ``build\html``.
 
-Experiments
--------------
-
-#TODO
-
-
-Unit tests
--------------
-
-#TODO
