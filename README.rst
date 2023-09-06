@@ -1,4 +1,5 @@
-[![INFORMS Journal on Computing Logo](https://INFORMSJoC.github.io/logos/INFORMS_Journal_on_Computing_Header.jpg)](https://pubsonline.informs.org/journal/ijoc)
+.. image :: https://INFORMSJoC.github.io/logos/INFORMS_Journal_on_Computing_Header.jpg
+     :target: https://pubsonline.informs.org/journal/ijoc
 VRPSolverEasy 
 ==============================
 .. image:: https://github.com/inria-UFF/VRPSolverEasy/actions/workflows/python-package.yml/badge.svg
