@@ -7,33 +7,31 @@ Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](
 
 The software and data in this repository are a snapshot of the software and data
 that were used in the research reported on in the paper 
-[This is a Template](https://doi.org/10.1287/ijoc.2019.0000) by T. Ralphs. 
-The snapshot is based on 
-[this SHA](https://github.com/tkralphs/JoCTemplate/commit/f7f30c63adbcb0811e5a133e1def696b74f3ba15) 
-in the development repository. 
+[VRPSolverEasy: a Python library for the exact
+solution of a rich vehicle routing problem](https://doi.org/10.1287/ijoc.2023.0103) by N. Errami, E. Queiroga, R. Sadykov, and E. Uchoa. 
 
 **Important: This code is being developed on an on-going basis at 
-https://github.com/tkralphs/JoCTemplate. Please go there if you would like to
+https://github.com/inria-UFF/VRPSolverEasy. Please go there if you would like to
 get a more recent version or would like support**
 
 ## Cite
 
 To cite the contents of this repository, please cite both the paper and this repo, using their respective DOIs.
 
-https://doi.org/10.1287/ijoc.2019.0000
+https://doi.org/10.1287/ijoc.2023.0103
 
-https://doi.org/10.1287/ijoc.2019.0000.cd
+https://doi.org/10.1287/ijoc.2023.0103.cd
 
 Below is the BibTex for citing this snapshot of the respoitory.
 
 ```
-@article{CacheTest,
-  author =        {T. Ralphs},
+@article{VrpSolverEasyIjoc2023,
+  author =        {N. Errami and E. Queiroga and R. Sadykov and E. Uchoa},
   publisher =     {INFORMS Journal on Computing},
-  title =         {{CacheTest}},
-  year =          {2020},
-  doi =           {10.1287/ijoc.2019.0000.cd},
-  url =           {https://github.com/INFORMSJoC/2019.0000},
+  title =         {{VRPSolverEasy: a Python library for the exact solution of a rich vehicle routing problem}},
+  year =          {2023},
+  doi =           {10.1287/ijoc.2023.0103.cd},
+  url =           {https://github.com/INFORMSJoC/2023.0103},
 }  
 ```
 
@@ -70,45 +68,126 @@ VRPSolverEasy requires a version of python >= 3.6
     python -m pip install .
     ```
 
-## Results
+## Example
 
-Figure 1 in the paper shows the results of the multiplication test with different
-values of K using `gcc` 7.5 on an Ubuntu Linux box.
+A simple example that shows how to use the VRPSolverEasy package:
 
-![Figure 1](results/mult-test.png)
+```python
+import VRPSolverEasy as vrpse
+import math
 
-Figure 2 in the paper shows the results of the sum test with different
-values of K using `gcc` 7.5 on an Ubuntu Linux box.
+def compute_euclidean_distance(x_i, x_j, y_i, y_j):
+  """compute the euclidean distance between 2 points from graph"""
+    return round(math.sqrt((x_i - x_j)**2 +
+                            (y_i - y_j)**2), 3)
 
-![Figure 1](results/sum-test.png)
+# Data
+cost_per_distance = 10
+begin_time = 0
+end_time = 5000
+nb_point = 7
 
-## Replicating
+# Map with names and coordinates
+coordinates = {"Wisconsin, USA": (44.50, -89.50),  # depot
+              "West Virginia, USA": (39.000000, -80.500000),
+              "Vermont, USA": (44.000000, -72.699997),
+              "Texas, the USA": (31.000000, -100.000000),
+              "South Dakota, the US": (44.500000, -100.000000),
+              "Rhode Island, the US": (41.742325, -71.742332),
+              "Oregon, the US": (44.000000, -120.500000)
+              }
 
-To replicate the results in [Figure 1](results/mult-test), do either
+# Demands of points
+demands = [0, 500, 300, 600, 658, 741, 436]
 
+# Initialisation
+model = vrpse.Model()
+
+# Add vehicle type
+model.add_vehicle_type(
+    id=1,
+    start_point_id=0,
+    end_point_id=0,
+    name="VEH1",
+    capacity=1100,
+    max_number=6,
+    var_cost_dist=cost_per_distance,
+    tw_end=5000)
+
+# Add depot
+model.add_depot(id=0, name="D1", tw_begin=0, tw_end=5000)
+
+coordinates_keys = list(coordinates.keys())
+# Add customers
+for i in range(1, nb_point):
+    model.add_customer(
+        id=i,
+        name=coordinates_keys[i],
+        demand=demands[i],
+        tw_begin=begin_time,
+        tw_end=end_time)
+
+# Add links
+coordinates_values = list(coordinates.values())
+for i in range(0, 7):
+    for j in range(i + 1, 7):
+        dist = compute_euclidean_distance(coordinates_values[i][0],
+                                          coordinates_values[j][0],
+                                          coordinates_values[i][1],
+                                          coordinates_values[j][1])
+        model.add_link(
+            start_point_id=i,
+            end_point_id=j,
+            distance=dist,
+            time=dist)
+
+# solve model
+model.solve()
+model.export()
+
+if model.solution.is_defined():
+    print(model.solution)
 ```
-make mult-test
-```
-or
-```
-python test.py mult
-```
-To replicate the results in [Figure 2](results/sum-test), do either
 
-```
-make sum-test
-```
-or
-```
-python test.py sum
-```
+## Replicating Experiments
 
-## Ongoing Development
+### File Naming Conventions
+
+Scripts in the `scripts` folder follow a naming convention:
+
+- **Problem**: `CVRP`, `CVRPTW`, or `HFVRP`
+- **Solver**: `CLP` or `CPLEX`.
+- **Upper Bound Source**: `hgs`, `no`, `yes`.
+  - `hgs`: Via Hybrid Genetic Search (HGS).
+  - `no`: No heuristic upper bound.
+  - `yes`: Via OR-Tools.
+- **CPLEX Settings**: Specifies whether the CPLEX built-in heuristic is enabled or disabled.
+  - `yes_no`: Upper bound from OR-Tools, CPLEX built-in heuristic disabled.
+  - `yes_yes`: Upper bound from OR-Tools, CPLEX built-in heuristic enabled.
+
+### Demos options
+The demos `CVRP.py`, `CVRPTW.py`, and `HFVRP.py` are called with the following options:
+
+- `-i`: Instance path.
+- `-s`: Solver (`CLP` or `CPLEX`).
+  - To use `CPLEX`, you'll need to install the academic version of VRPSolverEasy (see the documentation).
+- `-u`: Upper bound, whether obtained from OR-Tools or HGS.
+- `-e`: Time limit in seconds.
+- `-b`: Disables the CPLEX built-in heuristic (set to `yes` to disable, `no` to enable).
+
+### Running Experiments
+
+1. Navigate to `scripts`.
+2. Run desired script: `sh script_name.sh`.
+3. Output will be written to the `results` folder. The results obtained for the paper are already available there.
+
+
+### Ongoing Development
 
 This code is being developed on an on-going basis at the author's
-[Github site](https://github.com/tkralphs/JoCTemplate).
+[Github site](https://github.com/inria-UFF/VRPSolverEasy).
 
 ## Support
 
 For support in using this software, submit an
-[issue](https://github.com/tkralphs/JoCTemplate/issues/new).
+[issue](https://github.com/inria-UFF/VRPSolverEasy/issues/new).

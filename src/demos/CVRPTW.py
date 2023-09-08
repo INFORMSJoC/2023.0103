@@ -1,55 +1,20 @@
 """ This module allows to solve Solomon instances of
 Capacitated Vehicle Routing Problem with Time Windows. """
 
-
-import os
 import math
+import os
 import sys
 import getopt
 from VRPSolverEasy.src import solver
 
-
-class DataCvrptw:
-    """Contains all data for CVRPTW problem
-    """
-
-    def __init__(
-            self,
-            vehicle_capacity: int,
-            nb_customers: int,
-            max_number: int,
-            cust_demands=None,
-            cust_coordinates=None,
-            depot_coordinates=0,
-            cust_tw_begin=None,
-            cust_tw_end=None,
-            cust_service_time=None,
-            depot_tw_begin=0,
-            depot_tw_end=0,
-            depot_service_time=0):
-
-        self.vehicle_capacity = vehicle_capacity
-        self.nb_customers = nb_customers
-        self.max_number = max_number
-        self.cust_demands = cust_demands
-        self.cust_coordinates = cust_coordinates
-        self.depot_coordinates = depot_coordinates
-        self.cust_tw_begin = cust_tw_begin
-        self.cust_tw_end = cust_tw_end
-        self.cust_service_time = cust_service_time
-        self.depot_tw_begin = depot_tw_begin
-        self.depot_tw_end = depot_tw_end
-        self.depot_service_time = depot_service_time
-
-
 def read_instance(name: str):
     """ Read an instance in the folder data from a given name """
-
-    with open(
-            os.path.normpath(name),
-            "r", encoding="UTF-8") as file:
-        return [str(element) for element in file.read().split()]
-
+    path_project = os.path.abspath(os.getcwd())
+    with open(name,
+              "r", encoding="UTF-8")as file:
+        elements = [str(element) for element in file.read().split()]
+    file.close()
+    return elements
 
 
 def compute_euclidean_distance(x_i, y_i, x_j, y_j, number_digit=3):
@@ -58,98 +23,82 @@ def compute_euclidean_distance(x_i, y_i, x_j, y_j, number_digit=3):
                            (y_i - y_j)**2), number_digit)
 
 
-def solve_demo(instance_name,
-               time_resolution=30,
-               solver_name_input="CLP",
-               solver_path=""):
-    """return a solution from modelisation"""
+def compute_one_decimal_floor_euclidean_distance(x_i, y_i, x_j, y_j):
+    """Compute the euclidean distance between 2 points from graph"""
+    return math.floor(math.sqrt((x_i - x_j)**2 + (y_i - y_j)**2) * 10) / 10
 
-    # read parameters given in command line
-    type_instance = "CVRPTW/"
-    if len(sys.argv) > 1:
-        print(instance_name)
-        opts = getopt.getopt(instance_name, "i:t:s:p:")
-        for opt, arg in opts[0]:
-            if opt in ["-i"]:
-                instance_name = arg
-            if opt in ["-t"]:
-                time_resolution = float(arg)
-            if opt in ["-s"]:
-                solver_name_input = arg
-            if opt in ["-p"]:
-                solver_path = arg
+
+def solve_demo(instance_path,
+               solver_name="CLP",
+               solver_path="",
+               time_resolution=30,
+               disableBuiltInHeur=False,
+               upper_bound=-1):
+    """Return a solution from modelisation"""
 
     # read instance
-    data = read_cvrptw_instances(instance_name)
+    data = read_cvrptw_instances(instance_path)
+
+    # get data
+    vehicle_type = data["vehicle_type"]
+    depot = data["Points"][0]
+    customers = data["Points"][1:]
+    links = data["Links"]
 
     # modelisation of problem
     model = solver.Model()
 
     # add vehicle type
-    model.add_vehicle_type(id=1,
-                           start_point_id=0,
-                           end_point_id=0,
-                           max_number=data.max_number,
-                           capacity=data.vehicle_capacity,
-                           tw_begin=data.depot_tw_begin,
-                           tw_end=data.depot_tw_end,
-                           var_cost_dist=1
+    model.add_vehicle_type(id=vehicle_type["id"],
+                           start_point_id=vehicle_type["start_point_id"],
+                           end_point_id=vehicle_type["end_point_id"],
+                           capacity=vehicle_type["capacity"],
+                           max_number=vehicle_type["max_number"],
+                           tw_begin=vehicle_type["tw_begin"],
+                           tw_end=vehicle_type["tw_end"],
+                           var_cost_dist=vehicle_type["var_cost_dist"],
+                           var_cost_time=vehicle_type["var_cost_time"]
                            )
     # add depot
-    model.add_depot(id=0,
-                    service_time=data.depot_service_time,
-                    tw_begin=data.depot_tw_begin,
-                    tw_end=data.depot_tw_end
+    model.add_depot(id=depot["id"],
+                    service_time=depot["service_time"],
+                    tw_begin=depot["tw_begin"],
+                    tw_end=depot["tw_end"]
                     )
 
     # add all customers
-    for i in range(data.nb_customers):
-        model.add_customer(id=i + 1,
-                           service_time=data.cust_service_time[i],
-                           tw_begin=data.cust_tw_begin[i],
-                           tw_end=data.cust_tw_end[i],
-                           demand=data.cust_demands[i]
+    for customer in customers:
+        model.add_customer(id=customer["id"],
+                           service_time=customer["service_time"],
+                           tw_begin=customer["tw_begin"],
+                           tw_end=customer["tw_end"],
+                           demand=customer["demand"]
                            )
-
-
-    # Compute the links between depot and other points
-    for i,cust_i in enumerate(data.cust_coordinates):
-        dist = compute_euclidean_distance(cust_i[0],
-                                          cust_i[1],
-                                          data.depot_coordinates[0],
-                                          data.depot_coordinates[1]
-                                          )
-        model.add_link(start_point_id=0,
-                       end_point_id=i + 1,
-                       distance=dist,
-                       time=dist
+    # add all links
+    for link in links:
+        model.add_link(start_point_id=link["start_point_id"],
+                       end_point_id=link["end_point_id"],
+                       distance=link["distance"],
+                       time=link["time"]
                        )
 
-    # Compute the links between points
-    for i,cust_i in enumerate(data.cust_coordinates):
-        for j in range(i + 1, len(data.cust_coordinates)):
-            dist = compute_euclidean_distance(cust_i[0],
-                                              cust_i[1],
-                                              data.cust_coordinates[j][0],
-                                              data.cust_coordinates[j][1]
-                                              )
-            model.add_link(start_point_id=i + 1,
-                           end_point_id=j + 1,
-                           distance=dist,
-                           time=dist
-                           )
-
-
     # set parameters
-    model.set_parameters(time_limit=time_resolution,
-                         solver_name=solver_name_input)
+    if disableBuiltInHeur:
+        model.set_parameters(time_limit=time_resolution, solver_name=solver_name, 
+                            heuristic_used=False)
+        print('Built-in heuristic is disabled')
+    else:
+        model.set_parameters(time_limit=time_resolution, solver_name=solver_name, 
+                            heuristic_used=True)
+        print('Built-in heuristic is enabled')
+
+    if upper_bound != -1:
+        model.parameters.upper_bound = upper_bound
 
     ''' If you have cplex 22.1 installed on your laptop windows you have to specify
         solver path'''
-    if (solver_name_input == "CPLEX" and solver_path != ""):
+    if (solver_name == "CPLEX" and solver_path != ""):
         model.parameters.cplex_path = solver_path
-
-    #model.export(instance_name)
 
     # solve model
     model.solve()
@@ -157,14 +106,14 @@ def solve_demo(instance_name,
     # export the result
     # model.solution.export(instance_name.split(".")[0] + "_result")
 
-    return model.solution.value
+    return model.solution
 
-
-def read_cvrptw_instances(instance_full_path):
-    """Read literature instances of CVRPTW ("Solomon" format) by giving the name of instance
-        and returns dictionary containing all elements of model"""
-    instance_iter = iter(
-        read_instance(instance_full_path))
+def read_cvrptw_instances(instance_name):
+    """Read literature instances of CVRPTW ("Solomon" format) by giving the name of instance,
+        compute lower bound and returns dictionary containing all elements of model"""
+    instance_iter = iter(read_instance(instance_name))
+    # Instantiate the data problem.
+    data = {}
 
     for i in range(4):
         next(instance_iter)
@@ -175,26 +124,52 @@ def read_cvrptw_instances(instance_full_path):
     for i in range(13):
         next(instance_iter)
 
-    depot_x = int(next(instance_iter))
-    depot_y = int(next(instance_iter))
-    next(instance_iter) #depot demand
+    depot_x = float(next(instance_iter))
+    depot_y = float(next(instance_iter))
+    depot_demand = int(next(instance_iter))
     depot_tw_begin = int(next(instance_iter))
     depot_tw_end = int(next(instance_iter))
     depot_service_time = int(next(instance_iter))
     id_point = 0
 
-    vehicle_capacity = capacity_input
-    vehicle_max_number = max_number_input
+    vehicles = []
+    # Initialize vehicle type
+    vehicle_type = {"id": 1,  # we cannot have an id less than 1
+                    "start_point_id": id_point,
+                    "end_point_id": id_point,
+                    "capacity": capacity_input,
+                    "max_number": max_number_input,
+                    "tw_begin": depot_tw_begin,
+                    "tw_end": depot_tw_end,
+                    "service_time": depot_service_time,
+                    "var_cost_dist": 1,
+                    "var_cost_time": 0
+                    }
+    index = 0
+    time_windows = [(depot_tw_begin, depot_tw_end)]
+    service_times = [0]
+    for i in range(max_number_input):
+        vehicles.append(capacity_input)
+        index += 1
 
-    depot_coordinates = [depot_x, depot_y]
+    data['vehicle_capacities'] = vehicles
+    data['num_vehicles'] = max_number_input
+    data['depot'] = 0
 
-    cust_coordinates = []
-    cust_demands = []
-    cust_tw_begin = []
-    cust_tw_end = []
-    cust_service_time = []
+    demands = []
 
+    # Initialize the points with depot
+    points = [{"x": depot_x,
+               "y": depot_y,
+               "demand": depot_demand,
+               "tw_begin": depot_tw_begin,
+               "tw_end": depot_tw_end,
+               "service_time": depot_service_time,
+               "id": id_point
+               }]
+    demands.append(depot_demand)
     # Add the customers in the list of points
+
     while True:
         id_point += 1
         value = next(instance_iter, None)
@@ -206,34 +181,73 @@ def read_cvrptw_instances(instance_full_path):
         tw_begin = int(next(instance_iter))
         tw_end = int(next(instance_iter))
         service_time = int(next(instance_iter))
+        points.append({"x": x_coord,
+                       "y": y_coord,
+                       "demand": demand,
+                       "tw_begin": tw_begin,
+                       "tw_end": tw_end + service_time,
+                       "service_time": service_time,
+                       "id": id_point})
+        demands.append(demand)
+        time_windows.append((tw_begin, tw_end))
+        service_times.append(service_time)
 
-        cust_coordinates.append([x_coord, y_coord])
-        cust_tw_begin.append(tw_begin)
-        cust_tw_end.append(tw_end + service_time)
-        cust_service_time.append(service_time)
-        cust_demands.append(demand)
+    data['demands'] = demands
+    data['time_windows'] = time_windows
+    # compute the links of graph
+    links = []
+    matrix = [[0 for i in range((len(points)))] for i in range(len(points))]
+    matrix_time = [[0 for i in range((len(points)))]
+                   for i in range(len(points))]
 
-    return DataCvrptw(vehicle_capacity,
-                      id_point - 1,
-                      vehicle_max_number,
-                      cust_demands,
-                      cust_coordinates,
-                      depot_coordinates,
-                      cust_tw_begin,
-                      cust_tw_end,
-                      cust_service_time,
-                      depot_tw_begin,
-                      depot_tw_end,
-                      depot_service_time
-                      )
+    for i, point in enumerate(points):
+        for j in range(i + 1, len(points)):
+            dist = compute_one_decimal_floor_euclidean_distance(
+                point["x"], point["y"], points[j]["x"], points[j]["y"])
 
+            links.append({"start_point_id": point["id"],
+                          "end_point_id": points[j]["id"],
+                          "distance": dist,
+                          "time": dist
+                          })
+            matrix_time[i][j] = dist + service_times[i]
+            matrix_time[j][i] = dist + service_times[j]
+            matrix[i][j] = dist
+            matrix[j][i] = dist
+
+    data['distance_matrix'] = matrix
+    data['time_matrix'] = matrix_time
+    upper_bound = 0
+
+    return {"Points": points,
+            "vehicle_type": vehicle_type,
+            "Links": links}
+
+def main(argv):
+    instance_path = ''
+    solver_name = ''
+    solver_path = ''
+    disableBuiltInHeur = False
+    time_resolution = 30
+    upper_bound = -1
+    opts, args = getopt.getopt(argv,"i:s:u:b:e:p:")
+   
+    for opt, arg in opts:
+        if opt == "-i":
+            instance_path = arg
+        elif opt == "-s":
+            solver_name = arg
+        elif opt == "-u":
+            upper_bound = float(arg)
+        elif opt == "-b":
+            disableBuiltInHeur = arg == "yes"
+        elif opt == "-e":
+            time_resolution = float(arg)
+        if opt in ["-p"]:
+            solver_path = arg
+
+    solve_demo(instance_path, solver_name, solver_path, time_resolution, disableBuiltInHeur, upper_bound)
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
-        solve_demo(sys.argv[1:])
-    else:
-        print("""Please indicates the path of your instance like this : \n
-       python CVRPTW.py -i INSTANCE_PATH/NAME_INSTANCE \n
-       -t TIME_RESOLUTION -s SOLVER_NAME (-p PATH_SOLVER (WINDOWS only))
-       """)
-
+        main(sys.argv[1:])

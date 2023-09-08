@@ -1,0 +1,108 @@
+Node memory for rank-1 cuts will be used (2.13415)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VRPSolver v0.5.27, 24/02/2023, © Inria Bordeaux, France, vrpsolver.math.u-bordeaux.fr
+      Corresponds to the solver by Pessoa, Sadykov, Uchoa and Vanderbeck (2020)
+                 Paper: dx.doi.org/10.1007/s10107-020-01523-z
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   BaPCod v0.77, 15/03/2023, © Inria Bordeaux, France, bapcod.math.u-bordeaux.fr 
+           THIS CODE IS PROVIDED AS IS, USE IT AT YOUR OWN RISK
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Bucket steps were recalculated for graph G_1 : [1.5]
+RCSP solver info : symmetric case is detected for graph G_1! 
+Bidirectional border value is initialised to 17.5
+RCSP solver info : number of forw. reachable buckets / buck. strongly connected components is 272( 66.6667% ) / 272( 100% )
+Generating neighbourhoods for rank-1 cuts separation
+Building structures for 4- and 5-row rank-1 packing cut separation...done!
+Model is built TIME = 0h0m0s2t = 2
+************************************************************************************************
+**** BaB tree root node
+**** Local DB = -1e+12, global bounds : [ -1e+12 , 450.1 ], TIME = 0h0m0s2t = 2
+**** 1 open nodes, 0 columns (0 active), 0 dyn. constrs. (0 active), 32 art. vars. (32 active)
+************************************************************************************************
+#<DWph=2> <it=  1> <et=0.02> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.00> <DB=-67975.6000> <Mlp=20524.5600> <PB=450.1> 
+#<DWph=2> <it=  2> <et=0.02> <Mt= 0.00> <Spt= 0.00> <nCl= 11> <al=0.55> <DB=-39820.4240> <Mlp= 6843.4400> <PB=450.1> 
+#<DWph=2> <it=  3> <et=0.02> <Mt= 0.00> <Spt= 0.00> <nCl= 12> <al=0.60> <DB=-28354.6224> <Mlp= 2858.0400> <PB=450.1> 
+#<DWph=2> <it=  4> <et=0.02> <Mt= 0.00> <Spt= 0.00> <nCl=  3> <al=0.64> <DB=-16230.1608> <Mlp=  587.6867> <PB=450.1> 
+<DWph=2> <it=  5> <et=0.02> <Mt= 0.00> <Spt= 0.00> <nCl= 12> <al=0.07> <DB=-2439.8959> <Mlp=  486.0000> <PB=450.1> 
+<DWph=2> <it=  6> <et=0.02> <Mt= 0.00> <Spt= 0.00> <nCl= 12> <al=0.00> <DB=  125.0000> <Mlp=  453.0000> <PB=450.1> 
+<DWph=2> <it=  7> <et=0.02> <Mt= 0.00> <Spt= 0.00> <nCl=  7> <al=0.34> <DB=  405.9361> <Mlp=  446.8000> <PB=450.1> 
+<DWph=2> <it=  8> <et=0.02> <Mt= 0.00> <Spt= 0.00> <nCl=  5> <al=0.00> <DB=  443.6667> <Mlp=  443.6667> <PB=450.1> 
+<DWph=1> <it=  9> <et=0.02> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB=  443.6667> <Mlp=  443.6667> <PB=450.1> 
+    RCSP exact solver info for graph G_1 : TT = 0.000223, pt = 2e-06, dt = 6.1e-05, ct = 5.2e-05, ndl = 0', bdl = 0', odl = 0', odf = 0', bsi = 0', cnt = 0', bdch = 0', odch = 0', lcp = 0', #sols = 150
+    RCSP exact solver info for graph G_1 : TT = 0.000205, pt = 1e-05, dt = 4.3e-05, ct = 4.6e-05, ndl = 0', bdl = 0', odl = 0', odf = 0', bsi = 0', cnt = 0', bdch = 0', odch = 0', lcp = 0', #sols = 150
+<DWph=0> <it= 10> <et=0.02> <Mt= 0.00> <Spt= 0.00> <nCl=108> <al=0.00> <DB=  443.6667> <Mlp=  443.6667> <PB=450.1> 
+Dynamic params and stats :  aver.obdmd = 13.6471 aver.buck.num. = 24
+@@ 1 0 443.667 0.000101 0.000113 41.7196 0.02
+Labels distribution in buckets (bucket size) : largest - 2, top 0.1% - 2, top 0.5% - 2, top 2% - 2, top 10% - 1, top 50% - 0
+Reduced cost fixing for graph G_1... 234 buck. arcs remain (14.8% from prev., 6.19% from max.) + 167 jump buck. arcs (4.42% from max.)
+ TT = 0.000236, pt = 1.6e-05, dt = 4.9e-05, ct = 0.000151, ndl = 0', bdl = 0', odl = 0', odf = 1', lpcb = 0', cnt = 0', bdch = 0', odch = 0', lcp = 0'
+Labels distribution in buckets (bucket size) : largest - 2, top 0.1% - 2, top 0.5% - 2, top 2% - 2, top 10% - 1, top 50% - 0
+Run forward enumeration with border = 17.5... succeeded! lpt = 0.002005, ndl = 0', dl = 0', lpcb = 0', dch = 0'
+Run enumeration concatenation with time limit 0.3 sec.... succeeded!
+Sorting and storing enumerated solutions ... done!
+ TT = 0.004791, pt = 0.002016, dt = 0.002005, ct = 5.2e-05, ndl = 0', bdl = 0', lpcb = 0', cnt = 0', bdch = 0', odch = 0', lcp = 0'
+Enumeration succeeded!, number of elem. solutions is 26
+Estimating inspection time...     TT = 7e-06, performed by inspection with 26 solutions, nbR1C = 0, nbDiscC = 0
+Inspection time is low enough. Pricing will be done by inspection.
+Added 50 columns in the formulation 
+Removed 135 columns (not in the enumerated set) from the formulation
+Regenerated 50 columns with the 'enumerated' flag
+Added 3 columns in the formulation 
+ColGenEvalAlg final dual bound: 443.667 (rounded: 444)
+----- Terminating the node by MIP -----
+Version identifier: 20.1.0.0 | 2020-11-10 | 9bedb6d68
+CPXPARAM_Advance                                 0
+CPXPARAM_Threads                                 1
+CPXPARAM_MIP_Limits_Nodes                        2000000
+CPXPARAM_Simplex_Tolerances_Optimality           9.9999999999999995e-08
+CPXPARAM_Simplex_Tolerances_Feasibility          9.9999999999999995e-08
+CPXPARAM_TimeLimit                               1763.9706000000001
+CPXPARAM_MIP_Tolerances_UpperCutoff              450.000001
+CPXPARAM_MIP_Tolerances_MIPGap                   1.0000000000000001e-09
+Tried aggregator 2 times.
+MIP Presolve eliminated 3 rows and 34 columns.
+MIP Presolve modified 53 coefficients.
+Aggregator did 1 substitutions.
+Reduced MIP has 13 rows, 18 columns, and 48 nonzeros.
+Reduced MIP has 18 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.13 ticks)
+Probing fixed 2 vars, tightened 0 bounds.
+Probing time = 0.00 sec. (0.03 ticks)
+Tried aggregator 1 time.
+MIP Presolve eliminated 6 rows and 7 columns.
+Reduced MIP has 7 rows, 11 columns, and 25 nonzeros.
+Reduced MIP has 11 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.02 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 7 rows, 11 columns, and 25 nonzeros.
+Reduced MIP has 11 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
+Clique table members: 14.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.01 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0     0      integral     0      450.0000      450.0000        5    0.00%
+Elapsed time = 0.00 sec. (0.28 ticks, tree = 0.00 MB, solutions = 1)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.28 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.28 ticks)
+Solution status = Optimum
+New model incumbent solution 450, TIME = 0h0m0s3t = 3
+************************************************************************************************
+Search is finished, global bounds : [ 450 , 450 ], TIME = 0h0m0s3t = 3
+************************************************************************************************
+Built-in heuristic is disabled
+instance_name solver_name ext_heuristic solution_value solution_time best_lb root_lb root_time nb_branch_and_bound_nodes status
+/home/logis/Downloads/VRPSolverEasy/VRPSolverEasy/demos/data/CVRP/P-n16-k8 CPLEX False 450.0 0.034454818 450.0 450.0 0.034360005 1 0
+

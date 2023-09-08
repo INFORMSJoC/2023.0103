@@ -1,0 +1,1769 @@
+Node memory for rank-1 cuts will be used (5.49853)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VRPSolver v0.5.27, 24/02/2023, © Inria Bordeaux, France, vrpsolver.math.u-bordeaux.fr
+      Corresponds to the solver by Pessoa, Sadykov, Uchoa and Vanderbeck (2020)
+                 Paper: dx.doi.org/10.1007/s10107-020-01523-z
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   BaPCod v0.77, 15/03/2023, © Inria Bordeaux, France, bapcod.math.u-bordeaux.fr 
+           THIS CODE IS PROVIDED AS IS, USE IT AT YOUR OWN RISK
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Bucket steps were recalculated for graph G_1 : [4]
+RCSP solver info : symmetric case is detected for graph G_1! 
+Bidirectional border value is initialised to 50
+RCSP solver info : number of forw. reachable buckets / buck. strongly connected components is 1840( 91.9081% ) / 1740( 94.5652% )
+Generating neighbourhoods for rank-1 cuts separation
+Building structures for 4- and 5-row rank-1 packing cut separation...done!
+Model is built TIME = 0h0m0s4t = 4
+************************************************************************************************
+**** BaB tree root node
+**** Local DB = -1e+12, global bounds : [ -1e+12 , 1021.1 ], TIME = 0h0m0s4t = 4
+**** 1 open nodes, 0 columns (0 active), 0 dyn. constrs. (0 active), 152 art. vars. (152 active)
+************************************************************************************************
+#<DWph=2> <it=  1> <et=0.04> <Mt= 0.00> <Spt= 0.00> <nCl= 30> <al=0.00> <DB=-8724569.3600> <Mlp=200952.4800> <PB=1021.1> 
+#<DWph=2> <it=  2> <et=0.05> <Mt= 0.00> <Spt= 0.01> <nCl= 30> <al=0.55> <DB=-4194207.4889> <Mlp=195991.1020> <PB=1021.1> 
+#<DWph=2> <it=  3> <et=0.06> <Mt= 0.00> <Spt= 0.00> <nCl= 30> <al=0.45> <DB=-3304083.0810> <Mlp=194936.2376> <PB=1021.1> 
+#<DWph=2> <it=  4> <et=0.06> <Mt= 0.00> <Spt= 0.01> <nCl= 30> <al=0.51> <DB=-2783134.3672> <Mlp=190868.1305> <PB=1021.1> 
+#<DWph=2> <it=  5> <et=0.07> <Mt= 0.00> <Spt= 0.00> <nCl= 30> <al=0.55> <DB=-2067474.5727> <Mlp=186018.4327> <PB=1021.1> 
+#<DWph=2> <it=  6> <et=0.07> <Mt= 0.00> <Spt= 0.01> <nCl= 30> <al=0.60> <DB=-2062401.0179> <Mlp=179926.9052> <PB=1021.1> 
+#<DWph=2> <it=  7> <et=0.08> <Mt= 0.00> <Spt= 0.01> <nCl= 30> <al=0.64> <DB=-1685423.0879> <Mlp=178170.6056> <PB=1021.1> 
+#<DWph=2> <it=  8> <et=0.08> <Mt= 0.00> <Spt= 0.00> <nCl= 30> <al=0.68> <DB=-1503339.3162> <Mlp=169279.6568> <PB=1021.1> 
+#<DWph=2> <it=  9> <et=0.09> <Mt= 0.00> <Spt= 0.01> <nCl= 30> <al=0.71> <DB=-1376700.9800> <Mlp=155830.4194> <PB=1021.1> 
+#<DWph=2> <it= 10> <et=0.10> <Mt= 0.00> <Spt= 0.00> <nCl= 30> <al=0.74> <DB=-1232406.0271> <Mlp=143874.2066> <PB=1021.1> 
+#<DWph=2> <it= 11> <et=0.10> <Mt= 0.00> <Spt= 0.01> <nCl= 30> <al=0.64> <DB=-1191956.1950> <Mlp=139415.3198> <PB=1021.1> 
+#<DWph=2> <it= 12> <et=0.11> <Mt= 0.00> <Spt= 0.00> <nCl= 30> <al=0.67> <DB=-1050370.7809> <Mlp=129502.4037> <PB=1021.1> 
+#<DWph=2> <it= 13> <et=0.11> <Mt= 0.00> <Spt= 0.01> <nCl= 30> <al=0.57> <DB=-1007104.7101> <Mlp=111121.0453> <PB=1021.1> 
+#<DWph=2> <it= 14> <et=0.12> <Mt= 0.00> <Spt= 0.00> <nCl= 30> <al=0.62> <DB=-942927.5919> <Mlp=107325.9123> <PB=1021.1> 
+#<DWph=2> <it= 15> <et=0.13> <Mt= 0.00> <Spt= 0.01> <nCl= 30> <al=0.65> <DB=-872325.0063> <Mlp=100996.9536> <PB=1021.1> 
+#<DWph=2> <it= 16> <et=0.13> <Mt= 0.00> <Spt= 0.00> <nCl= 30> <al=0.69> <DB=-839009.3790> <Mlp=87048.8044> <PB=1021.1> 
+#<DWph=2> <it= 17> <et=0.14> <Mt= 0.00> <Spt= 0.01> <nCl= 30> <al=0.72> <DB=-789427.1085> <Mlp=72334.8194> <PB=1021.1> 
+#<DWph=2> <it= 18> <et=0.15> <Mt= 0.00> <Spt= 0.00> <nCl= 30> <al=0.62> <DB=-744144.2643> <Mlp=60116.5687> <PB=1021.1> 
+#<DWph=2> <it= 19> <et=0.15> <Mt= 0.01> <Spt= 0.01> <nCl= 30> <al=0.66> <DB=-681878.6743> <Mlp=50433.5953> <PB=1021.1> 
+#<DWph=2> <it= 20> <et=0.16> <Mt= 0.00> <Spt= 0.01> <nCl= 30> <al=0.69> <DB=-594656.0414> <Mlp=34766.3228> <PB=1021.1> 
+#<DWph=2> <it= 21> <et=0.17> <Mt= 0.00> <Spt= 0.00> <nCl= 30> <al=0.59> <DB=-555630.4039> <Mlp=19150.0113> <PB=1021.1> 
+#<DWph=2> <it= 22> <et=0.18> <Mt= 0.00> <Spt= 0.01> <nCl= 30> <al=0.63> <DB=-411005.0691> <Mlp= 4783.5917> <PB=1021.1> 
+#<DWph=2> <it= 23> <et=0.18> <Mt= 0.01> <Spt= 0.00> <nCl= 16> <al=0.53> <DB=-178767.1571> <Mlp= 1761.7536> <PB=1021.1> 
+<DWph=2> <it= 24> <et=0.19> <Mt= 0.00> <Spt= 0.00> <nCl= 10> <al=0.43> <DB=-49510.9915> <Mlp= 1706.6430> <PB=1021.1> 
+<DWph=2> <it= 25> <et=0.19> <Mt= 0.00> <Spt= 0.01> <nCl= 30> <al=0.33> <DB=-4782.7912> <Mlp= 1678.7356> <PB=1021.1> 
+<DWph=2> <it= 26> <et=0.20> <Mt= 0.00> <Spt= 0.00> <nCl= 30> <al=0.23> <DB=-8604.8041> <Mlp= 1622.9991> <PB=1021.1> 
+<DWph=2> <it= 27> <et=0.20> <Mt= 0.00> <Spt= 0.00> <nCl= 29> <al=0.31> <DB= -836.1348> <Mlp= 1589.4176> <PB=1021.1> 
+<DWph=2> <it= 28> <et=0.21> <Mt= 0.00> <Spt= 0.01> <nCl= 30> <al=0.38> <DB=-3094.2031> <Mlp= 1479.7779> <PB=1021.1> 
+<DWph=2> <it= 29> <et=0.22> <Mt= 0.01> <Spt= 0.00> <nCl= 30> <al=0.44> <DB= -297.1678> <Mlp= 1389.6098> <PB=1021.1> 
+<DWph=2> <it= 30> <et=0.22> <Mt= 0.00> <Spt= 0.01> <nCl= 30> <al=0.50> <DB=-2499.0518> <Mlp= 1332.3247> <PB=1021.1> 
+<DWph=2> <it= 31> <et=0.23> <Mt= 0.00> <Spt= 0.00> <nCl= 30> <al=0.55> <DB=-1373.4013> <Mlp= 1284.1525> <PB=1021.1> 
+<DWph=2> <it= 32> <et=0.24> <Mt= 0.00> <Spt= 0.01> <nCl= 30> <al=0.59> <DB=-1328.8422> <Mlp= 1245.6544> <PB=1021.1> 
+<DWph=2> <it= 33> <et=0.24> <Mt= 0.00> <Spt= 0.00> <nCl= 30> <al=0.63> <DB= -532.7352> <Mlp= 1218.7372> <PB=1021.1> 
+<DWph=2> <it= 34> <et=0.25> <Mt= 0.00> <Spt= 0.01> <nCl= 29> <al=0.67> <DB= -691.7300> <Mlp= 1186.0526> <PB=1021.1> 
+<DWph=2> <it= 35> <et=0.26> <Mt= 0.01> <Spt= 0.00> <nCl= 18> <al=0.70> <DB=  325.2696> <Mlp= 1173.9163> <PB=1021.1> 
+<DWph=2> <it= 36> <et=0.26> <Mt= 0.00> <Spt= 0.01> <nCl= 30> <al=0.60> <DB=-1043.0063> <Mlp= 1164.0501> <PB=1021.1> 
+<DWph=2> <it= 37> <et=0.27> <Mt= 0.00> <Spt= 0.00> <nCl= 28> <al=0.64> <DB=  229.4445> <Mlp= 1139.8193> <PB=1021.1> 
+<DWph=2> <it= 38> <et=0.28> <Mt= 0.00> <Spt= 0.01> <nCl= 19> <al=0.68> <DB=  574.1921> <Mlp= 1099.0467> <PB=1021.1> 
+<DWph=2> <it= 39> <et=0.28> <Mt= 0.00> <Spt= 0.00> <nCl= 30> <al=0.58> <DB=  210.6039> <Mlp= 1085.2916> <PB=1021.1> 
+<DWph=2> <it= 40> <et=0.29> <Mt= 0.00> <Spt= 0.01> <nCl= 21> <al=0.62> <DB=  732.5616> <Mlp= 1058.4838> <PB=1021.1> 
+<DWph=2> <it= 41> <et=0.30> <Mt= 0.01> <Spt= 0.00> <nCl= 21> <al=0.66> <DB=  718.6805> <Mlp= 1050.4931> <PB=1021.1> 
+<DWph=2> <it= 42> <et=0.30> <Mt= 0.00> <Spt= 0.01> <nCl= 18> <al=0.69> <DB=  830.8395> <Mlp= 1036.2750> <PB=1021.1> 
+<DWph=2> <it= 43> <et=0.31> <Mt= 0.00> <Spt= 0.00> <nCl= 25> <al=0.59> <DB=  673.7023> <Mlp= 1029.7451> <PB=1021.1> 
+<DWph=2> <it= 44> <et=0.32> <Mt= 0.00> <Spt= 0.01> <nCl= 16> <al=0.63> <DB=  773.9003> <Mlp= 1018.7201> <PB=1021.1> 
+<DWph=2> <it= 45> <et=0.32> <Mt= 0.00> <Spt= 0.00> <nCl= 12> <al=0.67> <DB=  753.5296> <Mlp= 1013.2400> <PB=1021.1> 
+<DWph=2> <it= 46> <et=0.33> <Mt= 0.00> <Spt= 0.01> <nCl=  3> <al=0.70> <DB=  884.4773> <Mlp= 1011.4336> <PB=1021.1> 
+<DWph=2> <it= 47> <et=0.34> <Mt= 0.00> <Spt= 0.00> <nCl= 19> <al=0.60> <DB=  769.5362> <Mlp= 1011.4336> <PB=1021.1> 
+<DWph=2> <it= 48> <et=0.34> <Mt= 0.01> <Spt= 0.01> <nCl=  3> <al=0.64> <DB=  928.4583> <Mlp= 1007.5676> <PB=1021.1> 
+<DWph=2> <it= 49> <et=0.35> <Mt= 0.00> <Spt= 0.00> <nCl= 25> <al=0.54> <DB=  780.0475> <Mlp= 1006.9802> <PB=1021.1> 
+<DWph=2> <it= 50> <et=0.36> <Mt= 0.00> <Spt= 0.01> <nCl= 12> <al=0.59> <DB=  959.5836> <Mlp= 1004.0829> <PB=1021.1> 
+<DWph=2> <it= 51> <et=0.36> <Mt= 0.00> <Spt= 0.00> <nCl= 10> <al=0.49> <DB=  926.2258> <Mlp= 1003.2099> <PB=1021.1> 
+<DWph=2> <it= 52> <et=0.37> <Mt= 0.00> <Spt= 0.01> <nCl=  9> <al=0.54> <DB=  960.3431> <Mlp= 1002.6970> <PB=1021.1> 
+<DWph=2> <it= 53> <et=0.38> <Mt= 0.00> <Spt= 0.01> <nCl=  8> <al=0.00> <DB=  886.2708> <Mlp= 1002.5272> <PB=1021.1> 
+<DWph=2> <it= 54> <et=0.38> <Mt= 0.00> <Spt= 0.00> <nCl=  5> <al=0.34> <DB=  976.6458> <Mlp= 1002.3133> <PB=1021.1> 
+<DWph=2> <it= 55> <et=0.39> <Mt= 0.00> <Spt= 0.01> <nCl=  1> <al=0.41> <DB= 1000.2006> <Mlp= 1002.2008> <PB=1021.1> 
+<DWph=2> <it= 56> <et=0.40> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <al=0.47> <DB=  956.5990> <Mlp= 1002.1550> <PB=1021.1> 
+<DWph=2> <it= 57> <et=0.41> <Mt= 0.00> <Spt= 0.01> <nCl=  2> <al=0.04> <DB=  967.0569> <Mlp= 1002.0817> <PB=1021.1> 
+<DWph=2> <it= 58> <et=0.42> <Mt= 0.00> <Spt= 0.01> <nCl=  5> <al=0.00> <DB= 1002.0817> <Mlp= 1002.0817> <PB=1021.1> 
+<DWph=1> <it= 59> <et=0.43> <Mt= 0.01> <Spt= 0.01> <nCl=  9> <al=0.32> <DB=  840.9176> <Mlp= 1002.0817> <PB=1021.1> 
+<DWph=1> <it= 60> <et=0.43> <Mt= 0.00> <Spt= 0.01> <nCl=  5> <al=0.22> <DB=  966.8499> <Mlp= 1002.0707> <PB=1021.1> 
+<DWph=1> <it= 61> <et=0.45> <Mt= 0.00> <Spt= 0.02> <nCl=  4> <al=0.00> <DB= 1002.0707> <Mlp= 1002.0707> <PB=1021.1> 
+    RCSP exact solver info for graph G_1 : TT = 0.010393, pt = 1.5e-05, dt = 0.008592, ct = 0.001469, ndl = 2', bdl = 49', odl = 2', odf = 13', bsi = 1', cnt = 2', bdch = 265', odch = 13', lcp = 10', #sols = 150
+<DWph=0> <it= 62> <et=0.46> <Mt= 0.00> <Spt= 0.01> <nCl= 50> <al=0.02> <DB=  819.2489> <Mlp= 1002.0707> <PB=1021.1> 
+    RCSP exact solver info for graph G_1 : TT = 0.008026, pt = 3.4e-05, dt = 0.006218, ct = 0.001467, ndl = 2', bdl = 49', odl = 2', odf = 13', bsi = 1', cnt = 2', bdch = 272', odch = 13', lcp = 10', #sols = 150
+<DWph=0> <it= 63> <et=0.47> <Mt= 0.00> <Spt= 0.01> <nCl= 10> <al=0.12> <DB=  923.8157> <Mlp= 1001.9770> <PB=1021.1> 
+    RCSP exact solver info for graph G_1 : TT = 0.007926, pt = 2.8e-05, dt = 0.006141, ct = 0.001464, ndl = 2', bdl = 49', odl = 2', odf = 13', bsi = 1', cnt = 2', bdch = 270', odch = 13', lcp = 10', #sols = 150
+<DWph=0> <it= 64> <et=0.49> <Mt= 0.00> <Spt= 0.01> <nCl=  3> <al=0.21> <DB=  998.9382> <Mlp= 1001.8656> <PB=1021.1> 
+    RCSP exact solver info for graph G_1 : TT = 0.007946, pt = 2.7e-05, dt = 0.00615, ct = 0.001464, ndl = 2', bdl = 49', odl = 2', odf = 13', bsi = 1', cnt = 2', bdch = 270', odch = 13', lcp = 10', #sols = 150
+    RCSP exact solver info for graph G_1 : TT = 0.007831, pt = 2.7e-05, dt = 0.006058, ct = 0.001446, ndl = 2', bdl = 49', odl = 2', odf = 13', bsi = 1', cnt = 2', bdch = 265', odch = 13', lcp = 10', #sols = 150
+<DWph=0> <it= 65> <et=0.50> <Mt= 0.00> <Spt= 0.02> <nCl=  4> <al=0.00> <DB= 1001.8532> <Mlp= 1001.8532> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26
+@@ 1 0 1001.85 0.0080938 0.010061 79.5281 0.51
+Labels distribution in buckets (bucket size) : largest - 26, top 0.1% - 26, top 0.5% - 17, top 2% - 12, top 10% - 7, top 50% - 1
+Reduced cost fixing for graph G_1... 32925 buck. arcs remain (30.4% from prev., 24.2% from max.) + 9637 jump buck. arcs (7.08% from max.)
+ TT = 0.045032, pt = 0.005382, dt = 0.01521, ct = 0.024271, ndl = 10', bdl = 150', odl = 4', odf = 41', lpcb = 377', cnt = 135', bdch = 1284', odch = 108', lcp = 87'
+Labels distribution in buckets (bucket size) : largest - 26, top 0.1% - 26, top 0.5% - 20, top 2% - 13, top 10% - 7, top 50% - 1
+Run forward enumeration with border = 50... succeeded! lpt = 0.110104, ndl = 21', dl = 25', lpcb = 535', dch = 555'
+Run enumeration concatenation with time limit 0.3 sec.... succeeded!
+Sorting and storing enumerated solutions ... done!
+ TT = 0.454996, pt = 0.002002, dt = 0.110104, ct = 0.149448, ndl = 21', bdl = 25', lpcb = 535', cnt = 295', bdch = 555', odch = 0', lcp = 0'
+Enumeration succeeded!, number of elem. solutions is 115140
+Estimating inspection time...     TT = 0.009462, performed by inspection with 115140 solutions, nbR1C = 0, nbDiscC = 0
+Inspection time is low enough. Pricing will be done by inspection.
+Added 551 columns in the formulation 
+Removed 859 columns (not in the enumerated set) from the formulation
+Regenerated 551 columns with the 'enumerated' flag
+<DWph=2> <it= 66> <et=1.03> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1003.5567> <Mlp= 1003.5567> <PB=1021.1> 
+<DWph=1> <it= 67> <et=1.04> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1003.5567> <Mlp= 1003.5567> <PB=1021.1> 
+    TT = 0.005097, performed by inspection with 115140 solutions, nbR1C = 0, nbDiscC = 0
+<DWph=0> <it= 68> <et=1.04> <Mt= 0.00> <Spt= 0.01> <nCl= 80> <al=0.30> <DB=  652.7589> <Mlp= 1003.5567> <PB=1021.1> 
+    TT = 0.004926, performed by inspection with 115140 solutions, nbR1C = 0, nbDiscC = 0
+<DWph=0> <it= 69> <et=1.05> <Mt= 0.00> <Spt= 0.00> <nCl= 24> <al=0.20> <DB=  911.8674> <Mlp= 1002.7483> <PB=1021.1> 
+    TT = 0.004824, performed by inspection with 115140 solutions, nbR1C = 0, nbDiscC = 0
+    TT = 0.004748, performed by inspection with 115140 solutions, nbR1C = 0, nbDiscC = 0
+<DWph=0> <it= 70> <et=1.06> <Mt= 0.00> <Spt= 0.02> <nCl=  8> <al=0.00> <DB= 1002.7483> <Mlp= 1002.7483> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26
+@@ 1 0 1002.75 0.00489875 0.005097 0 1.06
+Reduced cost fixing for graph G_1...  took 0.01 sec., done by inspection with 115140 solutions, remains 94504 (82.1%)
+Removed 8 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.953254)
+ColGenEvalAlg final dual bound: 1002.75 (rounded: 1003)
+Shrinking heuristic shrunk 9 edges
+In total 21 RCC cut(s) are found by the Fractional capacity min-cut heuristic 
+In total 22 RCC cut(s) are found by the greedy construction heuristic 
+----- Add fac. cuts : CAP(43), max.viol = 0.5, aver.viol = 0.13667, sep/add took 0.0240077/0.00697083 sec. -----
+655 columns (655 active), 43 dyn. constrs. (43 active), 195 art. vars. (195 active)
+<DWph=2> <it=  1> <et=1.13> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1004.4901> <Mlp= 1004.4901> <PB=1021.1> 
+<DWph=1> <it=  2> <et=1.14> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1004.4901> <Mlp= 1004.4901> <PB=1021.1> 
+    TT = 0.004141, performed by inspection with 94504 solutions, nbR1C = 0, nbDiscC = 0
+<DWph=0> <it=  3> <et=1.14> <Mt= 0.00> <Spt= 0.01> <nCl= 20> <al=0.30> <DB=  989.7127> <Mlp= 1004.4901> <PB=1021.1> 
+    TT = 0.004039, performed by inspection with 94504 solutions, nbR1C = 0, nbDiscC = 0
+    TT = 0.003968, performed by inspection with 94504 solutions, nbR1C = 0, nbDiscC = 0
+<DWph=0> <it=  4> <et=1.16> <Mt= 0.00> <Spt= 0.01> <nCl=  1> <al=0.00> <DB= 1004.3448> <Mlp= 1004.3448> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26
+@@ 1 1 1004.34 0.00404933 0.004141 0 1.16
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 94504 solutions, remains 79041 (83.6%)
+Removed 11 columns (not in the enumerated set) from the formulation
+ColGenEvalAlg final dual bound: 1004.34 (rounded: 1005)
+Gap improvement since the last cut separation : 0.0869976 (1002.75)
+Current active cuts : CAP(9,38.6971)
+Shrinking heuristic shrunk 6 edges
+In total 10 RCC cut(s) are found by the Fractional capacity min-cut heuristic 
+In total 3 RCC cut(s) are found by the greedy construction heuristic 
+----- Add fac. cuts : CAP(13), max.viol = 0.467866, aver.viol = 0.147233, sep/add took 0.0260669/0.00211118 sec. -----
+676 columns (665 active), 56 dyn. constrs. (23 active), 208 art. vars. (175 active)
+<DWph=2> <it=  1> <et=1.23> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1008.0334> <Mlp= 1008.0334> <PB=1021.1> 
+<DWph=1> <it=  2> <et=1.24> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1008.0334> <Mlp= 1008.0334> <PB=1021.1> 
+    TT = 0.003372, performed by inspection with 79041 solutions, nbR1C = 0, nbDiscC = 0
+<DWph=0> <it=  3> <et=1.24> <Mt= 0.00> <Spt= 0.01> <nCl=146> <al=0.30> <DB=  676.1865> <Mlp= 1008.0334> <PB=1021.1> 
+    TT = 0.00325, performed by inspection with 79041 solutions, nbR1C = 0, nbDiscC = 0
+    TT = 0.00318, performed by inspection with 79041 solutions, nbR1C = 0, nbDiscC = 0
+<DWph=0> <it=  4> <et=1.26> <Mt= 0.00> <Spt= 0.01> <nCl= 12> <al=0.00> <DB= 1001.8640> <Mlp= 1007.3727> <PB=1021.1> 
+    TT = 0.003144, performed by inspection with 79041 solutions, nbR1C = 0, nbDiscC = 0
+    TT = 0.003106, performed by inspection with 79041 solutions, nbR1C = 0, nbDiscC = 0
+<DWph=0> <it=  5> <et=1.27> <Mt= 0.01> <Spt= 0.01> <nCl=  1> <al=0.00> <DB= 1007.3523> <Mlp= 1007.3523> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26
+@@ 1 2 1007.35 0.0032104 0.003372 0 1.27
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 79041 solutions, remains 42589 (53.9%)
+Removed 25 columns (not in the enumerated set) from the formulation
+ColGenEvalAlg final dual bound: 1007.35 (rounded: 1008)
+Gap improvement since the last cut separation : 0.179496 (1004.34)
+Current active cuts : CAP(10,57.2561)
+Shrinking heuristic shrunk 5 edges
+In total 8 RCC cut(s) are found by the Fractional capacity min-cut heuristic 
+In total 4 RCC cut(s) are found by the greedy construction heuristic 
+In total 4 RCC cut(s) are found by the global pool greedy search heuristic 
+----- Add fac. cuts : CAP(16), max.viol = 0.400255, aver.viol = 0.103744, sep/add took 0.0281705/0.00361971 sec. -----
+824 columns (799 active), 39 dyn. constrs. (26 active), 224 art. vars. (178 active)
+<DWph=2> <it=  1> <et=1.35> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1007.5255> <Mlp= 1007.5255> <PB=1021.1> 
+<DWph=1> <it=  2> <et=1.35> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1007.5255> <Mlp= 1007.5255> <PB=1021.1> 
+    TT = 0.001736, performed by inspection with 42589 solutions, nbR1C = 0, nbDiscC = 0
+    TT = 0.001673, performed by inspection with 42589 solutions, nbR1C = 0, nbDiscC = 0
+<DWph=0> <it=  3> <et=1.35> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1007.5255> <Mlp= 1007.5255> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26
+@@ 1 3 1007.53 0.0017045 0.001736 0 1.35
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 42589 solutions, remains 40835 (95.9%)
+Removed 4 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.98731)
+ColGenEvalAlg final dual bound: 1007.53 (rounded: 1008)
+Gap improvement since the last cut separation : 0.0125975 (1007.35)
+Cut generation tailing off counter increased to 1
+Current active cuts : CAP(13,71.8653)
+In total 1 RCC cut(s) are found by the connected components heuristic 
+Shrinking heuristic shrunk 5 edges
+In total 6 RCC cut(s) are found by the greedy construction heuristic 
+In total 2 RCC cut(s) are found by the global pool greedy search heuristic 
+----- Add fac. cuts : CAP(9), max.viol = 0.090931, aver.viol = 0.0218689, sep/add took 0.0273455/0.00285525 sec. -----
+799 columns (795 active), 35 dyn. constrs. (22 active), 233 art. vars. (174 active)
+<DWph=2> <it=  1> <et=1.41> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1007.5352> <Mlp= 1007.5352> <PB=1021.1> 
+<DWph=1> <it=  2> <et=1.41> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1007.5352> <Mlp= 1007.5352> <PB=1021.1> 
+    TT = 0.001693, performed by inspection with 40835 solutions, nbR1C = 0, nbDiscC = 0
+    TT = 0.001613, performed by inspection with 40835 solutions, nbR1C = 0, nbDiscC = 0
+<DWph=0> <it=  3> <et=1.42> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1007.5352> <Mlp= 1007.5352> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26
+@@ 1 4 1007.54 0.001653 0.001693 0 1.42
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 40835 solutions, remains 40484 (99.1%)
+    Full reduced cost fixing is not called (gap ratio is 0.986599)
+ColGenEvalAlg final dual bound: 1007.54 (rounded: 1008)
+Gap improvement since the last cut separation : 0.000714841 (1007.53)
+Cut generation tailing off counter increased to 2
+Current active cuts : CAP(15,70.8715)
+Shrinking heuristic shrunk 5 edges
+140 Rank-1 3-rows pack. cuts added ,  max viol. = 0.400427, aver. viol. = 0.141634
+Building structures for heuristic rank-1 packing cut separation...done!
+100 Rank-1 4-rows pack. cuts added ,  max viol. = 0.477293, aver. viol. = 0.267301
+----- Add fac. cuts : R1C(240), max.viol = 0.477293, aver.viol = 0.193996, sep/add took 0.0779566/0.0288496 sec. -----
+799 columns (795 active), 262 dyn. constrs. (257 active), 473 art. vars. (409 active)
+<DWph=2> <it=  1> <et=1.56> <Mt= 0.02> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1014.8964> <Mlp= 1014.8964> <PB=1021.1> 
+<DWph=1> <it=  2> <et=1.56> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1014.8964> <Mlp= 1014.8964> <PB=1021.1> 
+    TT = 0.00453, performed by inspection with 40484 solutions, nbR1C = 45, nbDiscC = 0
+<DWph=0> <it=  3> <et=1.58> <Mt= 0.00> <Spt= 0.02> <nCl=150> <al=0.30> <DB=  647.3140> <Mlp= 1014.8964> <PB=1021.1> 
+    TT = 0.005087, performed by inspection with 40484 solutions, nbR1C = 66, nbDiscC = 0
+<DWph=0> <it=  4> <et=1.60> <Mt= 0.01> <Spt= 0.01> <nCl= 18> <al=0.20> <DB=  928.7939> <Mlp= 1014.3773> <PB=1021.1> 
+    TT = 0.005331, performed by inspection with 40484 solutions, nbR1C = 75, nbDiscC = 0
+<DWph=0> <it=  5> <et=1.61> <Mt= 0.00> <Spt= 0.00> <nCl=  2> <al=0.28> <DB=  990.3594> <Mlp= 1014.3016> <PB=1021.1> 
+    TT = 0.005259, performed by inspection with 40484 solutions, nbR1C = 75, nbDiscC = 0
+    TT = 0.00443, performed by inspection with 40484 solutions, nbR1C = 54, nbDiscC = 0
+<DWph=0> <it=  6> <et=1.63> <Mt= 0.00> <Spt= 0.02> <nCl=  1> <al=0.00> <DB= 1014.3016> <Mlp= 1014.3016> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 54 with avMem = 0
+@@ 1 5 1014.3 0.0049274 0.005331 0 1.63
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 40484 solutions, remains 6578 (16.2%)
+Removed 133 columns (not in the enumerated set) from the formulation
+ColGenEvalAlg final dual bound: 1014.3 (rounded: 1015)
+Gap improvement since the last cut separation : 0.498817 (1007.54)
+Current active cuts : CAP(5,58.1481) R1C(54,49.8098) 3rowPackR1C(30) 4rowPackR1C(24)
+Shrinking heuristic shrunk 7 edges
+In total 4 RCC cut(s) are found by the Fractional capacity min-cut heuristic 
+In total 6 RCC cut(s) are found by the greedy construction heuristic 
+In total 3 RCC cut(s) are found by the global pool greedy search heuristic 
+66 Rank-1 3-rows pack. cuts added ,  max viol. = 0.280829, aver. viol. = 0.128713
+Building structures for heuristic rank-1 packing cut separation...done!
+89 Rank-1 4-rows pack. cuts added ,  max viol. = 0.384636, aver. viol. = 0.160796
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.384636, aver. viol. = 0.277068
+----- Add fac. cuts : CAP(13) R1C(255), max.viol = 0.384636, aver.viol = 0.193437, sep/add took 0.553489/0.0364849 sec. -----
+966 columns (833 active), 525 dyn. constrs. (335 active), 741 art. vars. (487 active)
+<DWph=2> <it=  1> <et=2.26> <Mt= 0.02> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1015.8012> <Mlp= 1015.8012> <PB=1021.1> 
+<DWph=1> <it=  2> <et=2.26> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1015.8012> <Mlp= 1015.8012> <PB=1021.1> 
+    TT = 0.000908, performed by inspection with 6578 solutions, nbR1C = 68, nbDiscC = 0
+<DWph=0> <it=  3> <et=2.26> <Mt= 0.00> <Spt= 0.01> <nCl= 25> <al=0.30> <DB=  810.1873> <Mlp= 1015.8012> <PB=1021.1> 
+    TT = 0.000941, performed by inspection with 6578 solutions, nbR1C = 80, nbDiscC = 0
+<DWph=0> <it=  4> <et=2.27> <Mt= 0.00> <Spt= 0.00> <nCl=  4> <al=0.30> <DB=  954.0740> <Mlp= 1015.7397> <PB=1021.1> 
+    TT = 0.000931, performed by inspection with 6578 solutions, nbR1C = 84, nbDiscC = 0
+<DWph=0> <it=  5> <et=2.28> <Mt= 0.00> <Spt= 0.00> <nCl=  4> <al=0.20> <DB=  952.8353> <Mlp= 1015.7397> <PB=1021.1> 
+    TT = 0.000929, performed by inspection with 6578 solutions, nbR1C = 87, nbDiscC = 0
+<DWph=0> <it=  6> <et=2.28> <Mt= 0.01> <Spt= 0.01> <nCl=  1> <al=0.28> <DB=  998.2323> <Mlp= 1015.7390> <PB=1021.1> 
+    TT = 0.000932, performed by inspection with 6578 solutions, nbR1C = 89, nbDiscC = 0
+    TT = 0.000828, performed by inspection with 6578 solutions, nbR1C = 73, nbDiscC = 0
+<DWph=0> <it=  7> <et=2.29> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <al=0.00> <DB= 1015.7390> <Mlp= 1015.7390> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 73 with avMem = 0
+@@ 1 6 1015.74 0.0009115 0.000941 0 2.29
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 6578 solutions, remains 3293 (50.1%)
+Removed 61 columns (not in the enumerated set) from the formulation
+ColGenEvalAlg final dual bound: 1015.74 (rounded: 1016)
+Gap improvement since the last cut separation : 0.211439 (1014.3)
+Current active cuts : CAP(4,31.8214) R1C(73,66.0687) 3rowPackR1C(34) 4rowPackR1C(36) 5rowPackR1C(3)
+Shrinking heuristic shrunk 7 edges
+In total 1 RCC cut(s) are found by the Fractional capacity min-cut heuristic 
+In total 1 RCC cut(s) are found by the greedy construction heuristic 
+36 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0967163, aver. viol. = 0.0581803
+Building structures for heuristic rank-1 packing cut separation...done!
+74 Rank-1 4-rows pack. cuts added ,  max viol. = 0.179836, aver. viol. = 0.0776293
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.201129, aver. viol. = 0.133225
+----- Add fac. cuts : CAP(2) R1C(210), max.viol = 0.359843, aver.viol = 0.117609, sep/add took 0.558391/0.027293 sec. -----
+868 columns (807 active), 547 dyn. constrs. (296 active), 953 art. vars. (448 active)
+<DWph=2> <it=  1> <et=2.90> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1016.3740> <Mlp= 1016.3740> <PB=1021.1> 
+<DWph=1> <it=  2> <et=2.91> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1016.3740> <Mlp= 1016.3740> <PB=1021.1> 
+    TT = 0.000553, performed by inspection with 3293 solutions, nbR1C = 77, nbDiscC = 0
+<DWph=0> <it=  3> <et=2.91> <Mt= 0.00> <Spt= 0.00> <nCl= 24> <al=0.30> <DB=  871.0610> <Mlp= 1016.3740> <PB=1021.1> 
+    TT = 0.000561, performed by inspection with 3293 solutions, nbR1C = 93, nbDiscC = 0
+<DWph=0> <it=  4> <et=2.92> <Mt= 0.01> <Spt= 0.00> <nCl=  1> <al=0.20> <DB=  987.2800> <Mlp= 1016.3348> <PB=1021.1> 
+    TT = 0.00053, performed by inspection with 3293 solutions, nbR1C = 93, nbDiscC = 0
+<DWph=0> <it=  5> <et=2.93> <Mt= 0.00> <Spt= 0.01> <nCl=  1> <al=0.10> <DB= 1013.4293> <Mlp= 1016.3348> <PB=1021.1> 
+    TT = 0.000479, performed by inspection with 3293 solutions, nbR1C = 81, nbDiscC = 0
+<DWph=0> <it=  6> <et=2.93> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <al=0.00> <DB= 1016.3348> <Mlp= 1016.3348> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 81 with avMem = 0
+@@ 1 7 1016.33 0.00053075 0.000561 0 2.93
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 3293 solutions, remains 2656 (80.7%)
+Removed 43 columns (not in the enumerated set) from the formulation
+ColGenEvalAlg final dual bound: 1016.33 (rounded: 1017)
+Gap improvement since the last cut separation : 0.111137 (1015.74)
+Current active cuts : CAP(4,36.5028) R1C(81,77.9019) 3rowPackR1C(31) 4rowPackR1C(33) 5rowPackR1C(17)
+Shrinking heuristic shrunk 6 edges
+In total 4 RCC cut(s) are found by the Fractional capacity min-cut heuristic 
+In total 20 RCC cut(s) are found by the greedy construction heuristic 
+In total 1 RCC cut(s) are found by the global pool greedy search heuristic 
+39 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0796883, aver. viol. = 0.0388049
+Building structures for heuristic rank-1 packing cut separation...done!
+61 Rank-1 4-rows pack. cuts added ,  max viol. = 0.172057, aver. viol. = 0.0471312
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.183369, aver. viol. = 0.0799272
+----- Add fac. cuts : CAP(25) R1C(200), max.viol = 0.202809, aver.viol = 0.0781755, sep/add took 0.672434/0.0346198 sec. -----
+834 columns (791 active), 521 dyn. constrs. (316 active), 1178 art. vars. (468 active)
+<DWph=2> <it=  1> <et=3.66> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1016.7955> <Mlp= 1016.7955> <PB=1021.1> 
+<DWph=1> <it=  2> <et=3.67> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1016.7955> <Mlp= 1016.7955> <PB=1021.1> 
+    TT = 0.00051, performed by inspection with 2656 solutions, nbR1C = 95, nbDiscC = 0
+<DWph=0> <it=  3> <et=3.67> <Mt= 0.00> <Spt= 0.01> <nCl= 14> <al=0.30> <DB=  918.3146> <Mlp= 1016.7955> <PB=1021.1> 
+    TT = 0.000497, performed by inspection with 2656 solutions, nbR1C = 106, nbDiscC = 0
+<DWph=0> <it=  4> <et=3.68> <Mt= 0.01> <Spt= 0.00> <nCl=  2> <al=0.20> <DB=  997.0664> <Mlp= 1016.7543> <PB=1021.1> 
+    TT = 0.00047, performed by inspection with 2656 solutions, nbR1C = 106, nbDiscC = 0
+<DWph=0> <it=  5> <et=3.69> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <al=0.10> <DB= 1010.6618> <Mlp= 1016.7543> <PB=1021.1> 
+    TT = 0.000476, performed by inspection with 2656 solutions, nbR1C = 110, nbDiscC = 0
+<DWph=0> <it=  6> <et=3.69> <Mt= 0.00> <Spt= 0.01> <nCl=  2> <al=0.19> <DB= 1011.7973> <Mlp= 1016.7540> <PB=1021.1> 
+    TT = 0.000481, performed by inspection with 2656 solutions, nbR1C = 112, nbDiscC = 0
+    TT = 0.000442, performed by inspection with 2656 solutions, nbR1C = 102, nbDiscC = 0
+<DWph=0> <it=  7> <et=3.70> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1016.7540> <Mlp= 1016.7540> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 102 with avMem = 0
+@@ 1 8 1016.75 0.000479333 0.00051 0 3.7
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 2656 solutions, remains 2316 (87.2%)
+Removed 19 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.910146)
+ColGenEvalAlg final dual bound: 1016.75 (rounded: 1017)
+Gap improvement since the last cut separation : 0.0879686 (1016.33)
+Current active cuts : CAP(4,27.4743) R1C(102,89.6232) 3rowPackR1C(31) 4rowPackR1C(43) 5rowPackR1C(28)
+Shrinking heuristic shrunk 6 edges
+18 Rank-1 3-rows pack. cuts added ,  max viol. = 0.127954, aver. viol. = 0.0801309
+Building structures for heuristic rank-1 packing cut separation...done!
+34 Rank-1 4-rows pack. cuts added ,  max viol. = 0.134408, aver. viol. = 0.08424
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.134408, aver. viol. = 0.114039
+----- Add fac. cuts : R1C(152), max.viol = 0.174191, aver.viol = 0.105049, sep/add took 0.634924/0.0190918 sec. -----
+810 columns (791 active), 468 dyn. constrs. (264 active), 1330 art. vars. (416 active)
+<DWph=2> <it=  1> <et=4.38> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1016.9922> <Mlp= 1016.9922> <PB=1021.1> 
+<DWph=1> <it=  2> <et=4.38> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1016.9922> <Mlp= 1016.9922> <PB=1021.1> 
+    TT = 0.00044, performed by inspection with 2316 solutions, nbR1C = 93, nbDiscC = 0
+<DWph=0> <it=  3> <et=4.38> <Mt= 0.00> <Spt= 0.00> <nCl=  4> <al=0.30> <DB= 1004.4160> <Mlp= 1016.9922> <PB=1021.1> 
+    TT = 0.000427, performed by inspection with 2316 solutions, nbR1C = 98, nbDiscC = 0
+<DWph=0> <it=  4> <et=4.39> <Mt= 0.00> <Spt= 0.00> <nCl=  2> <al=0.37> <DB= 1008.7865> <Mlp= 1016.9857> <PB=1021.1> 
+    TT = 0.00039, performed by inspection with 2316 solutions, nbR1C = 98, nbDiscC = 0
+    TT = 0.000371, performed by inspection with 2316 solutions, nbR1C = 92, nbDiscC = 0
+<DWph=0> <it=  5> <et=4.40> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1016.9852> <Mlp= 1016.9852> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 92 with avMem = 0
+@@ 1 9 1016.99 0.000407 0.00044 0 4.4
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 2316 solutions, remains 2085 (90%)
+Removed 26 columns (not in the enumerated set) from the formulation
+ColGenEvalAlg final dual bound: 1016.99 (rounded: 1017)
+Gap improvement since the last cut separation : 0.0531941 (1016.75)
+Current active cuts : CAP(4,31.4196) R1C(92,93.7971) 3rowPackR1C(30) 4rowPackR1C(34) 5rowPackR1C(28)
+Shrinking heuristic shrunk 4 edges
+13 Rank-1 3-rows pack. cuts added ,  max viol. = 0.126751, aver. viol. = 0.0702135
+Building structures for heuristic rank-1 packing cut separation...done!
+32 Rank-1 4-rows pack. cuts added ,  max viol. = 0.126751, aver. viol. = 0.0582162
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.126751, aver. viol. = 0.092212
+----- Add fac. cuts : R1C(145), max.viol = 0.2176, aver.viol = 0.103719, sep/add took 0.799592/0.0195659 sec. -----
+797 columns (771 active), 409 dyn. constrs. (247 active), 1475 art. vars. (399 active)
+<DWph=2> <it=  1> <et=5.24> <Mt= 0.01> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1017.1698> <Mlp= 1017.1698> <PB=1021.1> 
+<DWph=1> <it=  2> <et=5.24> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1017.1698> <Mlp= 1017.1698> <PB=1021.1> 
+    TT = 0.00042, performed by inspection with 2085 solutions, nbR1C = 101, nbDiscC = 0
+<DWph=0> <it=  3> <et=5.25> <Mt= 0.00> <Spt= 0.00> <nCl=  7> <al=0.30> <DB=  947.1020> <Mlp= 1017.1698> <PB=1021.1> 
+    TT = 0.000393, performed by inspection with 2085 solutions, nbR1C = 105, nbDiscC = 0
+    TT = 0.000349, performed by inspection with 2085 solutions, nbR1C = 98, nbDiscC = 0
+<DWph=0> <it=  4> <et=5.26> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <al=0.00> <DB= 1016.3850> <Mlp= 1017.1288> <PB=1021.1> 
+    TT = 0.000352, performed by inspection with 2085 solutions, nbR1C = 98, nbDiscC = 0
+    TT = 0.000346, performed by inspection with 2085 solutions, nbR1C = 98, nbDiscC = 0
+<DWph=0> <it=  5> <et=5.26> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1017.1288> <Mlp= 1017.1288> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 98 with avMem = 0
+@@ 1 10 1017.13 0.000372 0.00042 0 5.26
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 2085 solutions, remains 1957 (93.9%)
+Removed 13 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.964231)
+ColGenEvalAlg final dual bound: 1017.13 (rounded: 1018)
+Gap improvement since the last cut separation : 0.0349001 (1016.99)
+Current active cuts : CAP(4,28.5306) R1C(98,101.018) 3rowPackR1C(32) 4rowPackR1C(34) 5rowPackR1C(32)
+Shrinking heuristic shrunk 3 edges
+8 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0408523, aver. viol. = 0.030392
+Building structures for heuristic rank-1 packing cut separation...done!
+58 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0587626, aver. viol. = 0.0294604
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0731124, aver. viol. = 0.0430803
+----- Add fac. cuts : R1C(166), max.viol = 0.110089, aver.viol = 0.0457706, sep/add took 0.865073/0.0209817 sec. -----
+779 columns (766 active), 413 dyn. constrs. (274 active), 1641 art. vars. (426 active)
+<DWph=2> <it=  1> <et=6.17> <Mt= 0.02> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1017.3713> <Mlp= 1017.3713> <PB=1021.1> 
+<DWph=1> <it=  2> <et=6.18> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1017.3713> <Mlp= 1017.3713> <PB=1021.1> 
+    TT = 0.000428, performed by inspection with 1957 solutions, nbR1C = 109, nbDiscC = 0
+<DWph=0> <it=  3> <et=6.18> <Mt= 0.00> <Spt= 0.00> <nCl=  4> <al=0.30> <DB=  981.7773> <Mlp= 1017.3713> <PB=1021.1> 
+    TT = 0.000412, performed by inspection with 1957 solutions, nbR1C = 113, nbDiscC = 0
+    TT = 0.000367, performed by inspection with 1957 solutions, nbR1C = 109, nbDiscC = 0
+<DWph=0> <it=  4> <et=6.19> <Mt= 0.00> <Spt= 0.01> <nCl=  2> <al=0.00> <DB= 1017.3689> <Mlp= 1017.3689> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 109 with avMem = 0
+@@ 1 11 1017.37 0.000402333 0.000428 0 6.19
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 1957 solutions, remains 1798 (91.9%)
+Removed 8 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.904435)
+ColGenEvalAlg final dual bound: 1017.37 (rounded: 1018)
+Gap improvement since the last cut separation : 0.0604525 (1017.13)
+Current active cuts : CAP(4,25.058) R1C(109,107.221) 3rowPackR1C(29) 4rowPackR1C(41) 5rowPackR1C(39)
+Shrinking heuristic shrunk 2 edges
+In total 1 RCC cut(s) are found by the global pool greedy search heuristic 
+8 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0365475, aver. viol. = 0.0288142
+Building structures for heuristic rank-1 packing cut separation...done!
+13 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0723801, aver. viol. = 0.042822
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0723801, aver. viol. = 0.0395903
+----- Add fac. cuts : CAP(1) R1C(121), max.viol = 0.1204, aver.viol = 0.0565934, sep/add took 0.927483/0.0165145 sec. -----
+772 columns (764 active), 396 dyn. constrs. (242 active), 1763 art. vars. (394 active)
+<DWph=2> <it=  1> <et=7.15> <Mt= 0.02> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1017.5224> <Mlp= 1017.5224> <PB=1021.1> 
+<DWph=1> <it=  2> <et=7.16> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1017.5224> <Mlp= 1017.5224> <PB=1021.1> 
+    TT = 0.000424, performed by inspection with 1798 solutions, nbR1C = 116, nbDiscC = 0
+<DWph=0> <it=  3> <et=7.16> <Mt= 0.00> <Spt= 0.00> <nCl=  2> <al=0.30> <DB=  993.2221> <Mlp= 1017.5224> <PB=1021.1> 
+    TT = 0.000394, performed by inspection with 1798 solutions, nbR1C = 119, nbDiscC = 0
+    TT = 0.000357, performed by inspection with 1798 solutions, nbR1C = 115, nbDiscC = 0
+<DWph=0> <it=  4> <et=7.17> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1017.5136> <Mlp= 1017.5136> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 115 with avMem = 0
+@@ 1 12 1017.51 0.000391667 0.000424 0 7.17
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 1798 solutions, remains 1691 (94%)
+Removed 17 columns (not in the enumerated set) from the formulation
+ColGenEvalAlg final dual bound: 1017.51 (rounded: 1018)
+Gap improvement since the last cut separation : 0.0387795 (1017.37)
+Current active cuts : CAP(4,25.4604) R1C(115,108.672) 3rowPackR1C(25) 4rowPackR1C(35) 5rowPackR1C(55)
+Shrinking heuristic shrunk 3 edges
+11 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0819956, aver. viol. = 0.0434457
+Building structures for heuristic rank-1 packing cut separation...done!
+23 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0666231, aver. viol. = 0.0340693
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0819956, aver. viol. = 0.0437627
+----- Add fac. cuts : R1C(134), max.viol = 0.105641, aver.viol = 0.0526757, sep/add took 1.02615/0.016689 sec. -----
+766 columns (749 active), 376 dyn. constrs. (259 active), 1897 art. vars. (411 active)
+<DWph=2> <it=  1> <et=8.23> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1017.6019> <Mlp= 1017.6019> <PB=1021.1> 
+<DWph=1> <it=  2> <et=8.23> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1017.6019> <Mlp= 1017.6019> <PB=1021.1> 
+    TT = 0.000413, performed by inspection with 1691 solutions, nbR1C = 118, nbDiscC = 0
+<DWph=0> <it=  3> <et=8.24> <Mt= 0.00> <Spt= 0.00> <nCl= 10> <al=0.30> <DB=  960.7785> <Mlp= 1017.6019> <PB=1021.1> 
+    TT = 0.000379, performed by inspection with 1691 solutions, nbR1C = 122, nbDiscC = 0
+    TT = 0.000354, performed by inspection with 1691 solutions, nbR1C = 121, nbDiscC = 0
+<DWph=0> <it=  4> <et=8.24> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1017.6013> <Mlp= 1017.6013> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 121 with avMem = 0
+@@ 1 13 1017.6 0.000382 0.000413 0 8.24
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 1691 solutions, remains 1598 (94.5%)
+Removed 14 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.974843)
+ColGenEvalAlg final dual bound: 1017.6 (rounded: 1018)
+Gap improvement since the last cut separation : 0.0244556 (1017.51)
+Current active cuts : CAP(3,18.2455) R1C(121,112.741) 3rowPackR1C(22) 4rowPackR1C(37) 5rowPackR1C(62)
+Shrinking heuristic shrunk 2 edges
+In total 1 RCC cut(s) are found by the global pool greedy search heuristic 
+13 Rank-1 3-rows pack. cuts added ,  max viol. = 0.031813, aver. viol. = 0.0251313
+Building structures for heuristic rank-1 packing cut separation...done!
+40 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0380142, aver. viol. = 0.0298761
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0506058, aver. viol. = 0.0315974
+----- Add fac. cuts : CAP(1) R1C(153), max.viol = 0.0671659, aver.viol = 0.0315253, sep/add took 0.985551/0.0198308 sec. -----
+759 columns (745 active), 413 dyn. constrs. (284 active), 2051 art. vars. (436 active)
+<DWph=2> <it=  1> <et=9.27> <Mt= 0.02> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1017.6831> <Mlp= 1017.6831> <PB=1021.1> 
+<DWph=1> <it=  2> <et=9.27> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1017.6831> <Mlp= 1017.6831> <PB=1021.1> 
+    TT = 0.000396, performed by inspection with 1598 solutions, nbR1C = 117, nbDiscC = 0
+<DWph=0> <it=  3> <et=9.28> <Mt= 0.00> <Spt= 0.00> <nCl=  9> <al=0.30> <DB=  957.2048> <Mlp= 1017.6831> <PB=1021.1> 
+    TT = 0.000384, performed by inspection with 1598 solutions, nbR1C = 128, nbDiscC = 0
+<DWph=0> <it=  4> <et=9.29> <Mt= 0.00> <Spt= 0.01> <nCl=  2> <al=0.20> <DB=  993.0338> <Mlp= 1017.6485> <PB=1021.1> 
+    TT = 0.000366, performed by inspection with 1598 solutions, nbR1C = 130, nbDiscC = 0
+    TT = 0.000337, performed by inspection with 1598 solutions, nbR1C = 118, nbDiscC = 0
+<DWph=0> <it=  5> <et=9.29> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1017.6485> <Mlp= 1017.6485> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 118 with avMem = 0
+@@ 1 14 1017.65 0.00037075 0.000396 0 9.29
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 1598 solutions, remains 1499 (93.8%)
+Removed 16 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.96129)
+ColGenEvalAlg final dual bound: 1017.65 (rounded: 1018)
+Gap improvement since the last cut separation : 0.0135051 (1017.6)
+Cut generation tailing off counter increased to 1
+Current active cuts : CAP(3,16.9107) R1C(118,114.332) 3rowPackR1C(22) 4rowPackR1C(32) 5rowPackR1C(64)
+Shrinking heuristic shrunk 6 edges
+In total 1 RCC cut(s) are found by the greedy construction heuristic 
+3 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0234112, aver. viol. = 0.0219659
+Building structures for heuristic rank-1 packing cut separation...done!
+15 Rank-1 4-rows pack. cuts added ,  max viol. = 0.050317, aver. viol. = 0.0281996
+77 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0592385, aver. viol. = 0.0272258
+----- Add fac. cuts : CAP(1) R1C(95), max.viol = 0.0723778, aver.viol = 0.0321882, sep/add took 0.869556/0.0123408 sec. -----
+756 columns (740 active), 380 dyn. constrs. (223 active), 2147 art. vars. (375 active)
+<DWph=2> <it=  1> <et=10.20> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1017.6999> <Mlp= 1017.6999> <PB=1021.1> 
+<DWph=1> <it=  2> <et=10.20> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1017.6999> <Mlp= 1017.6999> <PB=1021.1> 
+    TT = 0.000388, performed by inspection with 1499 solutions, nbR1C = 123, nbDiscC = 0
+<DWph=0> <it=  3> <et=10.20> <Mt= 0.00> <Spt= 0.01> <nCl=  4> <al=0.30> <DB= 1012.0330> <Mlp= 1017.6999> <PB=1021.1> 
+    TT = 0.00037, performed by inspection with 1499 solutions, nbR1C = 126, nbDiscC = 0
+    TT = 0.000334, performed by inspection with 1499 solutions, nbR1C = 126, nbDiscC = 0
+<DWph=0> <it=  4> <et=10.21> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <al=0.00> <DB= 1017.6986> <Mlp= 1017.6986> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 126 with avMem = 0
+@@ 1 15 1017.7 0.000364 0.000388 0 10.21
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 1499 solutions, remains 1466 (97.8%)
+Removed 7 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.946913)
+ColGenEvalAlg final dual bound: 1017.7 (rounded: 1018)
+Gap improvement since the last cut separation : 0.014523 (1017.65)
+Cut generation tailing off counter increased to 2
+Current active cuts : CAP(2,12.7809) R1C(126,117.885) 3rowPackR1C(22) 4rowPackR1C(31) 5rowPackR1C(73)
+Shrinking heuristic shrunk 5 edges
+5 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0258995, aver. viol. = 0.0230563
+Building structures for heuristic rank-1 packing cut separation...done!
+12 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0322778, aver. viol. = 0.0260152
+95 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0454829, aver. viol. = 0.0256823
+----- Add fac. cuts : R1C(112), max.viol = 0.0769211, aver.viol = 0.0313471, sep/add took 0.917916/0.0148823 sec. -----
+745 columns (738 active), 335 dyn. constrs. (247 active), 2259 art. vars. (399 active)
+<DWph=2> <it=  1> <et=11.16> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1017.7360> <Mlp= 1017.7360> <PB=1021.1> 
+<DWph=1> <it=  2> <et=11.16> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1017.7360> <Mlp= 1017.7360> <PB=1021.1> 
+    TT = 0.000404, performed by inspection with 1466 solutions, nbR1C = 134, nbDiscC = 0
+    TT = 0.000368, performed by inspection with 1466 solutions, nbR1C = 134, nbDiscC = 0
+<DWph=0> <it=  3> <et=11.17> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1017.7360> <Mlp= 1017.7360> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 134 with avMem = 0
+@@ 1 16 1017.74 0.000386 0.000404 0 11.17
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 1466 solutions, remains 1439 (98.2%)
+Removed 5 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.936188)
+ColGenEvalAlg final dual bound: 1017.74 (rounded: 1018)
+Gap improvement since the last cut separation : 0.0109931 (1017.7)
+----- Cut generation is stopped due to tailing off -----
+Current active cuts : CAP(2,13.6802) R1C(134,118.698) 3rowPackR1C(20) 4rowPackR1C(33) 5rowPackR1C(81)
+**** Strong branching phase 1 is started *****
+SB phase 1 cand.  1 branch on VNB (lhs=14.0949)       : [ 1017.8425,  1020.7017], score = 0.32      <et=11.22>
+SB phase 1 cand.  2 branch on EDGE[9,32] (lhs=0.5024) : [ 1018.2938,  1018.6780], score = 0.53      <et=11.25>
+SB phase 1 cand.  3 branch on EDGE[0,32] (lhs=0.5050) : [ 1018.1339,  1018.2014], score = 0.19      <et=11.27>
+SB phase 1 cand.  4 branch on EDGE[0,40] (lhs=0.4829) : [ 1018.2703,  1018.4448], score = 0.38      <et=11.3>
+SB phase 1 cand.  5 branch on EDGE[17,40] (lhs=0.5171): [ 1018.3052,  1018.4448], score = 0.40      <et=11.33>
+SB phase 1 cand.  6 branch on EDGE[0,4] (lhs=0.4748)  : [ 1017.8657,  1018.1780], score = 0.06      <et=11.35>
+SB phase 1 cand.  7 branch on EDGE[4,75] (lhs=0.5252) : [ 1017.8611,  1018.1780], score = 0.06      <et=11.37>
+SB phase 1 cand.  8 branch on EDGE[46,67] (lhs=0.4748): [ 1017.7899,  1018.2023], score = 0.03      <et=11.39>
+SB phase 1 cand.  9 branch on EDGE[0,39] (lhs=0.4738) : [ 1017.9814,  1018.4025], score = 0.16      <et=11.41>
+SB phase 1 cand. 10 branch on EDGE[44,50] (lhs=0.5282): [ 1018.0882,  1018.3500], score = 0.22      <et=11.44>
+SB phase 1 cand. 11 branch on EDGE[1,73] (lhs=0.4654) : [ 1018.2812,  1018.5248], score = 0.43      <et=11.47>
+SB phase 1 cand. 12 branch on EDGE[0,8] (lhs=0.4633)  : [ 1017.9233,  1018.1837], score = 0.08      <et=11.49>
+SB phase 1 cand. 13 branch on EDGE[8,46] (lhs=0.5367) : [ 1017.9233,  1018.1837], score = 0.08      <et=11.52>
+SB phase 1 cand. 14 branch on EDGE[16,49] (lhs=0.5422): [ 1018.2575,  1018.3026], score = 0.30      <et=11.54>
+SB phase 1 cand. 15 branch on EDGE[6,33] (lhs=0.5470) : [ 1018.0280,  1018.4285], score = 0.20      <et=11.57>
+SB phase 1 cand. 16 branch on EDGE[3,44] (lhs=0.5530) : [ 1018.1079,  1018.4092], score = 0.25      <et=11.59>
+SB phase 1 cand. 17 branch on EDGE[12,26] (lhs=0.4434): [ 1018.2138,  1018.7351], score = 0.48      <et=11.63>
+SB phase 1 cand. 18 branch on EDGE[0,12] (lhs=0.5566) : [ 1018.2138,  1018.7351], score = 0.48      <et=11.66>
+SB phase 1 cand. 19 branch on EDGE[22,28] (lhs=0.5599): [ 1018.0484,  1018.2809], score = 0.17      <et=11.69>
+SB phase 1 cand. 20 branch on EDGE[9,40] (lhs=0.4386) : [ 1018.3939,  1018.9190], score = 0.78      <et=11.72>
+SB phase 1 cand. 21 branch on EDGE[12,40] (lhs=0.4333): [ 1018.2138,  1018.7294], score = 0.47      <et=11.75>
+SB phase 1 cand. 22 branch on EDGE[34,46] (lhs=0.5697): [ 1017.9700,  1018.0119], score = 0.06      <et=11.77>
+SB phase 1 cand. 23 branch on EDGE[0,52] (lhs=0.5697) : [ 1017.9455,  1017.9627], score = 0.05      <et=11.79>
+SB phase 1 cand. 24 branch on EDGE[0,1] (lhs=0.4242)  : [ 1018.0586,  1018.7919], score = 0.34      <et=11.82>
+SB phase 1 cand. 25 branch on EDGE[0,28] (lhs=0.5775) : [ 1018.0462,  1018.1630], score = 0.13      <et=11.84>
+SB phase 1 cand. 26 branch on EDGE[18,24] (lhs=0.4201): [ 1018.3462,  1018.5645], score = 0.51      <et=11.87>
+SB phase 1 cand. 27 branch on EDGE[0,45] (lhs=0.5831) : [ 1017.8072,  1018.1641], score = 0.03      <et=11.89>
+SB phase 1 cand. 28 branch on EDGE[2,62] (lhs=0.5847) : [ 1018.0404,  1018.1879], score = 0.14      <et=11.92>
+SB phase 1 cand. 29 branch on EDGE[41,42] (lhs=0.4097): [ 1018.1228,  1018.4540], score = 0.28      <et=11.95>
+SB phase 1 cand. 30 branch on EDGE[0,44] (lhs=0.4092) : [ 1018.0185,  1018.3137], score = 0.16      <et=11.98>
+SB phase 1 cand. 31 branch on EDGE[2,68] (lhs=0.5911) : [ 1018.0274,  1018.0470], score = 0.09      <et=12>
+SB phase 1 cand. 32 branch on EDGE[14,53] (lhs=0.4064): [ 1018.0183,  1018.6162], score = 0.25      <et=12.03>
+SB phase 1 cand. 33 branch on EDGE[10,58] (lhs=0.3978): [ 1018.0023,  1018.5062], score = 0.21      <et=12.05>
+SB phase 1 cand. 34 branch on EDGE[0,3] (lhs=0.3938)  : [ 1018.2338,  1018.3134], score = 0.29      <et=12.08>
+SB phase 1 cand. 35 branch on EDGE[33,62] (lhs=0.3932): [ 1017.9928,  1019.1127], score = 0.35      <et=12.11>
+SB phase 1 cand. 36 branch on EDGE[0,53] (lhs=0.6142) : [ 1017.8895,  1018.5012], score = 0.12      <et=12.13>
+SB phase 1 cand. 37 branch on EDGE[0,11] (lhs=0.3817) : [ 1017.9709,  1018.6119], score = 0.21      <et=12.16>
+SB phase 1 cand. 38 branch on EDGE[65,66] (lhs=0.6183): [ 1018.0271,  1018.9071], score = 0.34      <et=12.18>
+SB phase 1 cand. 39 branch on EDGE[0,35] (lhs=0.6195) : [ 1017.7971,  1018.3236], score = 0.04      <et=12.2>
+SB phase 1 cand. 40 branch on EDGE[4,45] (lhs=0.3784) : [ 1017.7907,  1018.3163], score = 0.03      <et=12.22>
+SB phase 1 cand. 41 branch on EDGE[7,53] (lhs=0.3738) : [ 1017.8722,  1018.8074], score = 0.15      <et=12.24>
+SB phase 1 cand. 42 branch on EDGE[34,75] (lhs=0.3712): [ 1017.7899,  1018.3746], score = 0.03      <et=12.26>
+SB phase 1 cand. 43 branch on EDGE[0,2] (lhs=0.3704)  : [ 1017.9424,  1018.1443], score = 0.08      <et=12.29>
+SB phase 1 cand. 44 branch on EDGE[25,31] (lhs=0.3688): [ 1018.0044,  1020.5500], score = 0.76      <et=12.32>
+SB phase 1 cand. 45 branch on EDGE[10,31] (lhs=0.6312): [ 1018.0094,  1019.3028], score = 0.43      <et=12.35>
+SB phase 1 cand. 46 branch on EDGE[1,43] (lhs=0.6332) : [ 1018.0309,  1018.7074], score = 0.29      <et=12.38>
+SB phase 1 cand. 47 branch on EDGE[0,38] (lhs=0.3647) : [ 1017.9845,  1018.2112], score = 0.12      <et=12.4>
+SB phase 1 cand. 48 branch on EDGE[0,72] (lhs=0.6439) : [ 1018.1610,  1018.4373], score = 0.30      <et=12.42>
+SB phase 1 cand. 49 branch on EDGE[8,35] (lhs=0.3528) : [ 1017.7571,  1018.9909], score = 0.03      <et=12.45>
+SB phase 1 cand. 50 branch on EDGE[10,65] (lhs=0.3491): [ 1017.9666,  1019.3304], score = 0.37      <et=12.47>
+SB phase 1 cand. 51 branch on EDGE[11,66] (lhs=0.6526): [ 1018.1467,  1018.5292], score = 0.33      <et=12.5>
+SB phase 1 cand. 52 branch on EDGE[11,53] (lhs=0.3433): [ 1018.1623,  1018.4937], score = 0.32      <et=12.53>
+SB phase 1 cand. 53 branch on EDGE[31,72] (lhs=0.6572): [ 1018.2246,  1018.5584], score = 0.40      <et=12.55>
+SB phase 1 cand. 54 branch on EDGE[41,56] (lhs=0.6579): [ 1018.0550,  1018.5801], score = 0.27      <et=12.58>
+SB phase 1 cand. 55 branch on EDGE[3,51] (lhs=0.3416) : [ 1018.1558,  1018.8359], score = 0.46      <et=12.61>
+SB phase 1 cand. 56 branch on EDGE[2,28] (lhs=0.3400) : [ 1017.9178,  1018.3669], score = 0.11      <et=12.63>
+SB phase 1 cand. 57 branch on EDGE[3,32] (lhs=0.3383) : [ 1017.8908,  1020.0927], score = 0.36      <et=12.66>
+SB phase 1 cand. 58 branch on EDGE[10,38] (lhs=0.3340): [ 1017.9865,  1019.0411], score = 0.33      <et=12.69>
+SB phase 1 cand. 59 branch on EDGE[0,16] (lhs=0.6712) : [ 1018.0051,  1018.4198], score = 0.18      <et=12.72>
+SB phase 1 cand. 60 branch on EDGE[4,34] (lhs=0.3266) : [ 1017.7763,  1018.0949], score = 0.01      <et=12.74>
+SB phase 1 cand. 61 branch on EDGE[34,67] (lhs=0.3266): [ 1017.8417,  1018.0149], score = 0.03      <et=12.76>
+SB phase 1 cand. 62 branch on EDGE[0,46] (lhs=0.3266) : [ 1017.8417,  1018.0119], score = 0.03      <et=12.78>
+SB phase 1 cand. 63 branch on EDGE[38,65] (lhs=0.6879): [ 1017.9617,  1018.9937], score = 0.28      <et=12.81>
+SB phase 1 cand. 64 branch on EDGE[0,62] (lhs=0.3079) : [ 1017.9912,  1018.0667], score = 0.08      <et=12.83>
+SB phase 1 cand. 65 branch on EDGE[11,14] (lhs=0.3025): [ 1018.0388,  1018.7936], score = 0.32      <et=12.86>
+SB phase 1 cand. 66 branch on EDGE[0,34] (lhs=0.3022) : [ 1017.9386,  1018.1960], score = 0.09      <et=12.88>
+SB phase 1 cand. 67 branch on EDGE[0,63] (lhs=0.7001) : [ 1017.8040,  1019.2746], score = 0.10      <et=12.91>
+SB phase 1 cand. 68 branch on EDGE[0,33] (lhs=0.2988) : [ 1017.8909,  1018.6328], score = 0.14      <et=12.93>
+SB phase 1 cand. 69 branch on EDGE[0,61] (lhs=0.7042) : [ 1017.9437,  1018.2079], score = 0.10      <et=12.96>
+SB phase 1 cand. 70 branch on EDGE[8,52] (lhs=0.2925) : [ 1017.8251,  1018.3620], score = 0.06      <et=12.98>
+SB phase 1 cand. 71 branch on EDGE[59,66] (lhs=0.7076): [ 1018.0316,  1018.6255], score = 0.26      <et=13.01>
+SB phase 1 cand. 72 branch on EDGE[14,59] (lhs=0.2924): [ 1018.0344,  1018.6911], score = 0.28      <et=13.04>
+SB phase 1 cand. 73 branch on EDGE[0,19] (lhs=0.7094) : [ 1017.8683,  1018.0107], score = 0.04      <et=13.06>
+SB phase 1 cand. 74 branch on EDGE[58,72] (lhs=0.2885): [ 1018.0910,  1018.8678], score = 0.40      <et=13.09>
+SB phase 1 cand. 75 branch on EDGE[0,59] (lhs=0.7126) : [ 1017.8502,  1018.4916], score = 0.09      <et=13.11>
+SB phase 1 cand. 76 branch on EDGE[13,57] (lhs=0.7153): [ 1017.9254,  1018.0686], score = 0.06      <et=13.14>
+SB phase 1 cand. 77 branch on EDGE[26,38] (lhs=0.2815): [ 1017.7360,  1019.3773], score = 0.00      <et=13.15>
+SB phase 1 cand. 78 branch on EDGE[18,55] (lhs=0.7203): [ 1018.1029,  1018.9348], score = 0.44      <et=13.18>
+SB phase 1 cand. 79 branch on EDGE[31,55] (lhs=0.2797): [ 1018.1029,  1018.9348], score = 0.44      <et=13.21>
+SB phase 1 cand. 80 branch on EDGE[0,73] (lhs=0.7219) : [ 1017.8822,  1018.4876], score = 0.11      <et=13.23>
+SB phase 1 cand. 81 branch on EDGE[0,65] (lhs=0.2751) : [ 1017.8478,  1019.1831], score = 0.16      <et=13.26>
+SB phase 1 cand. 82 branch on EDGE[38,58] (lhs=0.2751): [ 1017.9354,  1018.8574], score = 0.22      <et=13.29>
+SB phase 1 cand. 83 branch on EDGE[28,61] (lhs=0.2699): [ 1017.9048,  1018.2433], score = 0.09      <et=13.31>
+SB phase 1 cand. 84 branch on EDGE[3,24] (lhs=0.2654) : [ 1017.7766,  1019.6384], score = 0.08      <et=13.34>
+SB phase 1 cand. 85 branch on EDGE[6,42] (lhs=0.2646) : [ 1017.9351,  1021.2758], score = 0.65      <et=13.37>
+SB phase 1 cand. 86 branch on EDGE[27,45] (lhs=0.7356): [ 1017.9218,  1018.0540], score = 0.06      <et=13.39>
+SB phase 1 cand. 87 branch on EDGE[24,56] (lhs=0.2595): [ 1017.8741,  1021.7364], score = 0.45      <et=13.42>
+SB phase 1 cand. 88 branch on EDGE[16,51] (lhs=0.2588): [ 1017.9450,  1018.6112], score = 0.18      <et=13.45>
+SB phase 1 cand. 89 branch on EDGE[0,37] (lhs=0.7457) : [ 1017.9374,  1018.2427], score = 0.10      <et=13.48>
+SB phase 1 cand. 90 branch on EDGE[32,50] (lhs=0.2543): [ 1017.9175,  1019.2573], score = 0.28      <et=13.5>
+SB phase 1 cand. 91 branch on EDGE[23,63] (lhs=0.7459): [ 1017.8534,  1018.8110], score = 0.13      <et=13.52>
+SB phase 1 cand. 92 branch on EDGE[17,44] (lhs=0.2535): [ 1017.7933,  1019.4811], score = 0.10      <et=13.55>
+SB phase 1 cand. 93 branch on EDGE[0,10] (lhs=0.2534) : [ 1018.0008,  1018.9011], score = 0.31      <et=13.58>
+SB phase 1 cand. 94 branch on EDGE[7,11] (lhs=0.2504) : [ 1017.8291,  1019.4073], score = 0.16      <et=13.6>
+SB phase 1 cand. 95 branch on EDGE[39,72] (lhs=0.2493): [ 1018.1421,  1018.7399], score = 0.41      <et=13.63>
+SB phase 1 cand. 96 branch on EDGE[53,59] (lhs=0.2463): [ 1017.7920,  1019.4763], score = 0.10      <et=13.65>
+SB phase 1 cand. 97 branch on EDGE[22,62] (lhs=0.2449): [ 1017.8753,  1018.0667], score = 0.05      <et=13.68>
+SB phase 1 cand. 98 branch on EDGE[12,39] (lhs=0.2424): [ 1017.9278,  1018.7513], score = 0.19      <et=13.7>
+SB phase 1 cand. 99 branch on EDGE[36,71] (lhs=0.7803): [ 1017.8474,  1018.5349], score = 0.09      <et=13.72>
+SB phase 1 cand. 100 branch on EDGE[16,63] (lhs=0.2185): [ 1017.7743,  1019.5380], score = 0.07      <et=13.75>
+**** Strong branching phase 2 is started *****
+    TT = 0.000323, performed by inspection with 1439 solutions, nbR1C = 88, nbDiscC = 0
+    TT = 0.000329, performed by inspection with 1439 solutions, nbR1C = 105, nbDiscC = 0
+    TT = 0.000289, performed by inspection with 1439 solutions, nbR1C = 97, nbDiscC = 0
+    TT = 0.000291, performed by inspection with 1439 solutions, nbR1C = 99, nbDiscC = 0
+    TT = 0.000305, performed by inspection with 1439 solutions, nbR1C = 99, nbDiscC = 0
+    TT = 0.000287, performed by inspection with 1439 solutions, nbR1C = 98, nbDiscC = 0
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 98 with avMem = 0
+<DWph=0> <it=  6> <et=13.78> <Mt= 0.01> <Spt= 0.01> <nCl= 39> <al=0.00> <DB= 1018.7858> <Mlp= 1018.7858> <PB=1021.1> 
+    TT = 0.000317, performed by inspection with 1439 solutions, nbR1C = 97, nbDiscC = 0
+    TT = 0.000301, performed by inspection with 1439 solutions, nbR1C = 103, nbDiscC = 0
+    TT = 0.000293, performed by inspection with 1439 solutions, nbR1C = 104, nbDiscC = 0
+    TT = 0.000291, performed by inspection with 1439 solutions, nbR1C = 104, nbDiscC = 0
+    TT = 0.000288, performed by inspection with 1439 solutions, nbR1C = 101, nbDiscC = 0
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 101 with avMem = 0
+<DWph=0> <it=  6> <et=13.81> <Mt= 0.01> <Spt= 0.01> <nCl= 11> <al=0.00> <DB= 1018.3880> <Mlp= 1018.3880> <PB=1021.1> 
+SB phase 2 cand.  1 branch on EDGE[9,40] (lhs=0.4386) : [ 1018.3880,  1018.7858], score = 0.68      <et=13.82>
+    TT = 0.00028, performed by inspection with 1439 solutions, nbR1C = 77, nbDiscC = 0
+    TT = 0.000288, performed by inspection with 1439 solutions, nbR1C = 88, nbDiscC = 0
+    TT = 0.000274, performed by inspection with 1439 solutions, nbR1C = 88, nbDiscC = 0
+    TT = 0.000273, performed by inspection with 1439 solutions, nbR1C = 88, nbDiscC = 0
+    TT = 0.000245, performed by inspection with 1439 solutions, nbR1C = 72, nbDiscC = 0
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 72 with avMem = 0
+<DWph=0> <it=  6> <et=13.86> <Mt= 0.03> <Spt= 0.02> <nCl= 43> <al=0.00> <DB= 1019.6400> <Mlp= 1019.6400> <PB=1021.1> 
+    TT = 0.000316, performed by inspection with 1439 solutions, nbR1C = 105, nbDiscC = 0
+    TT = 0.000322, performed by inspection with 1439 solutions, nbR1C = 117, nbDiscC = 0
+    TT = 0.000312, performed by inspection with 1439 solutions, nbR1C = 117, nbDiscC = 0
+    TT = 0.000307, performed by inspection with 1439 solutions, nbR1C = 115, nbDiscC = 0
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 115 with avMem = 0
+<DWph=0> <it=  5> <et=13.89> <Mt= 0.01> <Spt= 0.01> <nCl= 18> <al=0.00> <DB= 1017.9636> <Mlp= 1017.9636> <PB=1021.1> 
+SB phase 2 cand.  2 branch on EDGE[25,31] (lhs=0.3688): [ 1017.9636,  1019.6400], score = 0.43      <et=13.9>
+    TT = 0.00027, performed by inspection with 1439 solutions, nbR1C = 73, nbDiscC = 0
+    TT = 0.00028, performed by inspection with 1439 solutions, nbR1C = 87, nbDiscC = 0
+    TT = 0.000279, performed by inspection with 1439 solutions, nbR1C = 94, nbDiscC = 0
+    TT = 0.000277, performed by inspection with 1439 solutions, nbR1C = 96, nbDiscC = 0
+    TT = 0.000253, performed by inspection with 1439 solutions, nbR1C = 85, nbDiscC = 0
+    TT = 0.000259, performed by inspection with 1439 solutions, nbR1C = 85, nbDiscC = 0
+    TT = 0.000256, performed by inspection with 1439 solutions, nbR1C = 85, nbDiscC = 0
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 85 with avMem = 0
+<DWph=0> <it=  7> <et=13.93> <Mt= 0.02> <Spt= 0.01> <nCl= 72> <al=0.00> <DB= 1020.7211> <Mlp= 1020.7211> <PB=1021.1> 
+    TT = 0.000316, performed by inspection with 1439 solutions, nbR1C = 109, nbDiscC = 0
+    TT = 0.000315, performed by inspection with 1439 solutions, nbR1C = 114, nbDiscC = 0
+    TT = 0.0003, performed by inspection with 1439 solutions, nbR1C = 113, nbDiscC = 0
+    TT = 0.000296, performed by inspection with 1439 solutions, nbR1C = 110, nbDiscC = 0
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 110 with avMem = 0
+<DWph=0> <it=  5> <et=13.97> <Mt= 0.02> <Spt= 0.01> <nCl=  4> <al=0.00> <DB= 1017.9213> <Mlp= 1017.9213> <PB=1021.1> 
+SB phase 2 cand.  3 branch on EDGE[6,42] (lhs=0.2646) : [ 1017.9213,  1020.7211], score = 0.55      <et=13.97>
+**** Strong branching phase 3 is started *****
+**** SB phase 3 evaluation of candidate 1, branch 1 ( EDGE[9,40] >= 1 ), value = 1018.79
+<DWph=2> <it=  1> <et=13.98> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1018.7858> <Mlp= 1018.7858> <PB=1021.1> 
+<DWph=1> <it=  2> <et=13.98> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1018.7858> <Mlp= 1018.7858> <PB=1021.1> 
+    TT = 0.000319, performed by inspection with 1439 solutions, nbR1C = 98, nbDiscC = 0
+    TT = 0.000284, performed by inspection with 1439 solutions, nbR1C = 92, nbDiscC = 0
+<DWph=0> <it=  3> <et=13.99> <Mt= 0.00> <Spt= 0.00> <nCl=  2> <al=0.00> <DB= 1012.9431> <Mlp= 1018.7858> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 92 with avMem = 0
+@@ 208 0 1018.79 0.0003015 0.000319 0 13.99
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 1439 solutions, remains 1438 (99.9%)
+    Full reduced cost fixing is not called (gap ratio is 2.31092)
+ColGenEvalAlg final dual bound: 1018.79 (rounded: 1019)
+Current active cuts : CAP(1,0.84244) R1C(92,124.955) 3rowPackR1C(15) 4rowPackR1C(23) 5rowPackR1C(54)
+27 Rank-1 3-rows pack. cuts added ,  max viol. = 0.122234, aver. viol. = 0.065639
+Building structures for heuristic rank-1 packing cut separation...done!
+51 Rank-1 4-rows pack. cuts added ,  max viol. = 0.170184, aver. viol. = 0.075549
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.258803, aver. viol. = 0.113614
+Shrinking heuristic shrunk 8 edges
+----- Add fac. cuts : R1C(178), max.viol = 0.258803, aver.viol = 0.0976666, sep/add took 0.698771/0.0209346 sec. -----
+922 columns (774 active), 322 dyn. constrs. (278 active), 478 art. vars. (430 active)
+<DWph=2> <it=  1> <et=14.76> <Mt= 0.04> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.0810> <Mlp= 1019.0810> <PB=1021.1> 
+<DWph=1> <it=  2> <et=14.76> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.0810> <Mlp= 1019.0810> <PB=1021.1> 
+    TT = 0.000363, performed by inspection with 1438 solutions, nbR1C = 117, nbDiscC = 0
+<DWph=0> <it=  3> <et=14.76> <Mt= 0.00> <Spt= 0.01> <nCl= 13> <al=0.30> <DB=  787.7060> <Mlp= 1019.0810> <PB=1021.1> 
+    TT = 0.000348, performed by inspection with 1438 solutions, nbR1C = 125, nbDiscC = 0
+    TT = 0.000298, performed by inspection with 1438 solutions, nbR1C = 107, nbDiscC = 0
+<DWph=0> <it=  4> <et=14.77> <Mt= 0.01> <Spt= 0.00> <nCl=  1> <al=0.00> <DB= 1015.1155> <Mlp= 1019.0810> <PB=1021.1> 
+    TT = 0.0003, performed by inspection with 1438 solutions, nbR1C = 109, nbDiscC = 0
+    TT = 0.000293, performed by inspection with 1438 solutions, nbR1C = 107, nbDiscC = 0
+<DWph=0> <it=  5> <et=14.77> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.0810> <Mlp= 1019.0810> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 107 with avMem = 0
+@@ 208 1 1019.08 0.0003204 0.000363 0 14.77
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 1438 solutions, remains 715 (49.7%)
+Removed 169 columns (not in the enumerated set) from the formulation
+ColGenEvalAlg final dual bound: 1019.08 (rounded: 1020)
+Gap improvement since the last cut separation : 0.127546 (1018.79)
+Current active cuts : CAP(1,2) R1C(107,128.928) 3rowPackR1C(19) 4rowPackR1C(33) 5rowPackR1C(55)
+11 Rank-1 3-rows pack. cuts added ,  max viol. = 0.190968, aver. viol. = 0.0868915
+Building structures for heuristic rank-1 packing cut separation...done!
+21 Rank-1 4-rows pack. cuts added ,  max viol. = 0.190968, aver. viol. = 0.0809524
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.190968, aver. viol. = 0.0950403
+Shrinking heuristic shrunk 7 edges
+In total 1 RCC cut(s) are found by the Fractional capacity min-cut heuristic 
+In total 10 RCC cut(s) are found by the greedy construction heuristic 
+----- Add fac. cuts : CAP(11) R1C(132), max.viol = 0.225806, aver.viol = 0.117861, sep/add took 0.659955/0.016088 sec. -----
+798 columns (619 active), 465 dyn. constrs. (258 active), 621 art. vars. (410 active)
+<DWph=2> <it=  1> <et=15.47> <Mt= 0.01> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1019.2687> <Mlp= 1019.2687> <PB=1021.1> 
+<DWph=1> <it=  2> <et=15.47> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.2687> <Mlp= 1019.2687> <PB=1021.1> 
+    TT = 0.000217, performed by inspection with 715 solutions, nbR1C = 108, nbDiscC = 0
+<DWph=0> <it=  3> <et=15.48> <Mt= 0.00> <Spt= 0.00> <nCl=  4> <al=0.30> <DB=  950.2248> <Mlp= 1019.2687> <PB=1021.1> 
+    TT = 0.000201, performed by inspection with 715 solutions, nbR1C = 112, nbDiscC = 0
+    TT = 0.000189, performed by inspection with 715 solutions, nbR1C = 111, nbDiscC = 0
+<DWph=0> <it=  4> <et=15.48> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.2436> <Mlp= 1019.2436> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 111 with avMem = 0
+@@ 208 2 1019.24 0.000202333 0.000217 0 15.48
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 715 solutions, remains 640 (89.5%)
+Removed 31 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.915247)
+ColGenEvalAlg final dual bound: 1019.24 (rounded: 1020)
+Gap improvement since the last cut separation : 0.0805549 (1019.08)
+Current active cuts : CAP(2,3.13521) R1C(111,132.397) 3rowPackR1C(17) 4rowPackR1C(34) 5rowPackR1C(60)
+6 Rank-1 3-rows pack. cuts added ,  max viol. = 0.137559, aver. viol. = 0.0681981
+Building structures for heuristic rank-1 packing cut separation...done!
+28 Rank-1 4-rows pack. cuts added ,  max viol. = 0.137559, aver. viol. = 0.0495445
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.137559, aver. viol. = 0.0816543
+Shrinking heuristic shrunk 8 edges
+In total 1 RCC cut(s) are found by the global pool greedy search heuristic 
+----- Add fac. cuts : CAP(1) R1C(134), max.viol = 0.137559, aver.viol = 0.093581, sep/add took 0.747772/0.0127256 sec. -----
+796 columns (592 active), 450 dyn. constrs. (254 active), 756 art. vars. (406 active)
+<DWph=2> <it=  1> <et=16.26> <Mt= 0.01> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1019.2951> <Mlp= 1019.2951> <PB=1021.1> 
+<DWph=1> <it=  2> <et=16.26> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.2951> <Mlp= 1019.2951> <PB=1021.1> 
+    TT = 0.000204, performed by inspection with 640 solutions, nbR1C = 114, nbDiscC = 0
+<DWph=0> <it=  3> <et=16.27> <Mt= 0.00> <Spt= 0.00> <nCl=  2> <al=0.30> <DB= 1013.8709> <Mlp= 1019.2951> <PB=1021.1> 
+    TT = 0.000185, performed by inspection with 640 solutions, nbR1C = 114, nbDiscC = 0
+    TT = 0.000181, performed by inspection with 640 solutions, nbR1C = 113, nbDiscC = 0
+<DWph=0> <it=  4> <et=16.27> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <al=0.00> <DB= 1019.2950> <Mlp= 1019.2950> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 113 with avMem = 0
+@@ 208 3 1019.3 0.00019 0.000204 0 16.27
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 640 solutions, remains 600 (93.8%)
+Removed 11 columns (not in the enumerated set) from the formulation
+ColGenEvalAlg final dual bound: 1019.3 (rounded: 1020)
+Gap improvement since the last cut separation : 0.0276972 (1019.24)
+Current active cuts : CAP(1,0.667943) R1C(113,134.327) 3rowPackR1C(16) 4rowPackR1C(38) 5rowPackR1C(59)
+5 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0628296, aver. viol. = 0.0553875
+Building structures for heuristic rank-1 packing cut separation...done!
+18 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0628296, aver. viol. = 0.0418574
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0726813, aver. viol. = 0.04545
+Shrinking heuristic shrunk 5 edges
+In total 1 RCC cut(s) are found by the Fractional capacity min-cut heuristic 
+In total 1 RCC cut(s) are found by the greedy construction heuristic 
+In total 1 RCC cut(s) are found by the global pool greedy search heuristic 
+----- Add fac. cuts : CAP(3) R1C(123), max.viol = 0.145362, aver.viol = 0.0653668, sep/add took 0.809341/0.0119376 sec. -----
+798 columns (584 active), 439 dyn. constrs. (247 active), 882 art. vars. (399 active)
+<DWph=2> <it=  1> <et=17.11> <Mt= 0.01> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1019.3514> <Mlp= 1019.3514> <PB=1021.1> 
+<DWph=1> <it=  2> <et=17.11> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.3514> <Mlp= 1019.3514> <PB=1021.1> 
+    TT = 0.0002, performed by inspection with 600 solutions, nbR1C = 114, nbDiscC = 0
+    TT = 0.000176, performed by inspection with 600 solutions, nbR1C = 114, nbDiscC = 0
+<DWph=0> <it=  3> <et=17.12> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.3514> <Mlp= 1019.3514> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 114 with avMem = 0
+@@ 208 4 1019.35 0.000188 0.0002 0 17.12
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 600 solutions, remains 583 (97.2%)
+Removed 7 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.966935)
+ColGenEvalAlg final dual bound: 1019.35 (rounded: 1020)
+Gap improvement since the last cut separation : 0.0312327 (1019.3)
+Current active cuts : CAP(2,1.62891) R1C(114,135.304) 3rowPackR1C(16) 4rowPackR1C(34) 5rowPackR1C(64)
+7 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0898701, aver. viol. = 0.0519437
+Building structures for heuristic rank-1 packing cut separation...done!
+16 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0898701, aver. viol. = 0.0579862
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0898701, aver. viol. = 0.0502022
+Shrinking heuristic shrunk 8 edges
+In total 1 RCC cut(s) are found by the global pool greedy search heuristic 
+----- Add fac. cuts : CAP(1) R1C(123), max.viol = 0.102213, aver.viol = 0.0630327, sep/add took 0.684331/0.0117081 sec. -----
+798 columns (577 active), 433 dyn. constrs. (248 active), 1006 art. vars. (400 active)
+<DWph=2> <it=  1> <et=17.83> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.4360> <Mlp= 1019.4360> <PB=1021.1> 
+<DWph=1> <it=  2> <et=17.83> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.4360> <Mlp= 1019.4360> <PB=1021.1> 
+    TT = 0.0002, performed by inspection with 583 solutions, nbR1C = 118, nbDiscC = 0
+<DWph=0> <it=  3> <et=17.84> <Mt= 0.00> <Spt= 0.01> <nCl=  5> <al=0.30> <DB=  974.2194> <Mlp= 1019.4360> <PB=1021.1> 
+    TT = 0.000182, performed by inspection with 583 solutions, nbR1C = 121, nbDiscC = 0
+    TT = 0.000172, performed by inspection with 583 solutions, nbR1C = 116, nbDiscC = 0
+<DWph=0> <it=  4> <et=17.84> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.4339> <Mlp= 1019.4339> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 116 with avMem = 0
+@@ 208 5 1019.43 0.000184667 0.0002 0 17.84
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 583 solutions, remains 555 (95.2%)
+Removed 13 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.918528)
+ColGenEvalAlg final dual bound: 1019.43 (rounded: 1020)
+Gap improvement since the last cut separation : 0.0471995 (1019.35)
+Current active cuts : CAP(1,1.91678) R1C(116,137.841) 3rowPackR1C(13) 4rowPackR1C(33) 5rowPackR1C(70)
+1 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0293287, aver. viol. = 0.0293287
+Building structures for heuristic rank-1 packing cut separation...done!
+12 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0512998, aver. viol. = 0.0373635
+42 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0683998, aver. viol. = 0.0336079
+Shrinking heuristic shrunk 6 edges
+In total 2 RCC cut(s) are found by the global pool greedy search heuristic 
+----- Add fac. cuts : CAP(2) R1C(55), max.viol = 0.0683998, aver.viol = 0.0353993, sep/add took 0.831634/0.00544556 sec. -----
+802 columns (569 active), 368 dyn. constrs. (181 active), 1063 art. vars. (333 active)
+<DWph=2> <it=  1> <et=18.69> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.4577> <Mlp= 1019.4577> <PB=1021.1> 
+<DWph=1> <it=  2> <et=18.69> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.4577> <Mlp= 1019.4577> <PB=1021.1> 
+    TT = 0.00019, performed by inspection with 555 solutions, nbR1C = 118, nbDiscC = 0
+<DWph=0> <it=  3> <et=18.70> <Mt= 0.00> <Spt= 0.00> <nCl=  2> <al=0.30> <DB= 1013.0672> <Mlp= 1019.4577> <PB=1021.1> 
+    TT = 0.000172, performed by inspection with 555 solutions, nbR1C = 118, nbDiscC = 0
+    TT = 0.000167, performed by inspection with 555 solutions, nbR1C = 117, nbDiscC = 0
+<DWph=0> <it=  4> <et=18.70> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1019.4573> <Mlp= 1019.4573> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 117 with avMem = 0
+@@ 208 6 1019.46 0.000176333 0.00019 0 18.7
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 555 solutions, remains 535 (96.4%)
+Removed 7 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.904836)
+ColGenEvalAlg final dual bound: 1019.46 (rounded: 1020)
+Gap improvement since the last cut separation : 0.0140115 (1019.43)
+Cut generation tailing off counter increased to 1
+Current active cuts : CAP(1,2.12719) R1C(117,139.09) 3rowPackR1C(13) 4rowPackR1C(33) 5rowPackR1C(71)
+1 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0224955, aver. viol. = 0.0224955
+Building structures for heuristic rank-1 packing cut separation...done!
+6 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0601769, aver. viol. = 0.0403791
+39 Rank-1 5-rows pack. cuts added ,  max viol. = 0.050779, aver. viol. = 0.0258335
+Shrinking heuristic shrunk 7 edges
+In total 1 RCC cut(s) are found by the Fractional capacity min-cut heuristic 
+In total 1 RCC cut(s) are found by the greedy construction heuristic 
+In total 1 RCC cut(s) are found by the global pool greedy search heuristic 
+----- Add fac. cuts : CAP(3) R1C(46), max.viol = 0.0601769, aver.viol = 0.0373952, sep/add took 0.77216/0.00501446 sec. -----
+801 columns (564 active), 298 dyn. constrs. (174 active), 1112 art. vars. (326 active)
+<DWph=2> <it=  1> <et=19.49> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.4890> <Mlp= 1019.4890> <PB=1021.1> 
+<DWph=1> <it=  2> <et=19.49> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.4890> <Mlp= 1019.4890> <PB=1021.1> 
+    TT = 0.000193, performed by inspection with 535 solutions, nbR1C = 122, nbDiscC = 0
+<DWph=0> <it=  3> <et=19.50> <Mt= 0.00> <Spt= 0.00> <nCl=  5> <al=0.30> <DB= 1002.7412> <Mlp= 1019.4890> <PB=1021.1> 
+    TT = 0.000178, performed by inspection with 535 solutions, nbR1C = 122, nbDiscC = 0
+    TT = 0.000167, performed by inspection with 535 solutions, nbR1C = 120, nbDiscC = 0
+<DWph=0> <it=  4> <et=19.50> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1019.4878> <Mlp= 1019.4878> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 120 with avMem = 0
+@@ 208 7 1019.49 0.000179333 0.000193 0 19.5
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 535 solutions, remains 515 (96.3%)
+Removed 16 columns (not in the enumerated set) from the formulation
+ColGenEvalAlg final dual bound: 1019.49 (rounded: 1020)
+Gap improvement since the last cut separation : 0.0186065 (1019.46)
+Cut generation tailing off counter increased to 2
+Current active cuts : CAP(1,1.6861) R1C(120,139.495) 3rowPackR1C(14) 4rowPackR1C(30) 5rowPackR1C(76)
+Building structures for heuristic rank-1 packing cut separation...done!
+1 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0289323, aver. viol. = 0.0289323
+8 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0476509, aver. viol. = 0.0290908
+Shrinking heuristic shrunk 6 edges
+In total 1 RCC cut(s) are found by the global pool greedy search heuristic 
+----- Add fac. cuts : CAP(1) R1C(9), max.viol = 0.0703887, aver.viol = 0.0346496, sep/add took 0.862517/0.00124487 sec. -----
+806 columns (553 active), 254 dyn. constrs. (138 active), 1122 art. vars. (290 active)
+<DWph=2> <it=  1> <et=20.38> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.4944> <Mlp= 1019.4944> <PB=1021.1> 
+<DWph=1> <it=  2> <et=20.38> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.4944> <Mlp= 1019.4944> <PB=1021.1> 
+    TT = 0.000185, performed by inspection with 515 solutions, nbR1C = 121, nbDiscC = 0
+    TT = 0.000164, performed by inspection with 515 solutions, nbR1C = 121, nbDiscC = 0
+<DWph=0> <it=  3> <et=20.38> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.4944> <Mlp= 1019.4944> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 121 with avMem = 0
+@@ 208 8 1019.49 0.0001745 0.000185 0 20.38
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 515 solutions, remains 505 (98.1%)
+Removed 8 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.995687)
+ColGenEvalAlg final dual bound: 1019.49 (rounded: 1020)
+Gap improvement since the last cut separation : 0.00404535 (1019.49)
+----- Cut generation is stopped due to tailing off -----
+Current active cuts : CAP(1,1.70629) R1C(121,139.313) 3rowPackR1C(14) 4rowPackR1C(29) 5rowPackR1C(78)
+**** SB phase 3 evaluation of candidate 1, branch 2 ( EDGE[9,40] <= 0 ), value = 1018.39
+<DWph=2> <it=  1> <et=20.40> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1018.3880> <Mlp= 1018.3880> <PB=1021.1> 
+<DWph=1> <it=  2> <et=20.41> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1018.3880> <Mlp= 1018.3880> <PB=1021.1> 
+    TT = 0.000358, performed by inspection with 1439 solutions, nbR1C = 101, nbDiscC = 0
+<DWph=0> <it=  3> <et=20.41> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <al=0.30> <DB= 1011.9219> <Mlp= 1018.3880> <PB=1021.1> 
+    TT = 0.000323, performed by inspection with 1439 solutions, nbR1C = 101, nbDiscC = 0
+    TT = 0.000308, performed by inspection with 1439 solutions, nbR1C = 99, nbDiscC = 0
+<DWph=0> <it=  4> <et=20.41> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1018.3880> <Mlp= 1018.3880> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 99 with avMem = 0
+@@ 209 0 1018.39 0.000329667 0.000358 0 20.41
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 1439 solutions, remains 1088 (75.6%)
+Removed 77 columns (not in the enumerated set) from the formulation
+ColGenEvalAlg final dual bound: 1018.39 (rounded: 1019)
+Current active cuts : CAP(1,2) R1C(99,118.678) 3rowPackR1C(20) 4rowPackR1C(25) 5rowPackR1C(54)
+18 Rank-1 3-rows pack. cuts added ,  max viol. = 0.173661, aver. viol. = 0.0402145
+Building structures for heuristic rank-1 packing cut separation...done!
+34 Rank-1 4-rows pack. cuts added ,  max viol. = 0.173661, aver. viol. = 0.0432881
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.199164, aver. viol. = 0.0739009
+Shrinking heuristic shrunk 4 edges
+In total 3 RCC cut(s) are found by the global pool greedy search heuristic 
+----- Add fac. cuts : CAP(3) R1C(152), max.viol = 0.199164, aver.viol = 0.0849153, sep/add took 0.818227/0.0164143 sec. -----
+804 columns (668 active), 355 dyn. constrs. (262 active), 507 art. vars. (414 active)
+<DWph=2> <it=  1> <et=21.27> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1018.6758> <Mlp= 1018.6758> <PB=1021.1> 
+<DWph=1> <it=  2> <et=21.27> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1018.6758> <Mlp= 1018.6758> <PB=1021.1> 
+    TT = 0.000299, performed by inspection with 1088 solutions, nbR1C = 91, nbDiscC = 0
+<DWph=0> <it=  3> <et=21.27> <Mt= 0.00> <Spt= 0.01> <nCl= 17> <al=0.30> <DB=  930.7630> <Mlp= 1018.6758> <PB=1021.1> 
+    TT = 0.000281, performed by inspection with 1088 solutions, nbR1C = 106, nbDiscC = 0
+<DWph=0> <it=  4> <et=21.28> <Mt= 0.01> <Spt= 0.00> <nCl=  3> <al=0.37> <DB=  986.1114> <Mlp= 1018.6177> <PB=1021.1> 
+    TT = 0.000267, performed by inspection with 1088 solutions, nbR1C = 110, nbDiscC = 0
+<DWph=0> <it=  5> <et=21.29> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <al=0.27> <DB= 1009.8399> <Mlp= 1018.6161> <PB=1021.1> 
+    TT = 0.000259, performed by inspection with 1088 solutions, nbR1C = 110, nbDiscC = 0
+    TT = 0.000248, performed by inspection with 1088 solutions, nbR1C = 100, nbDiscC = 0
+<DWph=0> <it=  6> <et=21.29> <Mt= 0.00> <Spt= 0.00> <nCl=  2> <al=0.00> <DB= 1018.6161> <Mlp= 1018.6161> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 100 with avMem = 0
+@@ 209 1 1018.62 0.0002708 0.000299 0 21.29
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 1088 solutions, remains 916 (84.2%)
+Removed 37 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.912671)
+ColGenEvalAlg final dual bound: 1018.62 (rounded: 1019)
+Gap improvement since the last cut separation : 0.084109 (1018.39)
+Current active cuts : CAP(2,2.752) R1C(100,117.772) 3rowPackR1C(16) 4rowPackR1C(27) 5rowPackR1C(57)
+15 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0638927, aver. viol. = 0.0348497
+Building structures for heuristic rank-1 packing cut separation...done!
+41 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0638927, aver. viol. = 0.0401554
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.171517, aver. viol. = 0.0540505
+Shrinking heuristic shrunk 3 edges
+In total 2 RCC cut(s) are found by the Fractional capacity min-cut heuristic 
+In total 9 RCC cut(s) are found by the greedy construction heuristic 
+In total 2 RCC cut(s) are found by the global pool greedy search heuristic 
+----- Add fac. cuts : CAP(13) R1C(156), max.viol = 0.343033, aver.viol = 0.0595921, sep/add took 0.772165/0.0178939 sec. -----
+827 columns (654 active), 524 dyn. constrs. (278 active), 676 art. vars. (430 active)
+<DWph=2> <it=  1> <et=22.10> <Mt= 0.01> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1018.8215> <Mlp= 1018.8215> <PB=1021.1> 
+<DWph=1> <it=  2> <et=22.10> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1018.8215> <Mlp= 1018.8215> <PB=1021.1> 
+    TT = 0.000277, performed by inspection with 916 solutions, nbR1C = 104, nbDiscC = 0
+<DWph=0> <it=  3> <et=22.11> <Mt= 0.00> <Spt= 0.00> <nCl=  4> <al=0.30> <DB=  983.6249> <Mlp= 1018.8215> <PB=1021.1> 
+    TT = 0.000239, performed by inspection with 916 solutions, nbR1C = 107, nbDiscC = 0
+<DWph=0> <it=  4> <et=22.11> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <al=0.20> <DB= 1011.7712> <Mlp= 1018.8078> <PB=1021.1> 
+    TT = 0.000231, performed by inspection with 916 solutions, nbR1C = 107, nbDiscC = 0
+    TT = 0.000223, performed by inspection with 916 solutions, nbR1C = 105, nbDiscC = 0
+<DWph=0> <it=  5> <et=22.12> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1018.8077> <Mlp= 1018.8077> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 105 with avMem = 0
+@@ 209 2 1018.81 0.0002425 0.000277 0 22.12
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 916 solutions, remains 858 (93.7%)
+Removed 15 columns (not in the enumerated set) from the formulation
+ColGenEvalAlg final dual bound: 1018.81 (rounded: 1019)
+Gap improvement since the last cut separation : 0.0771257 (1018.62)
+Current active cuts : CAP(2,5.02447) R1C(105,119.649) 3rowPackR1C(17) 4rowPackR1C(31) 5rowPackR1C(57)
+16 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0261215, aver. viol. = 0.0236642
+Building structures for heuristic rank-1 packing cut separation...done!
+37 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0533735, aver. viol. = 0.0251218
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.061361, aver. viol. = 0.0309036
+Shrinking heuristic shrunk 4 edges
+----- Add fac. cuts : R1C(153), max.viol = 0.122722, aver.viol = 0.0323402, sep/add took 0.868933/0.0163369 sec. -----
+831 columns (644 active), 540 dyn. constrs. (267 active), 829 art. vars. (419 active)
+<DWph=2> <it=  1> <et=23.02> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1018.8696> <Mlp= 1018.8696> <PB=1021.1> 
+<DWph=1> <it=  2> <et=23.02> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1018.8696> <Mlp= 1018.8696> <PB=1021.1> 
+    TT = 0.000272, performed by inspection with 858 solutions, nbR1C = 115, nbDiscC = 0
+<DWph=0> <it=  3> <et=23.03> <Mt= 0.00> <Spt= 0.00> <nCl=  3> <al=0.30> <DB=  998.2975> <Mlp= 1018.8696> <PB=1021.1> 
+    TT = 0.000247, performed by inspection with 858 solutions, nbR1C = 119, nbDiscC = 0
+    TT = 0.000224, performed by inspection with 858 solutions, nbR1C = 114, nbDiscC = 0
+<DWph=0> <it=  4> <et=23.03> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1018.8683> <Mlp= 1018.8683> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 114 with avMem = 0
+@@ 209 3 1018.87 0.000247667 0.000272 0 23.03
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 858 solutions, remains 822 (95.8%)
+Removed 10 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.972371)
+ColGenEvalAlg final dual bound: 1018.87 (rounded: 1019)
+Gap improvement since the last cut separation : 0.0264233 (1018.81)
+Current active cuts : CAP(2,6.41064) R1C(114,119.962) 3rowPackR1C(19) 4rowPackR1C(33) 5rowPackR1C(62)
+2 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0480418, aver. viol. = 0.0353112
+Building structures for heuristic rank-1 packing cut separation...done!
+12 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0480418, aver. viol. = 0.0342438
+89 Rank-1 5-rows pack. cuts added ,  max viol. = 0.136622, aver. viol. = 0.0360459
+Shrinking heuristic shrunk 5 edges
+In total 1 RCC cut(s) are found by the greedy construction heuristic 
+----- Add fac. cuts : CAP(1) R1C(103), max.viol = 0.136622, aver.viol = 0.0442143, sep/add took 0.783686/0.0110336 sec. -----
+834 columns (637 active), 484 dyn. constrs. (228 active), 933 art. vars. (380 active)
+<DWph=2> <it=  1> <et=23.84> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1018.8938> <Mlp= 1018.8938> <PB=1021.1> 
+<DWph=1> <it=  2> <et=23.85> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1018.8938> <Mlp= 1018.8938> <PB=1021.1> 
+    TT = 0.00026, performed by inspection with 822 solutions, nbR1C = 117, nbDiscC = 0
+<DWph=0> <it=  3> <et=23.85> <Mt= 0.00> <Spt= 0.00> <nCl=  2> <al=0.30> <DB= 1017.0246> <Mlp= 1018.8938> <PB=1021.1> 
+    TT = 0.000236, performed by inspection with 822 solutions, nbR1C = 124, nbDiscC = 0
+<DWph=0> <it=  4> <et=23.85> <Mt= 0.01> <Spt= 0.00> <nCl=  1> <al=0.20> <DB= 1015.3246> <Mlp= 1018.8923> <PB=1021.1> 
+    TT = 0.000225, performed by inspection with 822 solutions, nbR1C = 123, nbDiscC = 0
+    TT = 0.000217, performed by inspection with 822 solutions, nbR1C = 118, nbDiscC = 0
+<DWph=0> <it=  5> <et=23.86> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1018.8923> <Mlp= 1018.8923> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 118 with avMem = 0
+@@ 209 4 1018.89 0.0002345 0.00026 0 23.86
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 822 solutions, remains 806 (98.1%)
+Removed 3 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.961384)
+ColGenEvalAlg final dual bound: 1018.89 (rounded: 1019)
+Gap improvement since the last cut separation : 0.0107936 (1018.87)
+Cut generation tailing off counter increased to 1
+Current active cuts : CAP(3,4.44838) R1C(118,121.565) 3rowPackR1C(19) 4rowPackR1C(35) 5rowPackR1C(64)
+4 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0590459, aver. viol. = 0.0349227
+Building structures for heuristic rank-1 packing cut separation...done!
+13 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0388225, aver. viol. = 0.029892
+75 Rank-1 5-rows pack. cuts added ,  max viol. = 0.107166, aver. viol. = 0.0353586
+Shrinking heuristic shrunk 4 edges
+----- Add fac. cuts : R1C(92), max.viol = 0.136714, aver.viol = 0.0495753, sep/add took 0.83888/0.00995603 sec. -----
+837 columns (637 active), 435 dyn. constrs. (220 active), 1025 art. vars. (372 active)
+<DWph=2> <it=  1> <et=24.72> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1018.9074> <Mlp= 1018.9074> <PB=1021.1> 
+<DWph=1> <it=  2> <et=24.72> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1018.9074> <Mlp= 1018.9074> <PB=1021.1> 
+    TT = 0.000261, performed by inspection with 806 solutions, nbR1C = 119, nbDiscC = 0
+    TT = 0.000223, performed by inspection with 806 solutions, nbR1C = 119, nbDiscC = 0
+<DWph=0> <it=  3> <et=24.73> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1018.9074> <Mlp= 1018.9074> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 119 with avMem = 0
+@@ 209 5 1018.91 0.000242 0.000261 0 24.73
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 806 solutions, remains 796 (98.8%)
+Removed 4 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.954497)
+ColGenEvalAlg final dual bound: 1018.91 (rounded: 1019)
+Gap improvement since the last cut separation : 0.00683866 (1018.89)
+Cut generation tailing off counter increased to 2
+Current active cuts : CAP(3,6.40009) R1C(119,123.088) 3rowPackR1C(18) 4rowPackR1C(35) 5rowPackR1C(66)
+Building structures for heuristic rank-1 packing cut separation...done!
+1 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0218886, aver. viol. = 0.0218886
+11 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0368357, aver. viol. = 0.0249233
+Shrinking heuristic shrunk 4 edges
+----- Add fac. cuts : R1C(12), max.viol = 0.0460987, aver.viol = 0.0341192, sep/add took 0.839048/0.00163037 sec. -----
+837 columns (633 active), 348 dyn. constrs. (142 active), 1037 art. vars. (294 active)
+<DWph=2> <it=  1> <et=25.58> <Mt= 0.01> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1018.9279> <Mlp= 1018.9279> <PB=1021.1> 
+<DWph=1> <it=  2> <et=25.58> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1018.9279> <Mlp= 1018.9279> <PB=1021.1> 
+    TT = 0.00026, performed by inspection with 796 solutions, nbR1C = 122, nbDiscC = 0
+<DWph=0> <it=  3> <et=25.59> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <al=0.30> <DB= 1014.4949> <Mlp= 1018.9279> <PB=1021.1> 
+    TT = 0.000228, performed by inspection with 796 solutions, nbR1C = 122, nbDiscC = 0
+    TT = 0.000215, performed by inspection with 796 solutions, nbR1C = 122, nbDiscC = 0
+<DWph=0> <it=  4> <et=25.59> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1018.9279> <Mlp= 1018.9279> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 122 with avMem = 0
+@@ 209 6 1018.93 0.000234333 0.00026 0 25.59
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 796 solutions, remains 788 (99%)
+    Full reduced cost fixing is not called (gap ratio is 0.945154)
+ColGenEvalAlg final dual bound: 1018.93 (rounded: 1019)
+Gap improvement since the last cut separation : 0.00934203 (1018.91)
+----- Cut generation is stopped due to tailing off -----
+Current active cuts : CAP(2,6.27394) R1C(122,124.973) 3rowPackR1C(18) 4rowPackR1C(35) 5rowPackR1C(69)
+SB exact phase 3 branch on EDGE[9,40] (lhs=0.438641) : [1019.4944, 1018.9279], tree depth = 2.242, tree size = 7.459, score = -0.6868
+SB with phases chosed candidate EDGE[9,40] (lhs=0.438641)
+************************************************************************************************
+**** BaB tree node (N° 3, parent N° 1, depth 1, treatOrderId 209)
+**** Local DB = 1018.93, global bounds : [ 1019 , 1021.1 ], TIME = 0h0m25s60t = 2560
+**** 2 open nodes, ETS : 7, 837 columns (634 active), 249 dyn. constrs. (132 active), 401 art. vars. (284 active)
+************************************************************************************************
+Estimated subtree size of the father is 7.45855
+**** Strong branching phase 2 is started *****
+    TT = 0.000205, performed by inspection with 788 solutions, nbR1C = 67, nbDiscC = 0
+    TT = 0.000195, performed by inspection with 788 solutions, nbR1C = 74, nbDiscC = 0
+    TT = 0.000183, performed by inspection with 788 solutions, nbR1C = 74, nbDiscC = 0
+    TT = 0.000179, performed by inspection with 788 solutions, nbR1C = 74, nbDiscC = 0
+    TT = 0.000175, performed by inspection with 788 solutions, nbR1C = 70, nbDiscC = 0
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 70 with avMem = 0
+<DWph=0> <it=  6> <et=25.64> <Mt= 0.02> <Spt= 0.02> <nCl= 19> <al=0.00> <DB= 1022.1236> <Mlp= 1022.1236> <PB=1021.1> 
+    TT = 0.000228, performed by inspection with 788 solutions, nbR1C = 108, nbDiscC = 0
+    TT = 0.000216, performed by inspection with 788 solutions, nbR1C = 110, nbDiscC = 0
+    TT = 0.00021, performed by inspection with 788 solutions, nbR1C = 110, nbDiscC = 0
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 110 with avMem = 0
+<DWph=0> <it=  4> <et=25.67> <Mt= 0.01> <Spt= 0.00> <nCl=  2> <al=0.00> <DB= 1019.0893> <Mlp= 1019.0893> <PB=1021.1> 
+SB phase 2 cand.  1 branch on EDGE[6,42] (lhs=0.2239): [ 1019.0893,  1022.1236], score = 0.33 (h)  <et=25.67>
+**** Strong branching phase 3 is started *****
+**** SB phase 3 evaluation of candidate 1, branch 1 ( EDGE[6,42] >= 1 ), value = 1022.12
+Branch is already conquered!
+**** SB phase 3 evaluation of candidate 1, branch 2 ( EDGE[6,42] <= 0 ), value = 1019.09
+<DWph=2> <it=  1> <et=25.67> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.0893> <Mlp= 1019.0893> <PB=1021.1> 
+<DWph=1> <it=  2> <et=25.68> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1019.0893> <Mlp= 1019.0893> <PB=1021.1> 
+    TT = 0.000224, performed by inspection with 788 solutions, nbR1C = 110, nbDiscC = 0
+    TT = 0.000216, performed by inspection with 788 solutions, nbR1C = 110, nbDiscC = 0
+<DWph=0> <it=  3> <et=25.68> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.0893> <Mlp= 1019.0893> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 110 with avMem = 0
+@@ 212 0 1019.09 0.00022 0.000224 0 25.68
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 788 solutions, remains 729 (92.5%)
+Removed 12 columns (not in the enumerated set) from the formulation
+ColGenEvalAlg final dual bound: 1019.09 (rounded: 1020)
+Current active cuts : CAP(2,6.04319) R1C(110,122.149) 3rowPackR1C(17) 4rowPackR1C(31) 5rowPackR1C(62)
+10 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0432916, aver. viol. = 0.0303166
+Building structures for heuristic rank-1 packing cut separation...done!
+32 Rank-1 4-rows pack. cuts added ,  max viol. = 0.071823, aver. viol. = 0.0379346
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0685164, aver. viol. = 0.0373691
+Shrinking heuristic shrunk 4 edges
+----- Add fac. cuts : R1C(142), max.viol = 0.0952547, aver.viol = 0.0449799, sep/add took 0.866006/0.0146678 sec. -----
+731 columns (624 active), 351 dyn. constrs. (263 active), 503 art. vars. (415 active)
+<DWph=2> <it=  1> <et=26.58> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.1568> <Mlp= 1019.1568> <PB=1021.1> 
+<DWph=1> <it=  2> <et=26.58> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.1568> <Mlp= 1019.1568> <PB=1021.1> 
+    TT = 0.000242, performed by inspection with 729 solutions, nbR1C = 117, nbDiscC = 0
+<DWph=0> <it=  3> <et=26.58> <Mt= 0.00> <Spt= 0.00> <nCl=  4> <al=0.30> <DB= 1002.2951> <Mlp= 1019.1568> <PB=1021.1> 
+    TT = 0.000215, performed by inspection with 729 solutions, nbR1C = 121, nbDiscC = 0
+    TT = 0.000201, performed by inspection with 729 solutions, nbR1C = 120, nbDiscC = 0
+<DWph=0> <it=  4> <et=26.59> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1019.1568> <Mlp= 1019.1568> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 120 with avMem = 0
+@@ 212 1 1019.16 0.000219333 0.000242 0 26.59
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 729 solutions, remains 702 (96.3%)
+Removed 7 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.96467)
+ColGenEvalAlg final dual bound: 1019.16 (rounded: 1020)
+Gap improvement since the last cut separation : 0.0335728 (1019.09)
+Current active cuts : CAP(2,4.35586) R1C(120,123.461) 3rowPackR1C(18) 4rowPackR1C(31) 5rowPackR1C(71)
+4 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0395122, aver. viol. = 0.0311742
+Building structures for heuristic rank-1 packing cut separation...done!
+16 Rank-1 4-rows pack. cuts added ,  max viol. = 0.062652, aver. viol. = 0.0356247
+73 Rank-1 5-rows pack. cuts added ,  max viol. = 0.08179, aver. viol. = 0.0352128
+Shrinking heuristic shrunk 3 edges
+In total 1 RCC cut(s) are found by the Fractional capacity min-cut heuristic 
+----- Add fac. cuts : CAP(1) R1C(93), max.viol = 0.08179, aver.viol = 0.0436628, sep/add took 0.912769/0.00986766 sec. -----
+735 columns (621 active), 445 dyn. constrs. (224 active), 597 art. vars. (376 active)
+<DWph=2> <it=  1> <et=27.53> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.2108> <Mlp= 1019.2108> <PB=1021.1> 
+<DWph=1> <it=  2> <et=27.53> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.2108> <Mlp= 1019.2108> <PB=1021.1> 
+    TT = 0.000241, performed by inspection with 702 solutions, nbR1C = 123, nbDiscC = 0
+    TT = 0.000209, performed by inspection with 702 solutions, nbR1C = 123, nbDiscC = 0
+<DWph=0> <it=  3> <et=27.53> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <al=0.00> <DB= 1019.2108> <Mlp= 1019.2108> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 123 with avMem = 0
+@@ 212 2 1019.21 0.000225 0.000241 0 27.53
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 702 solutions, remains 680 (96.9%)
+Removed 14 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.936408)
+ColGenEvalAlg final dual bound: 1019.21 (rounded: 1020)
+Gap improvement since the last cut separation : 0.0277901 (1019.16)
+Current active cuts : CAP(2,6.50281) R1C(123,126.35) 3rowPackR1C(18) 4rowPackR1C(30) 5rowPackR1C(75)
+2 Rank-1 3-rows pack. cuts added ,  max viol. = 0.025824, aver. viol. = 0.0237853
+Building structures for heuristic rank-1 packing cut separation...done!
+14 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0815496, aver. viol. = 0.0306578
+82 Rank-1 5-rows pack. cuts added ,  max viol. = 0.055046, aver. viol. = 0.0277052
+Shrinking heuristic shrunk 3 edges
+In total 1 RCC cut(s) are found by the global pool greedy search heuristic 
+----- Add fac. cuts : CAP(1) R1C(98), max.viol = 0.0815496, aver.viol = 0.0395348, sep/add took 0.941903/0.0105076 sec. -----
+736 columns (608 active), 424 dyn. constrs. (232 active), 696 art. vars. (384 active)
+<DWph=2> <it=  1> <et=28.50> <Mt= 0.01> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1019.2633> <Mlp= 1019.2633> <PB=1021.1> 
+<DWph=1> <it=  2> <et=28.51> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.2633> <Mlp= 1019.2633> <PB=1021.1> 
+    TT = 0.000235, performed by inspection with 680 solutions, nbR1C = 124, nbDiscC = 0
+<DWph=0> <it=  3> <et=28.51> <Mt= 0.00> <Spt= 0.00> <nCl=  4> <al=0.30> <DB=  983.0019> <Mlp= 1019.2633> <PB=1021.1> 
+    TT = 0.000209, performed by inspection with 680 solutions, nbR1C = 124, nbDiscC = 0
+    TT = 0.000199, performed by inspection with 680 solutions, nbR1C = 124, nbDiscC = 0
+<DWph=0> <it=  4> <et=28.51> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.2633> <Mlp= 1019.2633> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 124 with avMem = 0
+@@ 212 3 1019.26 0.000214333 0.000235 0 28.51
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 680 solutions, remains 656 (96.5%)
+Removed 9 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.908936)
+ColGenEvalAlg final dual bound: 1019.26 (rounded: 1020)
+Gap improvement since the last cut separation : 0.0277843 (1019.21)
+Current active cuts : CAP(3,7.4604) R1C(124,128.685) 3rowPackR1C(17) 4rowPackR1C(29) 5rowPackR1C(78)
+2 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0336251, aver. viol. = 0.0336251
+Building structures for heuristic rank-1 packing cut separation...done!
+12 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0336251, aver. viol. = 0.0298259
+33 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0495685, aver. viol. = 0.0301771
+Shrinking heuristic shrunk 4 edges
+----- Add fac. cuts : R1C(47), max.viol = 0.0683009, aver.viol = 0.0338523, sep/add took 0.927149/0.00484755 sec. -----
+740 columns (603 active), 382 dyn. constrs. (182 active), 743 art. vars. (334 active)
+<DWph=2> <it=  1> <et=29.46> <Mt= 0.01> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1019.2868> <Mlp= 1019.2868> <PB=1021.1> 
+<DWph=1> <it=  2> <et=29.46> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.2868> <Mlp= 1019.2868> <PB=1021.1> 
+    TT = 0.000233, performed by inspection with 656 solutions, nbR1C = 127, nbDiscC = 0
+<DWph=0> <it=  3> <et=29.47> <Mt= 0.00> <Spt= 0.00> <nCl=  5> <al=0.30> <DB= 1018.2333> <Mlp= 1019.2868> <PB=1021.1> 
+    TT = 0.000204, performed by inspection with 656 solutions, nbR1C = 127, nbDiscC = 0
+    TT = 0.000195, performed by inspection with 656 solutions, nbR1C = 127, nbDiscC = 0
+<DWph=0> <it=  4> <et=29.47> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.2868> <Mlp= 1019.2868> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 127 with avMem = 0
+@@ 212 4 1019.29 0.000210667 0.000233 0 29.47
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 656 solutions, remains 645 (98.3%)
+Removed 6 columns (not in the enumerated set) from the formulation
+ColGenEvalAlg final dual bound: 1019.29 (rounded: 1020)
+Gap improvement since the last cut separation : 0.0128202 (1019.26)
+Cut generation tailing off counter increased to 1
+Current active cuts : CAP(3,7.66411) R1C(127,129.269) 3rowPackR1C(17) 4rowPackR1C(29) 5rowPackR1C(81)
+Building structures for heuristic rank-1 packing cut separation...done!
+1 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0200752, aver. viol. = 0.0200752
+18 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0574234, aver. viol. = 0.0322106
+Shrinking heuristic shrunk 4 edges
+----- Add fac. cuts : R1C(19), max.viol = 0.114847, aver.viol = 0.0594303, sep/add took 0.896198/0.00225629 sec. -----
+745 columns (602 active), 309 dyn. constrs. (157 active), 762 art. vars. (309 active)
+<DWph=2> <it=  1> <et=30.38> <Mt= 0.01> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1019.2965> <Mlp= 1019.2965> <PB=1021.1> 
+<DWph=1> <it=  2> <et=30.39> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.2965> <Mlp= 1019.2965> <PB=1021.1> 
+    TT = 0.000232, performed by inspection with 645 solutions, nbR1C = 130, nbDiscC = 0
+<DWph=0> <it=  3> <et=30.39> <Mt= 0.00> <Spt= 0.00> <nCl=  5> <al=0.30> <DB= 1008.7015> <Mlp= 1019.2965> <PB=1021.1> 
+    TT = 0.000202, performed by inspection with 645 solutions, nbR1C = 131, nbDiscC = 0
+    TT = 0.0002, performed by inspection with 645 solutions, nbR1C = 129, nbDiscC = 0
+<DWph=0> <it=  4> <et=30.39> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <al=0.00> <DB= 1019.2950> <Mlp= 1019.2950> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 129 with avMem = 0
+@@ 212 5 1019.3 0.000211333 0.000232 0 30.39
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 645 solutions, remains 640 (99.2%)
+Removed 4 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.995193)
+ColGenEvalAlg final dual bound: 1019.3 (rounded: 1020)
+Gap improvement since the last cut separation : 0.00454202 (1019.29)
+Cut generation tailing off counter increased to 2
+Current active cuts : CAP(3,8.29594) R1C(129,131.001) 3rowPackR1C(17) 4rowPackR1C(29) 5rowPackR1C(83)
+5 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0779486, aver. viol. = 0.0653161
+Building structures for heuristic rank-1 packing cut separation...done!
+7 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0845239, aver. viol. = 0.0644498
+80 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0845239, aver. viol. = 0.0538976
+Shrinking heuristic shrunk 6 edges
+In total 2 RCC cut(s) are found by the global pool greedy search heuristic 
+----- Add fac. cuts : CAP(2) R1C(92), max.viol = 0.0929073, aver.viol = 0.0662949, sep/add took 0.873198/0.00941466 sec. -----
+751 columns (604 active), 359 dyn. constrs. (234 active), 856 art. vars. (386 active)
+<DWph=2> <it=  1> <et=31.29> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.3035> <Mlp= 1019.3035> <PB=1021.1> 
+<DWph=1> <it=  2> <et=31.29> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1019.3035> <Mlp= 1019.3035> <PB=1021.1> 
+    TT = 0.000231, performed by inspection with 640 solutions, nbR1C = 130, nbDiscC = 0
+<DWph=0> <it=  3> <et=31.29> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <al=0.30> <DB= 1011.1777> <Mlp= 1019.3035> <PB=1021.1> 
+    TT = 0.000207, performed by inspection with 640 solutions, nbR1C = 131, nbDiscC = 0
+    TT = 0.000195, performed by inspection with 640 solutions, nbR1C = 130, nbDiscC = 0
+<DWph=0> <it=  4> <et=31.30> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.3028> <Mlp= 1019.3028> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 130 with avMem = 0
+@@ 212 6 1019.3 0.000211 0.000231 0 31.3
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 640 solutions, remains 636 (99.4%)
+Removed 2 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.990657)
+ColGenEvalAlg final dual bound: 1019.3 (rounded: 1020)
+Gap improvement since the last cut separation : 0.00430483 (1019.3)
+----- Cut generation is stopped due to tailing off -----
+Current active cuts : CAP(3,6.97751) R1C(130,131.587) 3rowPackR1C(17) 4rowPackR1C(30) 5rowPackR1C(83)
+SB exact phase 3 branch on EDGE[6,42] (lhs=0.223917) : [1022.1236, 1019.3028], tree depth = 2.107, tree size = 6.614, score = -1.017 (h)
+SB with phases chosed candidate EDGE[6,42] (lhs=0.223917)
+************************************************************************************************
+**** BaB tree node (N° 5, parent N° 3, depth 2, treatOrderId 212)
+**** Local DB = 1019.3, global bounds : [ 1020 , 1021.1 ], TIME = 0h0m31s31t = 3131
+**** 3 open nodes, ETS : 9, 752 columns (603 active), 250 dyn. constrs. (141 active), 402 art. vars. (293 active)
+************************************************************************************************
+Estimated subtree size of the father is 6.6141
+**** Strong branching phase 2 is started *****
+    TT = 0.000184, performed by inspection with 636 solutions, nbR1C = 70, nbDiscC = 0
+    TT = 0.000179, performed by inspection with 636 solutions, nbR1C = 89, nbDiscC = 0
+    TT = 0.000166, performed by inspection with 636 solutions, nbR1C = 79, nbDiscC = 0
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 79 with avMem = 0
+<DWph=0> <it=  4> <et=31.35> <Mt= 0.03> <Spt= 0.01> <nCl= 22> <al=0.00> <DB= 1020.8394> <Mlp= 1020.8394> <PB=1021.1> 
+    TT = 0.000203, performed by inspection with 636 solutions, nbR1C = 124, nbDiscC = 0
+    TT = 0.000189, performed by inspection with 636 solutions, nbR1C = 124, nbDiscC = 0
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 124 with avMem = 0
+<DWph=0> <it=  3> <et=31.37> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.3319> <Mlp= 1019.3319> <PB=1021.1> 
+SB phase 2 cand.  1 branch on EDGE[25,31] (lhs=0.2080): [ 1019.3319,  1020.8394], score = 0.04 (h)  <et=31.37>
+**** Strong branching phase 3 is started *****
+**** SB phase 3 evaluation of candidate 1, branch 1 ( EDGE[25,31] >= 1 ), value = 1020.84
+<DWph=2> <it=  1> <et=31.38> <Mt= 0.01> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1020.8394> <Mlp= 1020.8394> <PB=1021.1> 
+<DWph=1> <it=  2> <et=31.38> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1020.8394> <Mlp= 1020.8394> <PB=1021.1> 
+    TT = 0.000177, performed by inspection with 636 solutions, nbR1C = 79, nbDiscC = 0
+    TT = 0.000167, performed by inspection with 636 solutions, nbR1C = 79, nbDiscC = 0
+<DWph=0> <it=  3> <et=31.38> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <al=0.00> <DB= 1020.8394> <Mlp= 1020.8394> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 79 with avMem = 0
+@@ 215 0 1020.84 0.000172 0.000177 0 31.38
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 636 solutions, remains 219 (34.4%)
+Removed 337 columns (not in the enumerated set) from the formulation
+ColGenEvalAlg final dual bound: 1020.84 (rounded: 1021)
+Current active cuts : CAP(1,3.06569) R1C(79,115.065) 3rowPackR1C(14) 4rowPackR1C(17) 5rowPackR1C(48)
+22 Rank-1 3-rows pack. cuts added ,  max viol. = 0.182482, aver. viol. = 0.094061
+Building structures for heuristic rank-1 packing cut separation...done!
+33 Rank-1 4-rows pack. cuts added ,  max viol. = 0.182482, aver. viol. = 0.101194
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.182482, aver. viol. = 0.145164
+Shrinking heuristic shrunk 21 edges
+In total 4 RCC cut(s) are found by the Fractional capacity min-cut heuristic 
+In total 9 RCC cut(s) are found by the greedy construction heuristic 
+In total 8 RCC cut(s) are found by the global pool greedy search heuristic 
+----- Add fac. cuts : CAP(21) R1C(155), max.viol = 0.328467, aver.viol = 0.151066, sep/add took 0.442471/0.00965589 sec. -----
+737 columns (289 active), 401 dyn. constrs. (266 active), 553 art. vars. (418 active)
+<DWph=2> <it=  1> <et=31.86> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1022.3500> <Mlp= 1022.3500> <PB=1021.1> 
+<DWph=1> <it=  2> <et=31.86> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1022.3500> <Mlp= 1022.3500> <PB=1021.1> 
+    TT = 0.000103, performed by inspection with 219 solutions, nbR1C = 60, nbDiscC = 0
+    TT = 8.9e-05, performed by inspection with 219 solutions, nbR1C = 60, nbDiscC = 0
+<DWph=0> <it=  3> <et=31.86> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1022.3500> <Mlp= 1022.3500> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 60 with avMem = 0
+@@ 215 1 1022.35 9.6e-05 0.000103 0 31.86
+ColGenEvalAlg final dual bound: 1022.35 (rounded: 1023)
+Gap improvement since the last cut separation : 5.79707 (1020.84)
+Current active cuts : CAP(2,26.7154) R1C(60,104.456) 3rowPackR1C(7) 4rowPackR1C(19) 5rowPackR1C(34)
+**** SB phase 3 evaluation of candidate 1, branch 2 ( EDGE[25,31] <= 0 ), value = 1019.33
+<DWph=2> <it=  1> <et=31.87> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.3319> <Mlp= 1019.3319> <PB=1021.1> 
+<DWph=1> <it=  2> <et=31.88> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.3319> <Mlp= 1019.3319> <PB=1021.1> 
+    TT = 0.000224, performed by inspection with 636 solutions, nbR1C = 124, nbDiscC = 0
+    TT = 0.000198, performed by inspection with 636 solutions, nbR1C = 124, nbDiscC = 0
+<DWph=0> <it=  3> <et=31.88> <Mt= 0.01> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1019.3319> <Mlp= 1019.3319> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 124 with avMem = 0
+@@ 216 0 1019.33 0.000211 0.000224 0 31.88
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 636 solutions, remains 626 (98.4%)
+Removed 5 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.973707)
+ColGenEvalAlg final dual bound: 1019.33 (rounded: 1020)
+Current active cuts : CAP(3,5.64352) R1C(124,128.827) 3rowPackR1C(17) 4rowPackR1C(30) 5rowPackR1C(77)
+4 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0463413, aver. viol. = 0.0312957
+Building structures for heuristic rank-1 packing cut separation...done!
+15 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0607457, aver. viol. = 0.0329194
+89 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0902408, aver. viol. = 0.0357833
+Shrinking heuristic shrunk 5 edges
+In total 1 RCC cut(s) are found by the global pool greedy search heuristic 
+----- Add fac. cuts : CAP(1) R1C(108), max.viol = 0.180482, aver.viol = 0.0515971, sep/add took 0.909902/0.0111343 sec. -----
+724 columns (598 active), 334 dyn. constrs. (245 active), 662 art. vars. (397 active)
+<DWph=2> <it=  1> <et=32.82> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.3979> <Mlp= 1019.3979> <PB=1021.1> 
+<DWph=1> <it=  2> <et=32.82> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.3979> <Mlp= 1019.3979> <PB=1021.1> 
+    TT = 0.000241, performed by inspection with 626 solutions, nbR1C = 127, nbDiscC = 0
+<DWph=0> <it=  3> <et=32.83> <Mt= 0.00> <Spt= 0.00> <nCl=  2> <al=0.30> <DB= 1008.9204> <Mlp= 1019.3979> <PB=1021.1> 
+    TT = 0.000203, performed by inspection with 626 solutions, nbR1C = 128, nbDiscC = 0
+    TT = 0.000194, performed by inspection with 626 solutions, nbR1C = 128, nbDiscC = 0
+<DWph=0> <it=  4> <et=32.83> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.3979> <Mlp= 1019.3979> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 128 with avMem = 0
+@@ 216 1 1019.4 0.000212667 0.000241 0 32.83
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 626 solutions, remains 597 (95.4%)
+Removed 12 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.935174)
+ColGenEvalAlg final dual bound: 1019.4 (rounded: 1020)
+Gap improvement since the last cut separation : 0.0373351 (1019.33)
+Current active cuts : CAP(4,6.32411) R1C(128,129.553) 3rowPackR1C(17) 4rowPackR1C(30) 5rowPackR1C(81)
+5 Rank-1 3-rows pack. cuts added ,  max viol. = 0.032861, aver. viol. = 0.0272124
+Building structures for heuristic rank-1 packing cut separation...done!
+10 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0479564, aver. viol. = 0.0299566
+73 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0565486, aver. viol. = 0.0296707
+Shrinking heuristic shrunk 5 edges
+In total 1 RCC cut(s) are found by the global pool greedy search heuristic 
+----- Add fac. cuts : CAP(1) R1C(88), max.viol = 0.113097, aver.viol = 0.0345478, sep/add took 0.873301/0.00894604 sec. -----
+726 columns (588 active), 423 dyn. constrs. (230 active), 751 art. vars. (382 active)
+<DWph=2> <it=  1> <et=33.73> <Mt= 0.01> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1019.4753> <Mlp= 1019.4753> <PB=1021.1> 
+<DWph=1> <it=  2> <et=33.73> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.4753> <Mlp= 1019.4753> <PB=1021.1> 
+    TT = 0.000228, performed by inspection with 597 solutions, nbR1C = 125, nbDiscC = 0
+<DWph=0> <it=  3> <et=33.74> <Mt= 0.00> <Spt= 0.00> <nCl=  4> <al=0.30> <DB=  901.1544> <Mlp= 1019.4753> <PB=1021.1> 
+    TT = 0.000197, performed by inspection with 597 solutions, nbR1C = 130, nbDiscC = 0
+<DWph=0> <it=  4> <et=33.74> <Mt= 0.01> <Spt= 0.00> <nCl=  2> <al=0.37> <DB=  975.6911> <Mlp= 1019.4666> <PB=1021.1> 
+    TT = 0.000194, performed by inspection with 597 solutions, nbR1C = 131, nbDiscC = 0
+    TT = 0.000185, performed by inspection with 597 solutions, nbR1C = 124, nbDiscC = 0
+<DWph=0> <it=  5> <et=33.75> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.4666> <Mlp= 1019.4666> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 124 with avMem = 0
+@@ 216 2 1019.47 0.000201 0.000228 0 33.75
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 597 solutions, remains 565 (94.6%)
+Removed 12 columns (not in the enumerated set) from the formulation
+ColGenEvalAlg final dual bound: 1019.47 (rounded: 1020)
+Gap improvement since the last cut separation : 0.0403817 (1019.4)
+Current active cuts : CAP(3,5.95769) R1C(124,134.042) 3rowPackR1C(17) 4rowPackR1C(28) 5rowPackR1C(79)
+Building structures for heuristic rank-1 packing cut separation...done!
+1 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0318227, aver. viol. = 0.0318227
+Shrinking heuristic shrunk 5 edges
+----- Add fac. cuts : R1C(1), max.viol = 0.0636455, aver.viol = 0.0636455, sep/add took 0.923135/0.000315571 sec. -----
+732 columns (582 active), 330 dyn. constrs. (138 active), 752 art. vars. (290 active)
+<DWph=2> <it=  1> <et=34.68> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1019.4691> <Mlp= 1019.4691> <PB=1021.1> 
+<DWph=1> <it=  2> <et=34.69> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.4691> <Mlp= 1019.4691> <PB=1021.1> 
+    TT = 0.00022, performed by inspection with 565 solutions, nbR1C = 124, nbDiscC = 0
+    TT = 0.000187, performed by inspection with 565 solutions, nbR1C = 124, nbDiscC = 0
+<DWph=0> <it=  3> <et=34.69> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.4691> <Mlp= 1019.4691> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 124 with avMem = 0
+@@ 216 3 1019.47 0.0002035 0.00022 0 34.69
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 565 solutions, remains 562 (99.5%)
+Removed 4 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.9984)
+ColGenEvalAlg final dual bound: 1019.47 (rounded: 1020)
+Gap improvement since the last cut separation : 0.00150208 (1019.47)
+Cut generation tailing off counter increased to 1
+Current active cuts : CAP(3,5.58058) R1C(124,134.621) 3rowPackR1C(17) 4rowPackR1C(27) 5rowPackR1C(80)
+2 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0469622, aver. viol. = 0.0469622
+Building structures for heuristic rank-1 packing cut separation...done!
+4 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0469622, aver. viol. = 0.0404589
+41 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0520262, aver. viol. = 0.0330956
+Shrinking heuristic shrunk 5 edges
+----- Add fac. cuts : R1C(47), max.viol = 0.0736685, aver.viol = 0.0468725, sep/add took 0.914408/0.00494323 sec. -----
+732 columns (578 active), 300 dyn. constrs. (184 active), 799 art. vars. (336 active)
+<DWph=2> <it=  1> <et=35.62> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.4734> <Mlp= 1019.4734> <PB=1021.1> 
+<DWph=1> <it=  2> <et=35.62> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1019.4734> <Mlp= 1019.4734> <PB=1021.1> 
+    TT = 0.000219, performed by inspection with 562 solutions, nbR1C = 127, nbDiscC = 0
+    TT = 0.000181, performed by inspection with 562 solutions, nbR1C = 127, nbDiscC = 0
+<DWph=0> <it=  3> <et=35.63> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.4734> <Mlp= 1019.4734> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 127 with avMem = 0
+@@ 216 4 1019.47 0.0002 0.000219 0 35.63
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 562 solutions, remains 560 (99.6%)
+Removed 2 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.995555)
+ColGenEvalAlg final dual bound: 1019.47 (rounded: 1020)
+Gap improvement since the last cut separation : 0.00267497 (1019.47)
+Cut generation tailing off counter increased to 2
+Current active cuts : CAP(3,4.56964) R1C(127,135.395) 3rowPackR1C(17) 4rowPackR1C(27) 5rowPackR1C(83)
+3 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0324076, aver. viol. = 0.0286812
+Building structures for heuristic rank-1 packing cut separation...done!
+10 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0324077, aver. viol. = 0.0284695
+44 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0324077, aver. viol. = 0.0288618
+Shrinking heuristic shrunk 5 edges
+In total 1 RCC cut(s) are found by the greedy construction heuristic 
+----- Add fac. cuts : CAP(1) R1C(57), max.viol = 0.0524011, aver.viol = 0.0321208, sep/add took 0.883335/0.00545221 sec. -----
+732 columns (576 active), 358 dyn. constrs. (197 active), 857 art. vars. (349 active)
+<DWph=2> <it=  1> <et=36.53> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.4880> <Mlp= 1019.4880> <PB=1021.1> 
+<DWph=1> <it=  2> <et=36.53> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.4880> <Mlp= 1019.4880> <PB=1021.1> 
+    TT = 0.00022, performed by inspection with 560 solutions, nbR1C = 128, nbDiscC = 0
+<DWph=0> <it=  3> <et=36.53> <Mt= 0.00> <Spt= 0.00> <nCl=  4> <al=0.30> <DB=  991.2168> <Mlp= 1019.4880> <PB=1021.1> 
+    TT = 0.000191, performed by inspection with 560 solutions, nbR1C = 131, nbDiscC = 0
+    TT = 0.00018, performed by inspection with 560 solutions, nbR1C = 127, nbDiscC = 0
+<DWph=0> <it=  4> <et=36.54> <Mt= 0.01> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1019.4838> <Mlp= 1019.4838> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 127 with avMem = 0
+@@ 216 5 1019.48 0.000197 0.00022 0 36.54
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 560 solutions, remains 552 (98.6%)
+Removed 4 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.988756)
+ColGenEvalAlg final dual bound: 1019.48 (rounded: 1020)
+Gap improvement since the last cut separation : 0.00640928 (1019.47)
+----- Cut generation is stopped due to tailing off -----
+Current active cuts : CAP(4,5.5796) R1C(127,133.691) 3rowPackR1C(17) 4rowPackR1C(28) 5rowPackR1C(82)
+SB exact phase 3 branch on EDGE[25,31] (lhs=0.208039) : [1022.35, 1019.4838], tree depth = 2.544, tree size = 9.664, score = -1.499 (h)
+SB with phases chosed candidate EDGE[25,31] (lhs=0.208039)
+************************************************************************************************
+**** BaB tree node (N° 7, parent N° 5, depth 3, treatOrderId 216)
+**** Local DB = 1019.48, global bounds : [ 1020 , 1021.1 ], TIME = 0h0m36s54t = 3654
+**** 4 open nodes, ETS : 11, 736 columns (576 active), 258 dyn. constrs. (140 active), 410 art. vars. (292 active)
+************************************************************************************************
+Estimated subtree size of the father is 9.66441
+**** Strong branching phase 2 is started *****
+    TT = 0.000188, performed by inspection with 552 solutions, nbR1C = 76, nbDiscC = 0
+    TT = 0.000183, performed by inspection with 552 solutions, nbR1C = 101, nbDiscC = 0
+    TT = 0.000175, performed by inspection with 552 solutions, nbR1C = 103, nbDiscC = 0
+    TT = 0.000173, performed by inspection with 552 solutions, nbR1C = 103, nbDiscC = 0
+    TT = 0.000166, performed by inspection with 552 solutions, nbR1C = 93, nbDiscC = 0
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 93 with avMem = 0
+<DWph=0> <it=  6> <et=36.59> <Mt= 0.02> <Spt= 0.01> <nCl= 14> <al=0.00> <DB= 1019.8754> <Mlp= 1019.8754> <PB=1021.1> 
+    TT = 0.000176, performed by inspection with 552 solutions, nbR1C = 95, nbDiscC = 0
+    TT = 0.000172, performed by inspection with 552 solutions, nbR1C = 98, nbDiscC = 0
+    TT = 0.000165, performed by inspection with 552 solutions, nbR1C = 99, nbDiscC = 0
+    TT = 0.000162, performed by inspection with 552 solutions, nbR1C = 99, nbDiscC = 0
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 99 with avMem = 0
+<DWph=0> <it=  5> <et=36.63> <Mt= 0.02> <Spt= 0.01> <nCl=  5> <al=0.00> <DB= 1019.7732> <Mlp= 1019.7732> <PB=1021.1> 
+SB phase 2 cand.  1 branch on EDGE[39,72] (lhs=0.5926): [ 1019.7732,  1019.8754], score = 0.11 (h)  <et=36.63>
+**** Strong branching phase 3 is started *****
+**** SB phase 3 evaluation of candidate 1, branch 1 ( EDGE[39,72] >= 1 ), value = 1019.88
+<DWph=2> <it=  1> <et=36.64> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.8754> <Mlp= 1019.8754> <PB=1021.1> 
+<DWph=1> <it=  2> <et=36.64> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.8754> <Mlp= 1019.8754> <PB=1021.1> 
+    TT = 0.000177, performed by inspection with 552 solutions, nbR1C = 93, nbDiscC = 0
+    TT = 0.00016, performed by inspection with 552 solutions, nbR1C = 86, nbDiscC = 0
+<DWph=0> <it=  3> <et=36.64> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.8754> <Mlp= 1019.8754> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 86 with avMem = 0
+@@ 219 0 1019.88 0.0001685 0.000177 0 36.64
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 552 solutions, remains 393 (71.2%)
+Removed 131 columns (not in the enumerated set) from the formulation
+ColGenEvalAlg final dual bound: 1019.88 (rounded: 1020)
+Current active cuts : CAP(2,11.9575) R1C(86,743.116) 3rowPackR1C(13) 4rowPackR1C(20) 5rowPackR1C(53)
+6 Rank-1 3-rows pack. cuts added ,  max viol. = 0.152248, aver. viol. = 0.0761242
+Building structures for heuristic rank-1 packing cut separation...done!
+13 Rank-1 4-rows pack. cuts added ,  max viol. = 0.152248, aver. viol. = 0.0600045
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.152248, aver. viol. = 0.0760863
+Shrinking heuristic shrunk 8 edges
+In total 1 RCC cut(s) are found by the global pool greedy search heuristic 
+----- Add fac. cuts : CAP(1) R1C(119), max.viol = 0.195748, aver.viol = 0.114241, sep/add took 0.618707/0.00945714 sec. -----
+730 columns (459 active), 349 dyn. constrs. (218 active), 501 art. vars. (370 active)
+<DWph=2> <it=  1> <et=37.28> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1019.9851> <Mlp= 1019.9851> <PB=1021.1> 
+<DWph=1> <it=  2> <et=37.28> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.9851> <Mlp= 1019.9851> <PB=1021.1> 
+    TT = 0.000159, performed by inspection with 393 solutions, nbR1C = 96, nbDiscC = 0
+    TT = 0.000134, performed by inspection with 393 solutions, nbR1C = 88, nbDiscC = 0
+<DWph=0> <it=  3> <et=37.29> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <al=0.00> <DB= 1019.9851> <Mlp= 1019.9851> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 88 with avMem = 0
+@@ 219 1 1019.99 0.0001465 0.000159 0 37.29
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 393 solutions, remains 359 (91.3%)
+Removed 24 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.90245)
+ColGenEvalAlg final dual bound: 1019.99 (rounded: 1020)
+Gap improvement since the last cut separation : 0.0895844 (1019.88)
+Current active cuts : CAP(2,12.9428) R1C(88,742.317) 3rowPackR1C(13) 4rowPackR1C(24) 5rowPackR1C(51)
+3 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0447761, aver. viol. = 0.0348259
+Building structures for heuristic rank-1 packing cut separation...done!
+9 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0746269, aver. viol. = 0.0447761
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0746269, aver. viol. = 0.035597
+Shrinking heuristic shrunk 24 edges
+In total 2 RCC cut(s) are found by the Fractional capacity min-cut heuristic 
+In total 2 RCC cut(s) are found by the greedy construction heuristic 
+In total 2 RCC cut(s) are found by the global pool greedy search heuristic 
+----- Add fac. cuts : CAP(6) R1C(112), max.viol = 0.313433, aver.viol = 0.0632431, sep/add took 0.351559/0.00914784 sec. -----
+731 columns (436 active), 467 dyn. constrs. (219 active), 619 art. vars. (371 active)
+<DWph=2> <it=  1> <et=37.65> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1020.0000> <Mlp= 1020.0000> <PB=1021.1> 
+<DWph=1> <it=  2> <et=37.66> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1020.0000> <Mlp= 1020.0000> <PB=1021.1> 
+    TT = 0.000147, performed by inspection with 359 solutions, nbR1C = 89, nbDiscC = 0
+    TT = 0.000123, performed by inspection with 359 solutions, nbR1C = 89, nbDiscC = 0
+<DWph=0> <it=  3> <et=37.66> <Mt= 0.01> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1020.0000> <Mlp= 1020.0000> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 89 with avMem = 0
+@@ 219 2 1020 0.000135 0.000147 0 37.66
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 359 solutions, remains 357 (99.4%)
+Removed 1 columns (not in the enumerated set) from the formulation
+ColGenEvalAlg final dual bound: 1020 (rounded: 1020)
+Gap improvement since the last cut separation : 0.0133869 (1019.99)
+Cut generation tailing off counter increased to 1
+Current active cuts : CAP(2,12.525) R1C(89,743.352) 3rowPackR1C(14) 4rowPackR1C(24) 5rowPackR1C(51)
+Building structures for heuristic rank-1 packing cut separation...done!
+Shrinking heuristic shrunk 48 edges
+----- Add fac. cuts : sep. took 0.207394 sec.----- no cuts found  -----
+Current active cuts : CAP(2,12.525) R1C(89,743.352) 3rowPackR1C(14) 4rowPackR1C(24) 5rowPackR1C(51)
+**** SB phase 3 evaluation of candidate 1, branch 2 ( EDGE[39,72] <= 0 ), value = 1019.77
+<DWph=2> <it=  1> <et=37.88> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.7732> <Mlp= 1019.7732> <PB=1021.1> 
+<DWph=1> <it=  2> <et=37.88> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.7732> <Mlp= 1019.7732> <PB=1021.1> 
+    TT = 0.00018, performed by inspection with 552 solutions, nbR1C = 99, nbDiscC = 0
+    TT = 0.00016, performed by inspection with 552 solutions, nbR1C = 99, nbDiscC = 0
+<DWph=0> <it=  3> <et=37.89> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.7732> <Mlp= 1019.7732> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 99 with avMem = 0
+@@ 220 0 1019.77 0.00017 0.00018 0 37.89
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 552 solutions, remains 442 (80.1%)
+Removed 61 columns (not in the enumerated set) from the formulation
+ColGenEvalAlg final dual bound: 1019.77 (rounded: 1020)
+Current active cuts : CAP(4,8.2671) R1C(99,126.409) 3rowPackR1C(15) 4rowPackR1C(21) 5rowPackR1C(63)
+9 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0444936, aver. viol. = 0.0309037
+Building structures for heuristic rank-1 packing cut separation...done!
+26 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0932286, aver. viol. = 0.0342633
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0932286, aver. viol. = 0.0403297
+In total 1 RCC cut(s) are found by the connected components heuristic 
+Shrinking heuristic shrunk 5 edges
+In total 1 RCC cut(s) are found by the Fractional capacity min-cut heuristic 
+In total 2 RCC cut(s) are found by the greedy construction heuristic 
+In total 1 RCC cut(s) are found by the global pool greedy search heuristic 
+----- Add fac. cuts : CAP(5) R1C(135), max.viol = 0.134929, aver.viol = 0.0484827, sep/add took 0.809823/0.0126566 sec. -----
+730 columns (520 active), 385 dyn. constrs. (253 active), 537 art. vars. (405 active)
+<DWph=2> <it=  1> <et=38.73> <Mt= 0.01> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1020.0190> <Mlp= 1020.0190> <PB=1021.1> 
+<DWph=1> <it=  2> <et=38.73> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1020.0190> <Mlp= 1020.0190> <PB=1021.1> 
+    TT = 0.000189, performed by inspection with 442 solutions, nbR1C = 107, nbDiscC = 0
+<DWph=0> <it=  3> <et=38.73> <Mt= 0.00> <Spt= 0.00> <nCl=  2> <al=0.30> <DB= 1008.9130> <Mlp= 1020.0190> <PB=1021.1> 
+    TT = 0.000158, performed by inspection with 442 solutions, nbR1C = 109, nbDiscC = 0
+    TT = 0.000151, performed by inspection with 442 solutions, nbR1C = 109, nbDiscC = 0
+<DWph=0> <it=  4> <et=38.74> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1020.0188> <Mlp= 1020.0188> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 109 with avMem = 0
+@@ 220 1 1020.02 0.000166 0.000189 0 38.74
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 442 solutions, remains 378 (85.5%)
+Removed 50 columns (not in the enumerated set) from the formulation
+ColGenEvalAlg final dual bound: 1020.02 (rounded: 1021)
+Gap improvement since the last cut separation : 0.185113 (1019.77)
+Current active cuts : CAP(3,3.64313) R1C(109,122.587) 3rowPackR1C(16) 4rowPackR1C(25) 5rowPackR1C(68)
+2 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0525519, aver. viol. = 0.0485004
+Building structures for heuristic rank-1 packing cut separation...done!
+9 Rank-1 4-rows pack. cuts added ,  max viol. = 0.036221, aver. viol. = 0.027894
+81 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0525519, aver. viol. = 0.027648
+Shrinking heuristic shrunk 4 edges
+----- Add fac. cuts : R1C(92), max.viol = 0.0767463, aver.viol = 0.0428195, sep/add took 0.887155/0.0075194 sec. -----
+732 columns (472 active), 477 dyn. constrs. (214 active), 629 art. vars. (366 active)
+<DWph=2> <it=  1> <et=39.65> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1020.0560> <Mlp= 1020.0560> <PB=1021.1> 
+<DWph=1> <it=  2> <et=39.65> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1020.0560> <Mlp= 1020.0560> <PB=1021.1> 
+    TT = 0.000163, performed by inspection with 378 solutions, nbR1C = 109, nbDiscC = 0
+    TT = 0.000137, performed by inspection with 378 solutions, nbR1C = 109, nbDiscC = 0
+<DWph=0> <it=  3> <et=39.65> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1020.0560> <Mlp= 1020.0560> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 109 with avMem = 0
+@@ 220 2 1020.06 0.00015 0.000163 0 39.65
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 378 solutions, remains 368 (97.4%)
+Removed 8 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.962045)
+ColGenEvalAlg final dual bound: 1020.06 (rounded: 1021)
+Gap improvement since the last cut separation : 0.0344442 (1020.02)
+Current active cuts : CAP(3,5.2021) R1C(109,125.025) 3rowPackR1C(14) 4rowPackR1C(24) 5rowPackR1C(71)
+1 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0203269, aver. viol. = 0.0203269
+Building structures for heuristic rank-1 packing cut separation...done!
+6 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0297478, aver. viol. = 0.0233675
+57 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0364412, aver. viol. = 0.0229695
+Shrinking heuristic shrunk 5 edges
+----- Add fac. cuts : R1C(64), max.viol = 0.0618472, aver.viol = 0.0308714, sep/add took 0.872875/0.00523936 sec. -----
+732 columns (464 active), 423 dyn. constrs. (186 active), 693 art. vars. (338 active)
+<DWph=2> <it=  1> <et=40.55> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1020.0968> <Mlp= 1020.0968> <PB=1021.1> 
+<DWph=1> <it=  2> <et=40.55> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1020.0968> <Mlp= 1020.0968> <PB=1021.1> 
+    TT = 0.000163, performed by inspection with 368 solutions, nbR1C = 111, nbDiscC = 0
+<DWph=0> <it=  3> <et=40.55> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <al=0.30> <DB= 1011.3924> <Mlp= 1020.0968> <PB=1021.1> 
+    TT = 0.000138, performed by inspection with 368 solutions, nbR1C = 113, nbDiscC = 0
+    TT = 0.000133, performed by inspection with 368 solutions, nbR1C = 110, nbDiscC = 0
+<DWph=0> <it=  4> <et=40.56> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1020.0953> <Mlp= 1020.0953> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 110 with avMem = 0
+@@ 220 3 1020.1 0.000144667 0.000163 0 40.56
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 368 solutions, remains 355 (96.5%)
+Removed 15 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.922044)
+ColGenEvalAlg final dual bound: 1020.1 (rounded: 1021)
+Gap improvement since the last cut separation : 0.0375969 (1020.06)
+Current active cuts : CAP(3,3.91361) R1C(110,124.537) 3rowPackR1C(14) 4rowPackR1C(20) 5rowPackR1C(76)
+1 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0328888, aver. viol. = 0.0328888
+Building structures for heuristic rank-1 packing cut separation...done!
+12 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0394315, aver. viol. = 0.0298899
+32 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0470063, aver. viol. = 0.030271
+Shrinking heuristic shrunk 4 edges
+----- Add fac. cuts : R1C(45), max.viol = 0.0470063, aver.viol = 0.0312033, sep/add took 0.934009/0.0033184 sec. -----
+733 columns (450 active), 379 dyn. constrs. (169 active), 738 art. vars. (321 active)
+<DWph=2> <it=  1> <et=41.51> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1020.1515> <Mlp= 1020.1515> <PB=1021.1> 
+<DWph=1> <it=  2> <et=41.51> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1020.1515> <Mlp= 1020.1515> <PB=1021.1> 
+    TT = 0.000154, performed by inspection with 355 solutions, nbR1C = 104, nbDiscC = 0
+    TT = 0.000128, performed by inspection with 355 solutions, nbR1C = 104, nbDiscC = 0
+<DWph=0> <it=  3> <et=41.51> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1020.1515> <Mlp= 1020.1515> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 104 with avMem = 0
+@@ 220 4 1020.15 0.000141 0.000154 0 41.51
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 355 solutions, remains 334 (94.1%)
+Removed 21 columns (not in the enumerated set) from the formulation
+ColGenEvalAlg final dual bound: 1020.15 (rounded: 1021)
+Gap improvement since the last cut separation : 0.0559204 (1020.1)
+Current active cuts : CAP(2,4.88455) R1C(104,127.918) 3rowPackR1C(12) 4rowPackR1C(20) 5rowPackR1C(72)
+2 Rank-1 3-rows pack. cuts added ,  max viol. = 0.054984, aver. viol. = 0.0389241
+Building structures for heuristic rank-1 packing cut separation...done!
+29 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0661186, aver. viol. = 0.0276933
+90 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0661186, aver. viol. = 0.0317104
+Shrinking heuristic shrunk 4 edges
+In total 1 RCC cut(s) are found by the greedy construction heuristic 
+----- Add fac. cuts : CAP(1) R1C(121), max.viol = 0.0661186, aver.viol = 0.0338256, sep/add took 0.823974/0.00849366 sec. -----
+733 columns (429 active), 442 dyn. constrs. (239 active), 860 art. vars. (391 active)
+<DWph=2> <it=  1> <et=42.35> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1020.1725> <Mlp= 1020.1725> <PB=1021.1> 
+<DWph=1> <it=  2> <et=42.36> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1020.1725> <Mlp= 1020.1725> <PB=1021.1> 
+    TT = 0.000151, performed by inspection with 334 solutions, nbR1C = 109, nbDiscC = 0
+    TT = 0.000126, performed by inspection with 334 solutions, nbR1C = 109, nbDiscC = 0
+<DWph=0> <it=  3> <et=42.36> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1020.1725> <Mlp= 1020.1725> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 109 with avMem = 0
+@@ 220 5 1020.17 0.0001385 0.000151 0 42.36
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 334 solutions, remains 330 (98.8%)
+Removed 4 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.975247)
+ColGenEvalAlg final dual bound: 1020.17 (rounded: 1021)
+Gap improvement since the last cut separation : 0.0221432 (1020.15)
+Current active cuts : CAP(2,2.08732) R1C(109,129.708) 3rowPackR1C(12) 4rowPackR1C(22) 5rowPackR1C(75)
+3 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0378235, aver. viol. = 0.0260613
+Building structures for heuristic rank-1 packing cut separation...done!
+7 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0378235, aver. viol. = 0.0268734
+42 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0378235, aver. viol. = 0.0274696
+Shrinking heuristic shrunk 5 edges
+In total 1 RCC cut(s) are found by the global pool greedy search heuristic 
+----- Add fac. cuts : CAP(1) R1C(52), max.viol = 0.0436578, aver.viol = 0.0273002, sep/add took 0.853012/0.00377711 sec. -----
+733 columns (425 active), 454 dyn. constrs. (174 active), 913 art. vars. (326 active)
+<DWph=2> <it=  1> <et=43.23> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1020.1812> <Mlp= 1020.1812> <PB=1021.1> 
+<DWph=1> <it=  2> <et=43.23> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1020.1812> <Mlp= 1020.1812> <PB=1021.1> 
+    TT = 0.00015, performed by inspection with 330 solutions, nbR1C = 109, nbDiscC = 0
+    TT = 0.000126, performed by inspection with 330 solutions, nbR1C = 109, nbDiscC = 0
+<DWph=0> <it=  3> <et=43.23> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1020.1812> <Mlp= 1020.1812> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 109 with avMem = 0
+@@ 220 6 1020.18 0.000138 0.00015 0 43.23
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 330 solutions, remains 327 (99.1%)
+Removed 3 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.964964)
+ColGenEvalAlg final dual bound: 1020.18 (rounded: 1021)
+Gap improvement since the last cut separation : 0.00940786 (1020.17)
+Cut generation tailing off counter increased to 1
+Current active cuts : CAP(2,2.01581) R1C(109,130.426) 3rowPackR1C(12) 4rowPackR1C(23) 5rowPackR1C(74)
+3 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0488563, aver. viol. = 0.0408616
+Building structures for heuristic rank-1 packing cut separation...done!
+12 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0488563, aver. viol. = 0.0397735
+79 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0488563, aver. viol. = 0.0317683
+Shrinking heuristic shrunk 5 edges
+----- Add fac. cuts : R1C(94), max.viol = 0.0488563, aver.viol = 0.0410037, sep/add took 0.837812/0.00661624 sec. -----
+733 columns (422 active), 431 dyn. constrs. (215 active), 1007 art. vars. (367 active)
+<DWph=2> <it=  1> <et=44.09> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1020.1880> <Mlp= 1020.1880> <PB=1021.1> 
+<DWph=1> <it=  2> <et=44.09> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1020.1880> <Mlp= 1020.1880> <PB=1021.1> 
+    TT = 0.000146, performed by inspection with 327 solutions, nbR1C = 110, nbDiscC = 0
+    TT = 0.000127, performed by inspection with 327 solutions, nbR1C = 110, nbDiscC = 0
+<DWph=0> <it=  3> <et=44.09> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1020.1880> <Mlp= 1020.1880> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 110 with avMem = 0
+@@ 220 7 1020.19 0.0001365 0.000146 0 44.09
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 327 solutions, remains 318 (97.2%)
+Removed 9 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.956938)
+ColGenEvalAlg final dual bound: 1020.19 (rounded: 1021)
+Gap improvement since the last cut separation : 0.00741131 (1020.18)
+Cut generation tailing off counter increased to 2
+Current active cuts : CAP(1,1.16119) R1C(110,128.584) 3rowPackR1C(12) 4rowPackR1C(24) 5rowPackR1C(74)
+Building structures for heuristic rank-1 packing cut separation...done!
+1 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0240412, aver. viol. = 0.0240412
+Shrinking heuristic shrunk 4 edges
+----- Add fac. cuts : R1C(1), max.viol = 0.0240412, aver.viol = 0.0240412, sep/add took 0.891611/0.000228057 sec. -----
+732 columns (413 active), 380 dyn. constrs. (122 active), 1008 art. vars. (274 active)
+<DWph=2> <it=  1> <et=45.00> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1020.1922> <Mlp= 1020.1922> <PB=1021.1> 
+<DWph=1> <it=  2> <et=45.00> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1020.1922> <Mlp= 1020.1922> <PB=1021.1> 
+    TT = 0.000149, performed by inspection with 318 solutions, nbR1C = 108, nbDiscC = 0
+<DWph=0> <it=  3> <et=45.00> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <al=0.30> <DB= 1019.2099> <Mlp= 1020.1922> <PB=1021.1> 
+    TT = 0.000125, performed by inspection with 318 solutions, nbR1C = 108, nbDiscC = 0
+    TT = 0.000121, performed by inspection with 318 solutions, nbR1C = 107, nbDiscC = 0
+<DWph=0> <it=  4> <et=45.01> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1020.1922> <Mlp= 1020.1922> <PB=1021.1> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 107 with avMem = 0
+@@ 220 8 1020.19 0.000131667 0.000149 0 45.01
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 318 solutions, remains 313 (98.4%)
+Removed 6 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.952028)
+ColGenEvalAlg final dual bound: 1020.19 (rounded: 1021)
+Gap improvement since the last cut separation : 0.0045686 (1020.19)
+----- Cut generation is stopped due to tailing off -----
+Current active cuts : CAP(1,0.515072) R1C(107,129.073) 3rowPackR1C(12) 4rowPackR1C(23) 5rowPackR1C(72)
+SB exact phase 3 branch on EDGE[39,72] (lhs=0.592585) : [1020, 1020.1922], tree depth = 2.498, tree size = 9.297, score = -1.647 (h)
+SB with phases chosed candidate EDGE[39,72] (lhs=0.592585)
+************************************************************************************************
+**** BaB tree node (N° 8, parent N° 7, depth 4, treatOrderId 219)
+**** Local DB = 1020, global bounds : [ 1020 , 1021.1 ], TIME = 0h0m45s1t = 4501
+**** 5 open nodes, ETS : 15, 733 columns (408 active), 286 dyn. constrs. (118 active), 438 art. vars. (270 active)
+************************************************************************************************
+Estimated subtree size of the father is 9.29677
+**** Strong branching phase 2 is started *****
+    TT = 0.000133, performed by inspection with 357 solutions, nbR1C = 77, nbDiscC = 0
+    TT = 0.000131, performed by inspection with 357 solutions, nbR1C = 80, nbDiscC = 0
+    TT = 0.000117, performed by inspection with 357 solutions, nbR1C = 78, nbDiscC = 0
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 78 with avMem = 0
+<DWph=0> <it=  4> <et=45.03> <Mt= 0.01> <Spt= 0.01> <nCl=  5> <al=0.00> <DB= 1021.0000> <Mlp= 1021.0000> <PB=1021> 
+    TT = 0.000134, performed by inspection with 357 solutions, nbR1C = 78, nbDiscC = 0
+    TT = 0.000126, performed by inspection with 357 solutions, nbR1C = 78, nbDiscC = 0
+    TT = 0.000119, performed by inspection with 357 solutions, nbR1C = 76, nbDiscC = 0
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 76 with avMem = 0
+<DWph=0> <it=  4> <et=45.05> <Mt= 0.00> <Spt= 0.01> <nCl=  2> <al=0.00> <DB= 1020.3865> <Mlp= 1020.3865> <PB=1021> 
+ SB phase 2 candidate 1 is conquered !
+**** Strong branching phase 3 is started *****
+**** SB phase 3 evaluation of candidate 1, branch 1 ( VNB >= 15 ), value = 1021
+Branch is already conquered!
+**** SB phase 3 evaluation of candidate 1, branch 2 ( VNB <= 14 ), value = 1020.39
+Branch is already conquered!
+ SB phase 3 candidate 1 is conquered !
+SB with phases chosed candidate VNB (lhs=14.5)
+New model incumbent solution 1021, TIME = 0h0m45s5t = 4505
+************************************************************************************************
+**** BaB tree node (N° 2, parent N° 1, depth 1, treatOrderId 208)
+**** Local DB = 1019.49, global bounds : [ 1020 , 1021 ], TIME = 0h0m45s5t = 4505
+**** 1 open nodes, ETS : 12, 701 columns (437 active), 256 dyn. constrs. (103 active), 408 art. vars. (255 active)
+************************************************************************************************
+Estimated subtree size of the father is 7.45855
+**** Strong branching phase 2 is started *****
+    TT = 0.000175, performed by inspection with 505 solutions, nbR1C = 87, nbDiscC = 0
+    TT = 0.000163, performed by inspection with 505 solutions, nbR1C = 89, nbDiscC = 0
+    TT = 0.000151, performed by inspection with 505 solutions, nbR1C = 82, nbDiscC = 0
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 82 with avMem = 0
+<DWph=0> <it=  4> <et=45.09> <Mt= 0.02> <Spt= 0.01> <nCl= 15> <al=0.00> <DB= 1021.9143> <Mlp= 1021.9143> <PB=1021> 
+    TT = 0.000179, performed by inspection with 505 solutions, nbR1C = 108, nbDiscC = 0
+    TT = 0.000168, performed by inspection with 505 solutions, nbR1C = 108, nbDiscC = 0
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 108 with avMem = 0
+<DWph=0> <it=  3> <et=45.11> <Mt= 0.01> <Spt= 0.00> <nCl=  1> <al=0.00> <DB= 1019.6502> <Mlp= 1019.6502> <PB=1021> 
+SB phase 2 cand.  1 branch on EDGE[6,42] (lhs=0.2480) : [ 1019.6502,  1021.9143], score = 0.08 (h)  <et=45.11>
+**** Strong branching phase 3 is started *****
+**** SB phase 3 evaluation of candidate 1, branch 1 ( EDGE[6,42] >= 1 ), value = 1021.91
+Branch is already conquered!
+**** SB phase 3 evaluation of candidate 1, branch 2 ( EDGE[6,42] <= 0 ), value = 1019.65
+<DWph=2> <it=  1> <et=45.11> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.6502> <Mlp= 1019.6502> <PB=1021> 
+<DWph=1> <it=  2> <et=45.12> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.6502> <Mlp= 1019.6502> <PB=1021> 
+    TT = 0.000174, performed by inspection with 505 solutions, nbR1C = 108, nbDiscC = 0
+    TT = 0.000167, performed by inspection with 505 solutions, nbR1C = 108, nbDiscC = 0
+<DWph=0> <it=  3> <et=45.12> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1019.6502> <Mlp= 1019.6502> <PB=1021> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 108 with avMem = 0
+@@ 225 0 1019.65 0.0001705 0.000174 0 45.12
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 505 solutions, remains 256 (50.7%)
+Removed 198 columns (not in the enumerated set) from the formulation
+ColGenEvalAlg final dual bound: 1019.65 (rounded: 1020)
+Current active cuts : CAP(1,1.79108) R1C(108,136.393) 3rowPackR1C(14) 4rowPackR1C(28) 5rowPackR1C(66)
+18 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0526452, aver. viol. = 0.0318215
+Building structures for heuristic rank-1 packing cut separation...done!
+46 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0583588, aver. viol. = 0.0310269
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.10865, aver. viol. = 0.0419248
+Shrinking heuristic shrunk 7 edges
+In total 1 RCC cut(s) are found by the Fractional capacity min-cut heuristic 
+In total 1 RCC cut(s) are found by the greedy construction heuristic 
+In total 1 RCC cut(s) are found by the global pool greedy search heuristic 
+----- Add fac. cuts : CAP(3) R1C(164), max.viol = 0.133624, aver.viol = 0.0440675, sep/add took 0.720154/0.00957893 sec. -----
+639 columns (348 active), 381 dyn. constrs. (283 active), 533 art. vars. (435 active)
+<DWph=2> <it=  1> <et=45.86> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.7373> <Mlp= 1019.7373> <PB=1021> 
+<DWph=1> <it=  2> <et=45.86> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.7373> <Mlp= 1019.7373> <PB=1021> 
+    TT = 0.000129, performed by inspection with 256 solutions, nbR1C = 119, nbDiscC = 0
+<DWph=0> <it=  3> <et=45.87> <Mt= 0.00> <Spt= 0.00> <nCl=  2> <al=0.30> <DB=  989.8113> <Mlp= 1019.7373> <PB=1021> 
+    TT = 0.000118, performed by inspection with 256 solutions, nbR1C = 121, nbDiscC = 0
+    TT = 0.000113, performed by inspection with 256 solutions, nbR1C = 117, nbDiscC = 0
+<DWph=0> <it=  4> <et=45.87> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1019.7310> <Mlp= 1019.7310> <PB=1021> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 117 with avMem = 0
+@@ 225 1 1019.73 0.00012 0.000129 0 45.87
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 256 solutions, remains 221 (86.3%)
+Removed 41 columns (not in the enumerated set) from the formulation
+ColGenEvalAlg final dual bound: 1019.73 (rounded: 1020)
+Gap improvement since the last cut separation : 0.0598192 (1019.65)
+Current active cuts : CAP(2,3.73817) R1C(117,140.907) 3rowPackR1C(16) 4rowPackR1C(29) 5rowPackR1C(72)
+3 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0392493, aver. viol. = 0.0347632
+Building structures for heuristic rank-1 packing cut separation...done!
+16 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0398391, aver. viol. = 0.0352118
+66 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0650402, aver. viol. = 0.0356971
+Shrinking heuristic shrunk 7 edges
+In total 1 RCC cut(s) are found by the Fractional capacity min-cut heuristic 
+In total 1 RCC cut(s) are found by the global pool greedy search heuristic 
+----- Add fac. cuts : CAP(2) R1C(85), max.viol = 0.102826, aver.viol = 0.0387689, sep/add took 0.78721/0.004437 sec. -----
+641 columns (309 active), 468 dyn. constrs. (213 active), 620 art. vars. (365 active)
+<DWph=2> <it=  1> <et=46.67> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.8228> <Mlp= 1019.8228> <PB=1021> 
+<DWph=1> <it=  2> <et=46.68> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.8228> <Mlp= 1019.8228> <PB=1021> 
+    TT = 0.000117, performed by inspection with 221 solutions, nbR1C = 105, nbDiscC = 0
+    TT = 0.000102, performed by inspection with 221 solutions, nbR1C = 105, nbDiscC = 0
+<DWph=0> <it=  3> <et=46.68> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.8228> <Mlp= 1019.8228> <PB=1021> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 105 with avMem = 0
+@@ 225 2 1019.82 0.0001095 0.000117 0 46.68
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 221 solutions, remains 202 (91.4%)
+Removed 25 columns (not in the enumerated set) from the formulation
+ColGenEvalAlg final dual bound: 1019.82 (rounded: 1020)
+Gap improvement since the last cut separation : 0.0723567 (1019.73)
+Current active cuts : CAP(4,6.22169) R1C(105,152.608) 3rowPackR1C(14) 4rowPackR1C(26) 5rowPackR1C(65)
+8 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0344191, aver. viol. = 0.0240451
+Building structures for heuristic rank-1 packing cut separation...done!
+20 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0346652, aver. viol. = 0.0255327
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0660589, aver. viol. = 0.0286506
+Shrinking heuristic shrunk 9 edges
+In total 1 RCC cut(s) are found by the greedy construction heuristic 
+----- Add fac. cuts : CAP(1) R1C(128), max.viol = 0.116143, aver.viol = 0.0357483, sep/add took 0.739413/0.00596332 sec. -----
+640 columns (284 active), 446 dyn. constrs. (248 active), 749 art. vars. (400 active)
+<DWph=2> <it=  1> <et=47.44> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.9281> <Mlp= 1019.9281> <PB=1021> 
+<DWph=1> <it=  2> <et=47.44> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1019.9281> <Mlp= 1019.9281> <PB=1021> 
+    TT = 0.000113, performed by inspection with 202 solutions, nbR1C = 96, nbDiscC = 0
+    TT = 0.000102, performed by inspection with 202 solutions, nbR1C = 96, nbDiscC = 0
+<DWph=0> <it=  3> <et=47.44> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1019.9281> <Mlp= 1019.9281> <PB=1021> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 96 with avMem = 0
+@@ 225 3 1019.93 0.0001075 0.000113 0 47.44
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 202 solutions, remains 180 (89.1%)
+Removed 31 columns (not in the enumerated set) from the formulation
+ColGenEvalAlg final dual bound: 1019.93 (rounded: 1020)
+Gap improvement since the last cut separation : 0.0894687 (1019.82)
+Current active cuts : CAP(5,11.9079) R1C(96,161.171) 3rowPackR1C(15) 4rowPackR1C(24) 5rowPackR1C(57)
+2 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0216658, aver. viol. = 0.0216658
+Building structures for heuristic rank-1 packing cut separation...done!
+16 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0256044, aver. viol. = 0.0227747
+39 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0306888, aver. viol. = 0.0239273
+Shrinking heuristic shrunk 8 edges
+----- Add fac. cuts : R1C(57), max.viol = 0.0613775, aver.viol = 0.0274281, sep/add took 0.738012/0.00246142 sec. -----
+640 columns (253 active), 423 dyn. constrs. (165 active), 806 art. vars. (317 active)
+<DWph=2> <it=  1> <et=48.19> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1020.1023> <Mlp= 1020.1023> <PB=1021> 
+<DWph=1> <it=  2> <et=48.19> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1020.1023> <Mlp= 1020.1023> <PB=1021> 
+    TT = 9.7e-05, performed by inspection with 180 solutions, nbR1C = 84, nbDiscC = 0
+    TT = 8.3e-05, performed by inspection with 180 solutions, nbR1C = 84, nbDiscC = 0
+<DWph=0> <it=  3> <et=48.20> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1020.1023> <Mlp= 1020.1023> <PB=1021> 
+Dynamic params and stats :  aver.obdmd = 22.9091 aver.buck.num. = 26 nbR1C = 84 with avMem = 0
+@@ 225 4 1020.1 9e-05 9.7e-05 0 48.2
+ColGenEvalAlg final dual bound: 1020.1 (rounded: 1021)
+Gap improvement since the last cut separation : 0.162503 (1019.93)
+Current active cuts : CAP(3,5.90727) R1C(84,184.472) 3rowPackR1C(12) 4rowPackR1C(19) 5rowPackR1C(53)
+ SB phase 3 candidate 1 is conquered !
+SB with phases chosed candidate EDGE[6,42] (lhs=0.248033)
+************************************************************************************************
+Search is finished, global bounds : [ 1021 , 1021 ], TIME = 0h0m48s20t = 4820
+************************************************************************************************
+1021.0
+[[68, 2, 33, 51, 6], [72, 31, 10, 38, 58], [53, 59, 14, 35], [19, 54, 13, 57, 15, 5, 29], [37, 20, 70, 60, 71, 36, 69, 61], [74, 21, 47, 48, 30], [46, 8, 52, 27, 45], [28, 22, 64, 42, 62], [73, 1, 43, 41, 56, 23, 63], [32, 50, 18, 55, 25, 39], [65, 66, 11, 7], [26, 12, 9, 40], [75, 4, 34, 67], [16, 49, 24, 3, 44, 17]]
+Built-in heuristic is enabled
+instance_name solver_name ext_heuristic solution_value solution_time best_lb root_lb root_time nb_branch_and_bound_nodes status
+/home/logis/Downloads/VRPSolverEasy/VRPSolverEasy/demos/data/CVRP/E-n76-k14 CLP True 1021.0 48.204956454000005 1021.0 1018.0 11.182901161 13 0
+
