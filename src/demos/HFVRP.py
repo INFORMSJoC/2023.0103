@@ -86,7 +86,33 @@ def solve_demo(instance_path,
 
     # solve model
     #model.export()
+    # model.export(instance_path)
     model.solve()
+
+    if model.solution.is_defined :
+        path_instance_name = instance_path.split(".")[0]
+        name_instance = path_instance_name.split("\\")[
+            len(path_instance_name.split("\\"))-1]
+        print('{0} {1} {2} {3} {4} {5} {6} {7} {8} {9}\n'.format(
+                "instance_name","solver_name","ext_heuristic",
+                "solution_value",
+                "solution_time",
+                "best_lb",
+                "root_lb",
+                "root_time",
+                "nb_branch_and_bound_nodes",
+                "status"
+                ), end='')
+        print('{0} {1} {2} {3} {4} {5} {6} {7} {8} {9}\n'.format(
+            instance_path,solver_name,False if upper_bound == -1 else True,
+            model.solution.value,
+            model.statistics.solution_time,
+            model.statistics.best_lb,
+            model.statistics.root_lb,
+            model.statistics.root_time,
+            model.statistics.nb_branch_and_bound_nodes,
+            model.status
+            ))
 
     # export the result
     #model.solution.export()
