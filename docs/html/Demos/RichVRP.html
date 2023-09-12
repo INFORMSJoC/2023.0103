@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RichVRP &mdash; VRPSolverEasy 0.1.3 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Important notes" href="../Important%20notes/index.html" />
+    <link rel="prev" title="MDVRP" href="MDVRP.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> VRPSolverEasy
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Installation/index.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Example/index.html">Example</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Demos</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="CVRP.html">CVRP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CVRPTW.html">CVRPTW</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HFVRP.html">HFVRP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MDVRP.html">MDVRP</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">RichVRP</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#instance-format">Instance format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#run-instances">Run instances</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#demo-code">Demo code</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#get-data-and-create-the-model">Get data and create the model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#add-depots-and-vehicle-types">Add depots and vehicle types</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#add-customers">Add customers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#add-links">Add links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#set-parameters">Set parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#solve-model">Solve model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#print-solution">Print solution</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Important%20notes/index.html">Important notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Solver%20API/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">src</span></code>:  solver API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">VRPSolverEasy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Demos</a></li>
+      <li class="breadcrumb-item active">RichVRP</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/Demos/RichVRP.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="richvrp">
+<h1>RichVRP<a class="headerlink" href="#richvrp" title="Permalink to this heading"></a></h1>
+<p>The RichVRP is a demo that combines multiple elements supported by VRPSolverEasy. It has open routes, multiple depots, multiple time windows, two types of vehicles (small and big), optional customers, and incompatible vehicles (some customers can be served only by small vehicles).</p>
+<section id="instance-format">
+<h2>Instance format<a class="headerlink" href="#instance-format" title="Permalink to this heading"></a></h2>
+<p>The demo reads instances in the following format:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&lt;M&gt; # Number of depots
+0 &lt;xCoordDepot0&gt; &lt;yCoordDepot0&gt; &lt;beginTwDepot0&gt; &lt;endTwDepot0&gt;
+...
+M-1 &lt;xCoordDepotM-1&gt; &lt;yCoordDepotM-1&gt; &lt;beginTwDepotM-1&gt; &lt;endTwDepotM-1&gt;
+&lt;bigVehicleCapacity&gt; &lt;bigVehicleFixedCost&gt; &lt;bigVehicleVariableCost&gt; &lt;bigVehicleMaxNumber&gt;
+&lt;smallVehicleCapacity&gt; &lt;smallVehicleFixedCost&gt; &lt;smallVehicleVariableCost&gt; &lt;smallVehicleMaxNumber&gt;
+&lt;N&gt; # Number of customers
+M &lt;xCoordCustomerM&gt; &lt;yCoordCustomerM&gt; &lt;beginTwCustomerM&gt; &lt;endTwCustomerM&gt;
+...
+M+N-1 &lt;xCoordCustomerM+N-1&gt; &lt;yCoordCustomerM+N-1&gt; &lt;beginTwCustomerM+N-1&gt; &lt;endTwCustomerM+N-1&gt;
+</pre></div>
+</div>
+<p>For example, the example instance at demos/data/RichVRP/toy.txt has the following content:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>2
+0 0 0 0 1000
+1 100 100 0 500
+200 400 3.2 1
+50 20 1.0 4
+6
+2 5 15 35 50 0 1 1 20 100
+3 5 25 15 50 1 1 1 0 100
+4 15 15 100 50 0 0 1 180 250
+5 75 60 20 50 0 1 3 0 100 200 300 400 500
+6 50 50 80 50 0 0 1 80 130
+7 35 75 30 50 0 0 2 0 50 500 600
+</pre></div>
+</div>
+<p>which is read as follows:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Depots:
+Depot(id: 0, x: 0, y: 0, tw_begin: 0, tw_end: 1000)
+Depot(id: 1, x: 100, y: 100, tw_begin: 0, tw_end: 500)
+
+Big Vehicle:
+Vehicle(capacity: 200, fixed_cost: 400, var_cost: 3.2, max_number: 1)
+
+Small Vehicle:
+Vehicle(capacity: 50, fixed_cost: 20, var_cost: 1.0, max_number: 4)
+
+Customers:
+Customer(id: 2, x: 5, y: 15, demand: 35, service_time: 50, optional: False, only_small_veh: True, time_windows: [(20, 100)])
+Customer(id: 3, x: 5, y: 25, demand: 15, service_time: 50, optional: True, only_small_veh: True, time_windows: [(0, 100)])
+Customer(id: 4, x: 15, y: 15, demand: 100, service_time: 50, optional: False, only_small_veh: False, time_windows: [(180, 250)])
+Customer(id: 5, x: 75, y: 60, demand: 20, service_time: 50, optional: False, only_small_veh: True, time_windows: [(0, 100), (200, 300), (400, 500)])
+Customer(id: 6, x: 50, y: 50, demand: 80, service_time: 50, optional: False, only_small_veh: False, time_windows: [(80, 130)])
+Customer(id: 7, x: 35, y: 75, demand: 30, service_time: 50, optional: False, only_small_veh: False, time_windows: [(0, 50), (500, 600)])
+</pre></div>
+</div>
+</section>
+<section id="run-instances">
+<h2>Run instances<a class="headerlink" href="#run-instances" title="Permalink to this heading"></a></h2>
+<p>You can solve an instance by specifying different parameters directly in the command line, like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">RichVRP</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">i</span> <span class="o">&lt;</span><span class="n">instance</span> <span class="n">path</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">t</span> <span class="o">&lt;</span><span class="n">time</span> <span class="n">limit</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">s</span> <span class="o">&lt;</span><span class="n">solver_name</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>CPLEX solver can be used only with the <a class="reference internal" href="../Installation/index.html"><span class="doc">academic version</span></a>. When using CPLEX solver on a Windows computer, one should give its path: <code class="code docutils literal notranslate"><span class="pre">-p</span> <span class="pre">&lt;path</span> <span class="pre">to</span> <span class="pre">CPLEX&gt;</span></code>.</p>
+</section>
+<section id="demo-code">
+<h2>Demo code<a class="headerlink" href="#demo-code" title="Permalink to this heading"></a></h2>
+<section id="get-data-and-create-the-model">
+<h3>Get data and create the model<a class="headerlink" href="#get-data-and-create-the-model" title="Permalink to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">read_richvrp_instance</span><span class="p">(</span><span class="n">instance_name</span><span class="p">)</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">solver</span><span class="o">.</span><span class="n">Model</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">data</span></code> is an object of class <code class="docutils literal notranslate"><span class="pre">DataRichVrp</span></code> that keeps a list of objects from classes <code class="docutils literal notranslate"><span class="pre">Depot</span></code>, <code class="docutils literal notranslate"><span class="pre">Vehicle</span></code>, and <code class="docutils literal notranslate"><span class="pre">Customer</span></code>.</p>
+</section>
+<section id="add-depots-and-vehicle-types">
+<h3>Add depots and vehicle types<a class="headerlink" href="#add-depots-and-vehicle-types" title="Permalink to this heading"></a></h3>
+<p>We define two types of vehicles—big and small—for each depot.
+Each type of vehicle is characterized by the depot from which it starts its route.
+We use odd indexes for big vehicles and even indexes for small vehicles.
+Note that the <code class="docutils literal notranslate"><span class="pre">end_point_id</span></code> is set to -1 for these vehicle types, as we are requesting open routes.
+Additionally, all vehicle types share the same time window from their respective starting depots.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">big_vehicle_id</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># Big vehicles have odd ids</span>
+<span class="n">big_vehicle_ids</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># Store all the ids for big vehicles</span>
+<span class="n">small_vehicle_id</span> <span class="o">=</span> <span class="mi">2</span> <span class="c1"># Small vehicles have even ids</span>
+<span class="c1"># Add depots and vehicles</span>
+<span class="k">for</span> <span class="n">depot</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">depots</span><span class="p">:</span>
+    <span class="c1"># Add the depot</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">add_depot</span><span class="p">(</span><span class="nb">id</span> <span class="o">=</span> <span class="n">depot</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
+                    <span class="n">tw_begin</span> <span class="o">=</span> <span class="n">depot</span><span class="o">.</span><span class="n">tw_begin</span><span class="p">,</span>
+                    <span class="n">tw_end</span> <span class="o">=</span> <span class="n">depot</span><span class="o">.</span><span class="n">tw_end</span><span class="p">)</span>
+    <span class="c1"># Add the big vehicle to this depot</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">add_vehicle_type</span><span class="p">(</span><span class="nb">id</span> <span class="o">=</span> <span class="n">big_vehicle_id</span><span class="p">,</span>
+                            <span class="n">start_point_id</span> <span class="o">=</span> <span class="n">depot</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
+                            <span class="n">end_point_id</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="c1"># A vehicle may end anywhere</span>
+                            <span class="n">capacity</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">big_vehicle</span><span class="o">.</span><span class="n">capacity</span><span class="p">,</span>
+                            <span class="n">max_number</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">big_vehicle</span><span class="o">.</span><span class="n">max_number</span><span class="p">,</span>
+                            <span class="n">fixed_cost</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">big_vehicle</span><span class="o">.</span><span class="n">fixed_cost</span><span class="p">,</span>
+                            <span class="n">var_cost_dist</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">big_vehicle</span><span class="o">.</span><span class="n">var_cost</span><span class="p">,</span>
+                            <span class="n">tw_begin</span> <span class="o">=</span> <span class="n">depot</span><span class="o">.</span><span class="n">tw_begin</span><span class="p">,</span>
+                            <span class="n">tw_end</span> <span class="o">=</span> <span class="n">depot</span><span class="o">.</span><span class="n">tw_end</span><span class="p">)</span>
+    <span class="c1"># Add the small vehicle to this depot</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">add_vehicle_type</span><span class="p">(</span><span class="nb">id</span> <span class="o">=</span> <span class="n">small_vehicle_id</span><span class="p">,</span>
+                            <span class="n">start_point_id</span> <span class="o">=</span> <span class="n">depot</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
+                            <span class="n">end_point_id</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="c1"># A vehicle may end anywhere</span>
+                            <span class="n">capacity</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">small_vehicle</span><span class="o">.</span><span class="n">capacity</span><span class="p">,</span>
+                            <span class="n">max_number</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">small_vehicle</span><span class="o">.</span><span class="n">max_number</span><span class="p">,</span>
+                            <span class="n">fixed_cost</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">small_vehicle</span><span class="o">.</span><span class="n">fixed_cost</span><span class="p">,</span>
+                            <span class="n">var_cost_dist</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">small_vehicle</span><span class="o">.</span><span class="n">var_cost</span><span class="p">,</span>
+                            <span class="n">tw_begin</span> <span class="o">=</span> <span class="n">depot</span><span class="o">.</span><span class="n">tw_begin</span><span class="p">,</span>
+                            <span class="n">tw_end</span> <span class="o">=</span> <span class="n">depot</span><span class="o">.</span><span class="n">tw_end</span><span class="p">)</span>
+    <span class="n">big_vehicle_ids</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">big_vehicle_id</span><span class="p">)</span>
+    <span class="n">big_vehicle_id</span> <span class="o">+=</span> <span class="mi">2</span>
+    <span class="n">small_vehicle_id</span> <span class="o">+=</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</section>
+<section id="add-customers">
+<h3>Add customers<a class="headerlink" href="#add-customers" title="Permalink to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># ID for alternative points of a customer with multiple time windows</span>
+<span class="n">next_id</span> <span class="o">=</span> <span class="nb">max</span><span class="p">([</span><span class="n">customer</span><span class="o">.</span><span class="n">id</span> <span class="k">for</span> <span class="n">customer</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">customers</span><span class="p">])</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="c1"># IDs of a customer, including the alternative ones</span>
+<span class="n">customer_ids</span> <span class="o">=</span> <span class="p">{</span><span class="n">customer</span><span class="o">.</span><span class="n">id</span> <span class="p">:</span> <span class="p">[</span><span class="n">customer</span><span class="o">.</span><span class="n">id</span><span class="p">]</span> <span class="k">for</span> <span class="n">customer</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">customers</span><span class="p">}</span>
+<span class="c1"># Add customers</span>
+<span class="k">for</span> <span class="n">customer</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">customers</span><span class="p">:</span>
+    <span class="c1"># Add a point for each time window of a customer</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">tw</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">customer</span><span class="o">.</span><span class="n">time_windows</span><span class="p">):</span>
+        <span class="n">point_id</span> <span class="o">=</span> <span class="n">customer</span><span class="o">.</span><span class="n">id</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span> <span class="c1"># Is it an alternative point?</span>
+            <span class="n">point_id</span> <span class="o">=</span> <span class="n">next_id</span>
+            <span class="n">customer_ids</span><span class="p">[</span><span class="n">customer</span><span class="o">.</span><span class="n">id</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">next_id</span><span class="p">)</span>
+            <span class="n">next_id</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1"># Get the next alternative ID</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">add_customer</span><span class="p">(</span><span class="nb">id</span> <span class="o">=</span> <span class="n">point_id</span><span class="p">,</span>
+                            <span class="n">id_customer</span> <span class="o">=</span> <span class="n">customer</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
+                            <span class="n">demand</span> <span class="o">=</span> <span class="n">customer</span><span class="o">.</span><span class="n">demand</span><span class="p">,</span>
+                            <span class="n">service_time</span> <span class="o">=</span> <span class="n">customer</span><span class="o">.</span><span class="n">service_time</span><span class="p">,</span>
+                            <span class="n">tw_begin</span> <span class="o">=</span> <span class="n">tw</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+                            <span class="n">tw_end</span> <span class="o">=</span> <span class="n">tw</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+                            <span class="n">penalty</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="k">if</span> <span class="n">customer</span><span class="o">.</span><span class="n">optional</span> <span class="k">else</span> <span class="mf">0.0</span><span class="p">,</span>
+                            <span class="n">incompatible_vehicles</span> <span class="o">=</span> <span class="n">big_vehicle_ids</span> <span class="k">if</span> <span class="n">customer</span><span class="o">.</span><span class="n">only_small_veh</span> <span class="k">else</span> <span class="p">[])</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Given the instance format, the IDs of depots and customers will never overlap (which is not allowed by VRPSolverEasy).</p>
+</div>
+</section>
+<section id="add-links">
+<h3>Add links<a class="headerlink" href="#add-links" title="Permalink to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Compute the links between depots and other points</span>
+<span class="k">for</span> <span class="n">depot</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">depots</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">customer</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">customers</span><span class="p">:</span>
+        <span class="n">dist</span> <span class="o">=</span> <span class="n">compute_euclidean_distance</span><span class="p">(</span><span class="n">customer</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">customer</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> <span class="n">depot</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">depot</span><span class="o">.</span><span class="n">y</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">point_id</span> <span class="ow">in</span> <span class="n">customer_ids</span><span class="p">[</span><span class="n">customer</span><span class="o">.</span><span class="n">id</span><span class="p">]:</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">add_link</span><span class="p">(</span><span class="n">start_point_id</span> <span class="o">=</span> <span class="n">depot</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
+                            <span class="n">end_point_id</span> <span class="o">=</span> <span class="n">point_id</span><span class="p">,</span>
+                            <span class="n">distance</span> <span class="o">=</span> <span class="n">dist</span><span class="p">,</span>
+                            <span class="n">time</span> <span class="o">=</span> <span class="n">dist</span><span class="p">)</span>
+
+<span class="c1"># Compute the links between customer points</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">c1</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">customers</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">c2</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">customers</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">j</span> <span class="o">&lt;=</span> <span class="n">i</span><span class="p">:</span>
+            <span class="k">continue</span>
+        <span class="n">dist</span> <span class="o">=</span> <span class="n">compute_euclidean_distance</span><span class="p">(</span><span class="n">c1</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">c1</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> <span class="n">c2</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">c2</span><span class="o">.</span><span class="n">y</span><span class="p">)</span>
+        <span class="c1"># Add a link for each pair of points from c1 to c2</span>
+        <span class="k">for</span> <span class="n">point_id_c1</span> <span class="ow">in</span> <span class="n">customer_ids</span><span class="p">[</span><span class="n">c1</span><span class="o">.</span><span class="n">id</span><span class="p">]:</span>
+            <span class="k">for</span> <span class="n">point_id_c2</span> <span class="ow">in</span> <span class="n">customer_ids</span><span class="p">[</span><span class="n">c2</span><span class="o">.</span><span class="n">id</span><span class="p">]:</span>
+                <span class="n">model</span><span class="o">.</span><span class="n">add_link</span><span class="p">(</span><span class="n">start_point_id</span> <span class="o">=</span> <span class="n">point_id_c1</span><span class="p">,</span>
+                                <span class="n">end_point_id</span> <span class="o">=</span> <span class="n">point_id_c2</span><span class="p">,</span>
+                                <span class="n">distance</span> <span class="o">=</span> <span class="n">dist</span><span class="p">,</span>
+                                <span class="n">time</span> <span class="o">=</span> <span class="n">dist</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="set-parameters">
+<h3>Set parameters<a class="headerlink" href="#set-parameters" title="Permalink to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">set_parameters</span><span class="p">(</span><span class="n">time_limit</span><span class="o">=</span><span class="n">time_resolution</span><span class="p">,</span>
+                     <span class="n">solver_name</span><span class="o">=</span><span class="n">solver_name_input</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="solve-model">
+<h3>Solve model<a class="headerlink" href="#solve-model" title="Permalink to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">solve</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="print-solution">
+<h3>Print solution<a class="headerlink" href="#print-solution" title="Permalink to this heading"></a></h3>
+<p>To understand the solution, we need the alternative IDs and their time windows for each customer:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Customer IDs and time windows:&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">customer</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">customers</span><span class="p">:</span>
+    <span class="n">ids_and_tws</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">point_id</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">customer_ids</span><span class="p">[</span><span class="n">customer</span><span class="o">.</span><span class="n">id</span><span class="p">]):</span>
+        <span class="n">ids_and_tws</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;(id: </span><span class="si">{</span><span class="n">point_id</span><span class="si">}</span><span class="s2">, tw: </span><span class="si">{</span><span class="nb">list</span><span class="p">(</span><span class="n">customer</span><span class="o">.</span><span class="n">time_windows</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Customer </span><span class="si">{</span><span class="n">customer</span><span class="o">.</span><span class="n">id</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ids_and_tws</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>So, you can print the solution using the <code class="code docutils literal notranslate"><span class="pre">print()</span></code> function</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">solution</span><span class="o">.</span><span class="n">is_defined</span><span class="p">())</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">solution</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>For the toy instance, it produces:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Customer IDs and time windows:
+Customer 2: (id: 2, tw: [20, 100])
+Customer 3: (id: 3, tw: [0, 100])
+Customer 4: (id: 4, tw: [180, 250])
+Customer 5: (id: 5, tw: [0, 100]), (id: 8, tw: [200, 300]), (id: 9, tw: [400, 500])
+Customer 6: (id: 6, tw: [80, 130])
+Customer 7: (id: 7, tw: [0, 50]), (id: 10, tw: [500, 600])
+
+Solution cost : 980.2435999992152
+
+Route for vehicle 2:
+ID : 0 --&gt; 8 --&gt; 10
+End time : 0.0 --&gt; 250.0 --&gt; 550.0
+Load : 0.0 --&gt; 20.0 --&gt; 50.0
+Total cost : 158.767
+
+Route for vehicle 2:
+ID : 0 --&gt; 2
+End time : 0.0 --&gt; 70.0
+Load : 0.0 --&gt; 35.0
+Total cost : 35.811
+
+Route for vehicle 3:
+ID : 1 --&gt; 6 --&gt; 4
+End time : 0.0 --&gt; 130.0 --&gt; 230.0
+Load : 0.0 --&gt; 80.0 --&gt; 180.0
+Total cost : 784.6656
+</pre></div>
+</div>
+<p>You can also analyze the solution manually by retrieving each route. For example, consult the last section of the demo <a class="reference internal" href="CVRP.html"><span class="doc">CVRP</span></a>.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="MDVRP.html" class="btn btn-neutral float-left" title="MDVRP" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Important%20notes/index.html" class="btn btn-neutral float-right" title="Important notes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, ERRAMI Najib SADYKOV Ruslan UCHOA Eduardo QUEIROGA Eduardo.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
