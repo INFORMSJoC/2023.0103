@@ -25,13 +25,13 @@ https://doi.org/10.1287/ijoc.2023.0103.cd
 Below is the BibTex for citing this snapshot of the respoitory.
 
 ```
-@article{VrpSolverEasyIjoc2023,
+@misc{VrpSolverEasyIjoc2023,
   author =        {N. Errami and E. Queiroga and R. Sadykov and E. Uchoa},
   publisher =     {INFORMS Journal on Computing},
   title =         {{VRPSolverEasy: a Python library for the exact solution of a rich vehicle routing problem}},
   year =          {2023},
   doi =           {10.1287/ijoc.2023.0103.cd},
-  url =           {https://github.com/INFORMSJoC/2023.0103},
+  note =          {Available for download at https://github.com/INFORMSJoC/2023.0103},
 }  
 ```
 
