@@ -60,13 +60,22 @@ VRPSolverEasy requires a version of python >= 3.6
 > python -m pip install --upgrade pip
 > ```
 
+
 ### Installation Method
 
 - Download the repository and extract it
-- Move to the directory ``src`` and run:
+- Move to the root directory and run:
     ```bash
     python -m pip install .
     ```
+
+Copy binaries
+-------------
+
+Once the package is installed you will need to request the Bapcod distribution here: https://bapcod.math.u-bordeaux.fr/
+Once you have downloaded the distribution. You just have to go to the ``VRPSolverEasy`` folder and copy the system folder corresponding to your computer and copy it into the ``lib`` folder of the ``VRPSolverEasy`` python package.
+For example if your computer is a Mac you will copy and replace the ``Darwin`` folder, you will then have ``VRPSolverEasy/lib/Darwin``.
+
 
 ## Example
 
