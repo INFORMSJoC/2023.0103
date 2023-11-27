@@ -1,0 +1,98 @@
+Node memory for rank-1 cuts will be used (2.13415)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VRPSolver v0.5.27, 24/02/2023, © Inria Bordeaux, France, vrpsolver.math.u-bordeaux.fr
+      Corresponds to the solver by Pessoa, Sadykov, Uchoa and Vanderbeck (2020)
+                 Paper: dx.doi.org/10.1007/s10107-020-01523-z
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   BaPCod v0.77, 15/03/2023, © Inria Bordeaux, France, bapcod.math.u-bordeaux.fr 
+           THIS CODE IS PROVIDED AS IS, USE IT AT YOUR OWN RISK
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Bucket steps were recalculated for graph G_1 : [1.5]
+RCSP solver info : symmetric case is detected for graph G_1! 
+Bidirectional border value is initialised to 17.5
+RCSP solver info : number of forw. reachable buckets / buck. strongly connected components is 272( 66.6667% ) / 272( 100% )
+Generating neighbourhoods for rank-1 cuts separation
+Building structures for 4- and 5-row rank-1 packing cut separation...done!
+Model is built TIME = 0h0m0s0t = 0
+************************************************************************************************
+**** BaB tree root node
+**** Local DB = -1e+12, global bounds : [ -1e+12 , 450.1 ], TIME = 0h0m0s0t = 0
+**** 1 open nodes, 0 columns (0 active), 0 dyn. constrs. (0 active), 32 art. vars. (32 active)
+************************************************************************************************
+#<DWph=2> <it=  1> <et=0.00> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.00> <DB=-67975.6000> <Mlp=20524.5600> <PB=450.1> 
+#<DWph=2> <it=  2> <et=0.00> <Mt= 0.00> <Spt= 0.00> <nCl= 12> <al=0.55> <DB=-29647.4320> <Mlp= 6843.4400> <PB=450.1> 
+#<DWph=2> <it=  3> <et=0.00> <Mt= 0.00> <Spt= 0.00> <nCl= 11> <al=0.45> <DB=-28328.4048> <Mlp= 1573.2400> <PB=450.1> 
+#<DWph=2> <it=  4> <et=0.00> <Mt= 0.00> <Spt= 0.00> <nCl=  7> <al=0.51> <DB=-12075.8082> <Mlp=  556.4578> <PB=450.1> 
+<DWph=2> <it=  5> <et=0.00> <Mt= 0.00> <Spt= 0.00> <nCl= 10> <al=0.00> <DB=  288.5000> <Mlp=  464.5000> <PB=450.1> 
+<DWph=2> <it=  6> <et=0.00> <Mt= 0.00> <Spt= 0.00> <nCl=  7> <al=0.31> <DB=  353.9483> <Mlp=  456.1667> <PB=450.1> 
+<DWph=2> <it=  7> <et=0.00> <Mt= 0.00> <Spt= 0.00> <nCl=  4> <al=0.37> <DB=  412.7777> <Mlp=  448.0000> <PB=450.1> 
+<DWph=2> <it=  8> <et=0.00> <Mt= 0.00> <Spt= 0.00> <nCl=  2> <al=0.27> <DB=  418.9179> <Mlp=  445.1429> <PB=450.1> 
+<DWph=2> <it=  9> <et=0.00> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <al=0.00> <DB=  443.6667> <Mlp=  443.6667> <PB=450.1> 
+<DWph=1> <it= 10> <et=0.00> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB=  443.6667> <Mlp=  443.6667> <PB=450.1> 
+    RCSP exact solver info for graph G_1 : TT = 0.000211, pt = 2e-06, dt = 6e-05, ct = 4.9e-05, ndl = 0', bdl = 0', odl = 0', odf = 0', bsi = 0', cnt = 0', bdch = 0', odch = 0', lcp = 0', #sols = 150
+    RCSP exact solver info for graph G_1 : TT = 0.000196, pt = 8e-06, dt = 4e-05, ct = 4.2e-05, ndl = 0', bdl = 0', odl = 0', odf = 0', bsi = 0', cnt = 0', bdch = 0', odch = 0', lcp = 0', #sols = 150
+<DWph=0> <it= 11> <et=0.00> <Mt= 0.00> <Spt= 0.00> <nCl=104> <al=0.00> <DB=  443.6667> <Mlp=  443.6667> <PB=450.1> 
+Dynamic params and stats :  aver.obdmd = 13.6471 aver.buck.num. = 24
+@@ 1 0 443.667 9.55e-05 0.000109 41.7196 0
+Labels distribution in buckets (bucket size) : largest - 2, top 0.1% - 2, top 0.5% - 2, top 2% - 2, top 10% - 1, top 50% - 0
+Reduced cost fixing for graph G_1... 234 buck. arcs remain (14.8% from prev., 6.19% from max.) + 167 jump buck. arcs (4.42% from max.)
+ TT = 0.00023, pt = 1.6e-05, dt = 4.6e-05, ct = 0.000146, ndl = 0', bdl = 0', odl = 0', odf = 1', lpcb = 0', cnt = 0', bdch = 0', odch = 0', lcp = 0'
+Labels distribution in buckets (bucket size) : largest - 2, top 0.1% - 2, top 0.5% - 2, top 2% - 2, top 10% - 1, top 50% - 0
+Run forward enumeration with border = 17.5... succeeded! lpt = 0.002014, ndl = 0', dl = 0', lpcb = 0', dch = 0'
+Run enumeration concatenation with time limit 0.3 sec.... succeeded!
+Sorting and storing enumerated solutions ... done!
+ TT = 0.004712, pt = 0.001985, dt = 0.002014, ct = 2.5e-05, ndl = 0', bdl = 0', lpcb = 0', cnt = 0', bdch = 0', odch = 0', lcp = 0'
+Enumeration succeeded!, number of elem. solutions is 26
+Estimating inspection time...     TT = 7e-06, performed by inspection with 26 solutions, nbR1C = 0, nbDiscC = 0
+Inspection time is low enough. Pricing will be done by inspection.
+Added 50 columns in the formulation 
+Removed 123 columns (not in the enumerated set) from the formulation
+Regenerated 50 columns with the 'enumerated' flag
+<DWph=2> <it= 12> <et=0.01> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB=  443.6667> <Mlp=  443.6667> <PB=450.1> 
+<DWph=1> <it= 13> <et=0.01> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB=  443.6667> <Mlp=  443.6667> <PB=450.1> 
+<DWph=0> <it= 14> <et=0.01> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.30> <DB=  443.6667> <Mlp=  443.6667> <PB=450.1> 
+@@ 1 0 443.667 0 0 0 0.01
+ColGenEvalAlg final dual bound: 443.667 (rounded: 444)
+In total 6 RCC cut(s) are found by the connected components heuristic 
+Shrinking heuristic shrunk 1 edges
+In total 4 RCC cut(s) are found by the Fractional capacity min-cut heuristic 
+In total 3 RCC cut(s) are found by the greedy construction heuristic 
+----- Add fac. cuts : CAP(13), max.viol = 0.333333, aver.viol = 0.333333, sep/add took 0.000311902/0.000125083 sec. -----
+50 columns (50 active), 13 dyn. constrs. (13 active), 45 art. vars. (45 active)
+<DWph=2> <it=  1> <et=0.01> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB=  446.7500> <Mlp=  446.7500> <PB=450.1> 
+<DWph=1> <it=  2> <et=0.01> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB=  446.7500> <Mlp=  446.7500> <PB=450.1> 
+    TT = 4e-06, performed by inspection with 26 solutions, nbR1C = 0, nbDiscC = 0
+    TT = 8e-06, performed by inspection with 26 solutions, nbR1C = 0, nbDiscC = 0
+<DWph=0> <it=  3> <et=0.01> <Mt= 0.00> <Spt= 0.00> <nCl=  3> <al=0.00> <DB=  446.7500> <Mlp=  446.7500> <PB=450.1> 
+Dynamic params and stats :  aver.obdmd = 13.6471 aver.buck.num. = 24
+@@ 1 1 446.75 6e-06 8e-06 0 0.01
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 26 solutions, remains 24 (92.3%)
+Removed 7 columns (not in the enumerated set) from the formulation
+ColGenEvalAlg final dual bound: 446.75 (rounded: 447)
+Gap improvement since the last cut separation : 0.479275 (443.667)
+Current active cuts : CAP(3,10.75)
+Shrinking heuristic shrunk 1 edges
+In total 3 RCC cut(s) are found by the Fractional capacity min-cut heuristic 
+In total 1 RCC cut(s) are found by the greedy construction heuristic 
+----- Add fac. cuts : CAP(4), max.viol = 0.25, aver.viol = 0.25, sep/add took 0.000307439/4.7254e-05 sec. -----
+53 columns (46 active), 17 dyn. constrs. (7 active), 49 art. vars. (39 active)
+<DWph=2> <it=  1> <et=0.01> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB=  450.0000> <Mlp=  450.0000> <PB=450> 
+<DWph=1> <it=  2> <et=0.01> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB=  450.0000> <Mlp=  450.0000> <PB=450> 
+    TT = 4e-06, performed by inspection with 24 solutions, nbR1C = 0, nbDiscC = 0
+    TT = 6e-06, performed by inspection with 24 solutions, nbR1C = 0, nbDiscC = 0
+<DWph=0> <it=  3> <et=0.01> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB=  450.0000> <Mlp=  450.0000> <PB=450> 
+Dynamic params and stats :  aver.obdmd = 13.6471 aver.buck.num. = 24
+@@ 1 2 450 5e-06 6e-06 0 0.01
+ColGenEvalAlg final dual bound: 450 (rounded: 450)
+Gap improvement since the last cut separation : 1 (446.75)
+Current active cuts : CAP(4,40)
+New model incumbent solution 450, TIME = 0h0m0s1t = 1
+************************************************************************************************
+Search is finished, global bounds : [ 450 , 450 ], TIME = 0h0m0s1t = 1
+************************************************************************************************
+450.0
+[[6], [14, 5], [15, 12, 10], [8], [7, 9, 13], [3, 1], [2], [11, 4]]
+Built-in heuristic is enabled
+instance_name solver_name ext_heuristic solution_value solution_time best_lb root_lb root_time nb_branch_and_bound_nodes status
+/home/logis/Downloads/VRPSolverEasy/VRPSolverEasy/demos/data/CVRP/P-n16-k8 CLP True 450.0 0.015102784000000001 450.0 450.0 0.015003912 1 0
+

@@ -1,0 +1,871 @@
+Node memory for rank-1 cuts will be used (9.00901)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VRPSolver v0.5.27, 24/02/2023, © Inria Bordeaux, France, vrpsolver.math.u-bordeaux.fr
+      Corresponds to the solver by Pessoa, Sadykov, Uchoa and Vanderbeck (2020)
+                 Paper: dx.doi.org/10.1007/s10107-020-01523-z
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   BaPCod v0.77, 15/03/2023, © Inria Bordeaux, France, bapcod.math.u-bordeaux.fr 
+           THIS CODE IS PROVIDED AS IS, USE IT AT YOUR OWN RISK
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Bucket steps were recalculated for graph G_1 : [2]
+RCSP solver info : symmetric case is detected for graph G_1! 
+Bidirectional border value is initialised to 20
+RCSP solver info : number of forw. reachable buckets / buck. strongly connected components is 899( 82.326% ) / 899( 100% )
+Bucket steps were recalculated for graph G_2 : [3.5]
+RCSP solver info : symmetric case is detected for graph G_2! 
+Bidirectional border value is initialised to 40
+RCSP solver info : number of forw. reachable buckets / buck. strongly connected components is 1082( 90.4682% ) / 1082( 100% )
+Bucket steps were recalculated for graph G_3 : [6]
+RCSP solver info : symmetric case is detected for graph G_3! 
+Bidirectional border value is initialised to 70
+RCSP solver info : number of forw. reachable buckets / buck. strongly connected components is 1186( 95.0321% ) / 979( 82.5464% )
+Generating neighbourhoods for rank-1 cuts separation
+Building structures for 4- and 5-row rank-1 packing cut separation...done!
+Model is built TIME = 0h0m0s4t = 4
+************************************************************************************************
+**** BaB tree root node
+**** Local DB = -1e+12, global bounds : [ -1e+12 , 1166.33 ], TIME = 0h0m0s4t = 4
+**** 1 open nodes, 0 columns (0 active), 0 dyn. constrs. (0 active), 106 art. vars. (106 active)
+************************************************************************************************
+#<DWph=2> <it=  1> <et=0.05> <Mt= 0.00> <Spt= 0.00> <nCl= 90> <al=0.00> <DB=-427564.1801> <Mlp=142759.2816> <PB=1166.334> 
+#<DWph=2> <it=  2> <et=0.06> <Mt= 0.00> <Spt= 0.01> <nCl= 90> <al=0.55> <DB=-249551.7307> <Mlp=134982.4895> <PB=1166.334> 
+#<DWph=2> <it=  3> <et=0.06> <Mt= 0.00> <Spt= 0.01> <nCl= 90> <al=0.45> <DB=-192327.2948> <Mlp=127036.7966> <PB=1166.334> 
+#<DWph=2> <it=  4> <et=0.07> <Mt= 0.00> <Spt= 0.00> <nCl= 90> <al=0.51> <DB=-155584.2831> <Mlp=112736.6208> <PB=1166.334> 
+#<DWph=2> <it=  5> <et=0.08> <Mt= 0.00> <Spt= 0.01> <nCl= 90> <al=0.41> <DB=-131792.5308> <Mlp=102392.5617> <PB=1166.334> 
+#<DWph=2> <it=  6> <et=0.09> <Mt= 0.00> <Spt= 0.01> <nCl= 90> <al=0.46> <DB=-101560.4114> <Mlp=90239.9229> <PB=1166.334> 
+#<DWph=2> <it=  7> <et=0.10> <Mt= 0.00> <Spt= 0.00> <nCl= 90> <al=0.52> <DB=-67690.8594> <Mlp=72086.6053> <PB=1166.334> 
+#<DWph=2> <it=  8> <et=0.10> <Mt= 0.00> <Spt= 0.01> <nCl= 90> <al=0.57> <DB=-59385.7925> <Mlp=48792.0822> <PB=1166.334> 
+#<DWph=2> <it=  9> <et=0.11> <Mt= 0.00> <Spt= 0.01> <nCl= 90> <al=0.61> <DB=-49787.7701> <Mlp=33535.9561> <PB=1166.334> 
+#<DWph=2> <it= 10> <et=0.12> <Mt= 0.00> <Spt= 0.00> <nCl= 88> <al=0.65> <DB=-42364.9114> <Mlp=22730.2031> <PB=1166.334> 
+#<DWph=2> <it= 11> <et=0.13> <Mt= 0.01> <Spt= 0.01> <nCl= 82> <al=0.68> <DB=-37609.3290> <Mlp= 8681.9057> <PB=1166.334> 
+#<DWph=2> <it= 12> <et=0.14> <Mt= 0.00> <Spt= 0.01> <nCl= 40> <al=0.72> <DB=-25529.7945> <Mlp= 4955.8515> <PB=1166.334> 
+<DWph=2> <it= 13> <et=0.15> <Mt= 0.00> <Spt= 0.00> <nCl= 24> <al=0.62> <DB=-14538.5374> <Mlp= 2205.5033> <PB=1166.334> 
+<DWph=2> <it= 14> <et=0.16> <Mt= 0.00> <Spt= 0.01> <nCl= 61> <al=0.52> <DB=-6376.9915> <Mlp= 1978.1579> <PB=1166.334> 
+<DWph=2> <it= 15> <et=0.16> <Mt= 0.01> <Spt= 0.01> <nCl= 73> <al=0.42> <DB=-1609.4165> <Mlp= 1873.1076> <PB=1166.334> 
+<DWph=2> <it= 16> <et=0.17> <Mt= 0.00> <Spt= 0.00> <nCl= 79> <al=0.32> <DB=  325.5329> <Mlp= 1786.9757> <PB=1166.334> 
+<DWph=2> <it= 17> <et=0.18> <Mt= 0.00> <Spt= 0.01> <nCl= 89> <al=0.22> <DB=  407.8279> <Mlp= 1602.1588> <PB=1166.334> 
+<DWph=2> <it= 18> <et=0.20> <Mt= 0.00> <Spt= 0.01> <nCl= 90> <al=0.29> <DB=  247.0768> <Mlp= 1372.2323> <PB=1166.334> 
+<DWph=2> <it= 19> <et=0.20> <Mt= 0.01> <Spt= 0.00> <nCl= 88> <al=0.36> <DB=  765.0086> <Mlp= 1291.8229> <PB=1166.334> 
+<DWph=2> <it= 20> <et=0.22> <Mt= 0.00> <Spt= 0.01> <nCl= 84> <al=0.43> <DB=  967.7832> <Mlp= 1245.1497> <PB=1166.334> 
+<DWph=2> <it= 21> <et=0.22> <Mt= 0.00> <Spt= 0.01> <nCl= 74> <al=0.49> <DB= 1026.3280> <Mlp= 1184.3258> <PB=1166.334> 
+<DWph=2> <it= 22> <et=0.23> <Mt= 0.00> <Spt= 0.01> <nCl= 58> <al=0.54> <DB= 1064.1664> <Mlp= 1143.7197> <PB=1166.334> 
+<DWph=2> <it= 23> <et=0.24> <Mt= 0.01> <Spt= 0.00> <nCl= 50> <al=0.44> <DB= 1083.3711> <Mlp= 1129.0917> <PB=1166.334> 
+<DWph=2> <it= 24> <et=0.25> <Mt= 0.00> <Spt= 0.01> <nCl= 25> <al=0.49> <DB= 1101.2897> <Mlp= 1125.0540> <PB=1166.334> 
+<DWph=2> <it= 25> <et=0.26> <Mt= 0.00> <Spt= 0.00> <nCl= 19> <al=0.54> <DB= 1105.2379> <Mlp= 1124.1427> <PB=1166.334> 
+<DWph=2> <it= 26> <et=0.27> <Mt= 0.00> <Spt= 0.01> <nCl= 10> <al=0.59> <DB= 1110.0207> <Mlp= 1124.0316> <PB=1166.334> 
+<DWph=2> <it= 27> <et=0.27> <Mt= 0.00> <Spt= 0.01> <nCl= 10> <al=0.49> <DB= 1116.9135> <Mlp= 1123.9208> <PB=1166.334> 
+<DWph=2> <it= 28> <et=0.28> <Mt= 0.00> <Spt= 0.00> <nCl= 11> <al=0.39> <DB= 1109.9574> <Mlp= 1123.8664> <PB=1166.334> 
+<DWph=2> <it= 29> <et=0.29> <Mt= 0.00> <Spt= 0.01> <nCl= 10> <al=0.29> <DB= 1118.2320> <Mlp= 1123.2080> <PB=1166.334> 
+<DWph=2> <it= 30> <et=0.29> <Mt= 0.00> <Spt= 0.01> <nCl=  4> <al=0.36> <DB= 1109.9833> <Mlp= 1123.1868> <PB=1166.334> 
+<DWph=2> <it= 31> <et=0.30> <Mt= 0.01> <Spt= 0.00> <nCl=  6> <al=0.42> <DB= 1117.7016> <Mlp= 1121.7854> <PB=1166.334> 
+<DWph=2> <it= 32> <et=0.32> <Mt= 0.00> <Spt= 0.02> <nCl= 13> <al=0.00> <DB= 1116.9027> <Mlp= 1121.7854> <PB=1166.334> 
+<DWph=1> <it= 33> <et=0.33> <Mt= 0.00> <Spt= 0.01> <nCl= 23> <al=0.38> <DB= 1113.3049> <Mlp= 1121.7308> <PB=1166.334> 
+<DWph=1> <it= 34> <et=0.34> <Mt= 0.00> <Spt= 0.01> <nCl= 11> <al=0.28> <DB= 1117.9789> <Mlp= 1121.6592> <PB=1166.334> 
+<DWph=1> <it= 35> <et=0.36> <Mt= 0.00> <Spt= 0.02> <nCl=  1> <al=0.00> <DB= 1121.6592> <Mlp= 1121.6592> <PB=1166.334> 
+    RCSP exact solver info for graph G_1 : TT = 0.00129, pt = 1.1e-05, dt = 0.000825, ct = 0.000278, ndl = 0', bdl = 1', odl = 0', odf = 1', bsi = 0', cnt = 0', bdch = 2', odch = 0', lcp = 0', #sols = 150
+    RCSP exact solver info for graph G_2 : TT = 0.004234, pt = 1.2e-05, dt = 0.003396, ct = 0.000607, ndl = 1', bdl = 15', odl = 1', odf = 8', bsi = 1', cnt = 2', bdch = 71', odch = 7', lcp = 4', #sols = 150
+    RCSP exact solver info for graph G_3 : TT = 0.010788, pt = 2e-05, dt = 0.009506, ct = 0.000974, ndl = 3', bdl = 72', odl = 3', odf = 21', bsi = 1', cnt = 4', bdch = 732', odch = 42', lcp = 32', #sols = 150
+<DWph=0> <it= 36> <et=0.38> <Mt= 0.00> <Spt= 0.02> <nCl=246> <al=0.25> <DB= 1118.1168> <Mlp= 1121.6592> <PB=1166.334> 
+    RCSP exact solver info for graph G_1 : TT = 0.00124, pt = 4.4e-05, dt = 0.000714, ct = 0.00028, ndl = 0', bdl = 1', odl = 0', odf = 1', bsi = 0', cnt = 0', bdch = 2', odch = 0', lcp = 0', #sols = 150
+    RCSP exact solver info for graph G_2 : TT = 0.00324, pt = 4.2e-05, dt = 0.002353, ct = 0.000618, ndl = 1', bdl = 14', odl = 1', odf = 7', bsi = 1', cnt = 2', bdch = 70', odch = 6', lcp = 4', #sols = 150
+    RCSP exact solver info for graph G_3 : TT = 0.009008, pt = 3.5e-05, dt = 0.007697, ct = 0.001005, ndl = 3', bdl = 72', odl = 3', odf = 21', bsi = 1', cnt = 4', bdch = 730', odch = 42', lcp = 32', #sols = 150
+    RCSP exact solver info for graph G_1 : TT = 0.001212, pt = 3e-05, dt = 0.000701, ct = 0.000283, ndl = 0', bdl = 1', odl = 0', odf = 1', bsi = 0', cnt = 0', bdch = 2', odch = 0', lcp = 0', #sols = 150
+    RCSP exact solver info for graph G_2 : TT = 0.003179, pt = 2.7e-05, dt = 0.002313, ct = 0.000613, ndl = 1', bdl = 14', odl = 1', odf = 7', bsi = 1', cnt = 2', bdch = 70', odch = 6', lcp = 4', #sols = 150
+    RCSP exact solver info for graph G_3 : TT = 0.008858, pt = 2.5e-05, dt = 0.007567, ct = 0.000996, ndl = 2', bdl = 71', odl = 3', odf = 21', bsi = 1', cnt = 4', bdch = 714', odch = 41', lcp = 31', #sols = 150
+<DWph=0> <it= 37> <et=0.42> <Mt= 0.00> <Spt= 0.03> <nCl= 52> <al=0.00> <DB= 1121.6022> <Mlp= 1121.6022> <PB=1166.334> 
+Dynamic params and stats :  aver.obdmd = 16.3077 aver.buck.num. = 21
+@@ 1 0 1121.6 0.001027 0.001103 54.508 0.42
+Dynamic params and stats :  aver.obdmd = 19.8269 aver.buck.num. = 23
+@@ 1 0 1121.6 0.0033 0.004003 81.2502 0.42
+Dynamic params and stats :  aver.obdmd = 21.8269 aver.buck.num. = 24
+@@ 1 0 1121.6 0.00924833 0.01048 88.4578 0.42
+Labels distribution in buckets (bucket size) : largest - 4, top 0.1% - 4, top 0.5% - 4, top 2% - 3, top 10% - 2, top 50% - 0
+Reduced cost fixing for graph G_1... 13320 buck. arcs remain (55.7% from prev., 30.3% from max.) + 1091 jump buck. arcs (2.49% from max.)
+ TT = 0.007828, pt = 0.000736, dt = 0.00116, ct = 0.005826, ndl = 1', bdl = 14', odl = 0', odf = 7', lpcb = 11', cnt = 15', bdch = 50', odch = 6', lcp = 3'
+Labels distribution in buckets (bucket size) : largest - 6, top 0.1% - 6, top 0.5% - 5, top 2% - 4, top 10% - 3, top 50% - 1
+Run forward enumeration with border = 20... succeeded! lpt = 0.012716, ndl = 1', dl = 5', lpcb = 39', dch = 175'
+Run enumeration concatenation with time limit 0.3 sec.... succeeded!
+Sorting and storing enumerated solutions ... done!
+ TT = 0.031811, pt = 0.001979, dt = 0.012716, ct = 0.007756, ndl = 1', bdl = 5', lpcb = 39', cnt = 28', bdch = 175', odch = 0', lcp = 0'
+Enumeration succeeded!, number of elem. solutions is 9297
+Estimating inspection time...     TT = 0.000368, performed by inspection with 9297 solutions, nbR1C = 0, nbDiscC = 0
+Inspection time is low enough. Pricing will be done by inspection.
+Labels distribution in buckets (bucket size) : largest - 15, top 0.1% - 15, top 0.5% - 12, top 2% - 9, top 10% - 5, top 50% - 1
+Reduced cost fixing for graph G_2... 20355 buck. arcs remain (47.3% from prev., 38.4% from max.) + 3632 jump buck. arcs (6.86% from max.)
+ TT = 0.021124, pt = 0.002179, dt = 0.00661, ct = 0.012174, ndl = 5', bdl = 63', odl = 2', odf = 25', lpcb = 106', cnt = 75', bdch = 514', odch = 59', lcp = 41'
+Labels distribution in buckets (bucket size) : largest - 15, top 0.1% - 15, top 0.5% - 13, top 2% - 9, top 10% - 6, top 50% - 1
+Run forward enumeration with border = 40... succeeded! lpt = 0.078969, ndl = 16', dl = 24', lpcb = 379', dch = 530'
+Run enumeration concatenation with time limit 0.3 sec.... succeeded!
+Sorting and storing enumerated solutions ... done!
+ TT = 0.353954, pt = 0.002032, dt = 0.078969, ct = 0.126862, ndl = 16', bdl = 24', lpcb = 379', cnt = 236', bdch = 530', odch = 0', lcp = 0'
+Enumeration succeeded!, number of elem. solutions is 88196
+Estimating inspection time...     TT = 0.006442, performed by inspection with 88196 solutions, nbR1C = 0, nbDiscC = 0
+Inspection time is low enough. Pricing will be done by inspection.
+Labels distribution in buckets (bucket size) : largest - 38, top 0.1% - 38, top 0.5% - 35, top 2% - 26, top 10% - 14, top 50% - 2
+Reduced cost fixing for graph G_3... 16595 buck. arcs remain (32.3% from prev., 28.6% from max.) + 5932 jump buck. arcs (10.2% from max.)
+ TT = 0.030106, pt = 0.003999, dt = 0.011371, ct = 0.01455, ndl = 10', bdl = 101', odl = 4', odf = 41', lpcb = 245', cnt = 133', bdch = 1191', odch = 157', lcp = 93'
+Labels distribution in buckets (bucket size) : largest - 40, top 0.1% - 40, top 0.5% - 38, top 2% - 29, top 10% - 15, top 50% - 3
+Run forward enumeration with border = 70... succeeded! lpt = 0.178917, ndl = 56', dl = 31', lpcb = 998', dch = 322'
+Run enumeration concatenation with time limit 0.3 sec.... time limit reached, not succeeded.
+Sorting and storing enumerated solutions ...  TT = 0.574391, pt = 0.00197, dt = 0.178917, ct = 0.306301, ndl = 56', bdl = 31', lpcb = 998', cnt = 907', bdch = 322', odch = 0', lcp = 0'
+Added 390 columns in the formulation 
+Added 330 columns in the formulation 
+Removed 680 columns (not in the enumerated set) from the formulation
+Regenerated 720 columns with the 'enumerated' flag
+<DWph=2> <it= 38> <et=1.50> <Mt= 0.01> <Spt= 0.01> <nCl=  5> <al=0.00> <DB= 1117.7935> <Mlp= 1122.2483> <PB=1166.334> 
+<DWph=2> <it= 39> <et=1.50> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <al=0.00> <DB= 1122.2483> <Mlp= 1122.2483> <PB=1166.334> 
+<DWph=1> <it= 40> <et=1.51> <Mt= 0.00> <Spt= 0.01> <nCl=  5> <al=0.00> <DB= 1122.2483> <Mlp= 1122.2483> <PB=1166.334> 
+    TT = 0.000293, performed by inspection with 9297 solutions, nbR1C = 0, nbDiscC = 0
+    TT = 0.003442, performed by inspection with 88196 solutions, nbR1C = 0, nbDiscC = 0
+    RCSP exact solver info for graph G_3 : TT = 0.005286, pt = 1.4e-05, dt = 0.00411, ct = 0.000789, ndl = 3', bdl = 17', odl = 2', odf = 20', bsi = 1', cnt = 4', bdch = 221', odch = 47', lcp = 29', #sols = 150
+<DWph=0> <it= 41> <et=1.52> <Mt= 0.00> <Spt= 0.01> <nCl=186> <al=0.20> <DB= 1119.2440> <Mlp= 1122.2483> <PB=1166.334> 
+    TT = 0.000283, performed by inspection with 9297 solutions, nbR1C = 0, nbDiscC = 0
+    TT = 0.003402, performed by inspection with 88196 solutions, nbR1C = 0, nbDiscC = 0
+    RCSP exact solver info for graph G_3 : TT = 0.005246, pt = 2.7e-05, dt = 0.00407, ct = 0.000802, ndl = 3', bdl = 17', odl = 2', odf = 20', bsi = 1', cnt = 4', bdch = 221', odch = 48', lcp = 30', #sols = 150
+    TT = 0.000279, performed by inspection with 9297 solutions, nbR1C = 0, nbDiscC = 0
+    TT = 0.003363, performed by inspection with 88196 solutions, nbR1C = 0, nbDiscC = 0
+    RCSP exact solver info for graph G_3 : TT = 0.005172, pt = 2.4e-05, dt = 0.004017, ct = 0.000799, ndl = 3', bdl = 17', odl = 2', odf = 20', bsi = 1', cnt = 4', bdch = 221', odch = 48', lcp = 30', #sols = 150
+<DWph=0> <it= 42> <et=1.55> <Mt= 0.00> <Spt= 0.03> <nCl=  4> <al=0.00> <DB= 1122.2483> <Mlp= 1122.2483> <PB=1166.334> 
+Dynamic params and stats :  aver.obdmd = 16.3077 aver.buck.num. = 21
+@@ 1 0 1122.25 0.000285 0.000293 0 1.55
+Dynamic params and stats :  aver.obdmd = 19.8269 aver.buck.num. = 23
+@@ 1 0 1122.25 0.00340233 0.003442 0 1.55
+Dynamic params and stats :  aver.obdmd = 21.8269 aver.buck.num. = 24
+@@ 1 0 1122.25 0.00486233 0.004899 28.5628 1.55
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 9297 solutions, remains 8436 (90.7%)
+Reduced cost fixing for graph G_2...  took 0 sec., done by inspection with 88196 solutions, remains 77107 (87.4%)
+Removed 7 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.985556)
+ColGenEvalAlg final dual bound: 1122.25 (rounded: 1122.25)
+Shrinking heuristic shrunk 6 edges
+1 Rank-1 1-rows pack. cuts added ,  max viol. = 0.431002, aver. viol. = 0.431002
+150 Rank-1 3-rows pack. cuts added ,  max viol. = 0.490957, aver. viol. = 0.175004
+----- Add fac. cuts : R1C(151), max.viol = 0.490957, aver.viol = 0.1767, sep/add took 0.00860219/0.0434555 sec. -----
+1745 columns (1745 active), 151 dyn. constrs. (151 active), 256 art. vars. (256 active)
+<DWph=2> <it=  1> <et=1.65> <Mt= 0.01> <Spt= 0.01> <nCl= 15> <al=0.00> <DB= 1136.5533> <Mlp= 1139.7916> <PB=1166.334> 
+<DWph=2> <it=  2> <et=1.65> <Mt= 0.00> <Spt= 0.00> <nCl=  4> <al=0.40> <DB= 1135.5406> <Mlp= 1139.7916> <PB=1166.334> 
+<DWph=2> <it=  3> <et=1.66> <Mt= 0.00> <Spt= 0.01> <nCl=  4> <al=0.00> <DB= 1139.7916> <Mlp= 1139.7916> <PB=1166.334> 
+<DWph=1> <it=  4> <et=1.67> <Mt= 0.00> <Spt= 0.01> <nCl=  9> <al=0.20> <DB= 1119.9237> <Mlp= 1139.7916> <PB=1166.334> 
+<DWph=1> <it=  5> <et=1.68> <Mt= 0.01> <Spt= 0.00> <nCl=  6> <al=0.10> <DB= 1131.4442> <Mlp= 1139.7916> <PB=1166.334> 
+<DWph=1> <it=  6> <et=1.69> <Mt= 0.00> <Spt= 0.01> <nCl=  6> <al=0.00> <DB= 1131.8274> <Mlp= 1139.7916> <PB=1166.334> 
+<DWph=1> <it=  7> <et=1.69> <Mt= 0.00> <Spt= 0.00> <nCl=  2> <al=0.00> <DB= 1139.7916> <Mlp= 1139.7916> <PB=1166.334> 
+    TT = 0.000717, performed by inspection with 8436 solutions, nbR1C = 60, nbDiscC = 0
+    TT = 0.012129, performed by inspection with 77107 solutions, nbR1C = 60, nbDiscC = 0
+    RCSP exact solver info for graph G_3 : TT = 0.01545, pt = 0.000336, dt = 0.012613, ct = 0.002087, ndl = 4', bdl = 22', odl = 3', odf = 25', bsi = 2', cnt = 16', bdch = 360', odch = 70', lcp = 48', #sols = 150
+<DWph=0> <it=  8> <et=1.74> <Mt= 0.00> <Spt= 0.05> <nCl=172> <al=0.00> <DB= 1095.6855> <Mlp= 1139.7916> <PB=1166.334> 
+    TT = 0.00064, performed by inspection with 8436 solutions, nbR1C = 45, nbDiscC = 0
+    TT = 0.010215, performed by inspection with 77107 solutions, nbR1C = 45, nbDiscC = 0
+    RCSP exact solver info for graph G_3 : TT = 0.011999, pt = 0.000283, dt = 0.009522, ct = 0.001854, ndl = 3', bdl = 20', odl = 3', odf = 23', bsi = 2', cnt = 11', bdch = 311', odch = 61', lcp = 42', #sols = 150
+<DWph=0> <it=  9> <et=1.78> <Mt= 0.01> <Spt= 0.03> <nCl= 47> <al=0.00> <DB= 1135.5999> <Mlp= 1139.5607> <PB=1166.334> 
+    TT = 0.000677, performed by inspection with 8436 solutions, nbR1C = 51, nbDiscC = 0
+    TT = 0.010991, performed by inspection with 77107 solutions, nbR1C = 51, nbDiscC = 0
+    RCSP exact solver info for graph G_3 : TT = 0.012225, pt = 0.000295, dt = 0.009734, ct = 0.001872, ndl = 3', bdl = 21', odl = 3', odf = 23', bsi = 2', cnt = 11', bdch = 315', odch = 62', lcp = 42', #sols = 150
+<DWph=0> <it= 10> <et=1.81> <Mt= 0.01> <Spt= 0.03> <nCl=  5> <al=0.00> <DB= 1139.5541> <Mlp= 1139.5541> <PB=1166.334> 
+Dynamic params and stats :  aver.obdmd = 16.3077 aver.buck.num. = 21 nbR1C = 51 with avMem = 4.37255
+@@ 1 1 1139.55 0.000678 0.000717 0 1.81
+Dynamic params and stats :  aver.obdmd = 19.8269 aver.buck.num. = 23 nbR1C = 51 with avMem = 4.37255
+@@ 1 1 1139.55 0.0111117 0.012129 0 1.81
+Dynamic params and stats :  aver.obdmd = 21.8269 aver.buck.num. = 24 nbR1C = 51 with avMem = 4.37255
+@@ 1 1 1139.55 0.0125607 0.0147 28.5628 1.81
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 8436 solutions, remains 3844 (45.6%)
+Reduced cost fixing for graph G_2...  took 0.01 sec., done by inspection with 77107 solutions, remains 20835 (27%)
+Labels distribution in buckets (bucket size) : largest - 43, top 0.1% - 43, top 0.5% - 41, top 2% - 35, top 10% - 19, top 50% - 4
+Reduced cost fixing for graph G_3... 9796 buck. arcs remain (59% from prev., 16.9% from max.) + 5471 jump buck. arcs (9.42% from max.)
+ TT = 0.03834, pt = 0.005325, dt = 0.015893, ct = 0.016523, ndl = 12', bdl = 75', odl = 3', odf = 41', lpcb = 109', cnt = 132', bdch = 807', odch = 185', lcp = 122'
+Labels distribution in buckets (bucket size) : largest - 52, top 0.1% - 52, top 0.5% - 42, top 2% - 37, top 10% - 19, top 50% - 4
+Run forward enumeration with border = 70... succeeded! lpt = 0.074046, ndl = 18', dl = 4', lpcb = 234', dch = 43'
+Run enumeration concatenation with time limit 0.35703 sec.... succeeded!
+Sorting and storing enumerated solutions ... done!
+ TT = 0.211224, pt = 0, dt = 0.074046, ct = 0.068972, ndl = 18', bdl = 4', lpcb = 234', cnt = 413', bdch = 43', odch = 0', lcp = 0'
+Enumeration succeeded!, number of elem. solutions is 40758
+Estimating inspection time...     TT = 0.012747, performed by inspection with 40758 solutions, nbR1C = 51, nbDiscC = 0
+Inspection time is low enough. Pricing will be done by inspection.
+Added 406 columns in the formulation 
+Removed 652 columns (not in the enumerated set) from the formulation
+Regenerated 406 columns with the 'enumerated' flag
+<DWph=2> <it= 11> <et=2.17> <Mt= 0.03> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1139.7477> <Mlp= 1139.7477> <PB=1166.334> 
+<DWph=1> <it= 12> <et=2.18> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1139.7477> <Mlp= 1139.7477> <PB=1166.334> 
+    TT = 0.00038, performed by inspection with 3844 solutions, nbR1C = 70, nbDiscC = 0
+    TT = 0.00366, performed by inspection with 20835 solutions, nbR1C = 70, nbDiscC = 0
+    TT = 0.010123, performed by inspection with 40758 solutions, nbR1C = 70, nbDiscC = 0
+<DWph=0> <it= 13> <et=2.20> <Mt= 0.00> <Spt= 0.03> <nCl=117> <al=0.30> <DB= 1139.7361> <Mlp= 1139.7477> <PB=1166.334> 
+    TT = 0.000391, performed by inspection with 3844 solutions, nbR1C = 70, nbDiscC = 0
+    TT = 0.003647, performed by inspection with 20835 solutions, nbR1C = 70, nbDiscC = 0
+    TT = 0.010117, performed by inspection with 40758 solutions, nbR1C = 70, nbDiscC = 0
+    TT = 0.000328, performed by inspection with 3844 solutions, nbR1C = 53, nbDiscC = 0
+    TT = 0.003117, performed by inspection with 20835 solutions, nbR1C = 53, nbDiscC = 0
+    TT = 0.008456, performed by inspection with 40758 solutions, nbR1C = 53, nbDiscC = 0
+<DWph=0> <it= 14> <et=2.24> <Mt= 0.00> <Spt= 0.04> <nCl=  8> <al=0.00> <DB= 1139.7477> <Mlp= 1139.7477> <PB=1166.334> 
+Dynamic params and stats :  aver.obdmd = 16.3077 aver.buck.num. = 21 nbR1C = 53 with avMem = 4.26415
+@@ 1 1 1139.75 0.000366333 0.000391 0 2.24
+Dynamic params and stats :  aver.obdmd = 19.8269 aver.buck.num. = 23 nbR1C = 53 with avMem = 4.26415
+@@ 1 1 1139.75 0.00347467 0.00366 0 2.24
+Dynamic params and stats :  aver.obdmd = 21.8269 aver.buck.num. = 24 nbR1C = 53 with avMem = 4.26415
+@@ 1 1 1139.75 0.00956533 0.010123 0 2.24
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 3844 solutions, remains 3592 (93.4%)
+Reduced cost fixing for graph G_2...  took 0 sec., done by inspection with 20835 solutions, remains 17577 (84.4%)
+Reduced cost fixing for graph G_3...  took 0.01 sec., done by inspection with 40758 solutions, remains 34310 (84.2%)
+Removed 9 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.992772)
+ColGenEvalAlg final dual bound: 1139.75 (rounded: 1139.75)
+Gap improvement since the last cut separation : 0.396941 (1122.25)
+Current active cuts : R1C(53,114.314) 3rowPackR1C(53)
+Shrinking heuristic shrunk 13 edges
+In total 1 RCC cut(s) are found by the Fractional capacity min-cut heuristic 
+73 Rank-1 3-rows pack. cuts added ,  max viol. = 0.45098, aver. viol. = 0.190169
+Building structures for heuristic rank-1 packing cut separation...done!
+85 Rank-1 4-rows pack. cuts added ,  max viol. = 0.627451, aver. viol. = 0.252595
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.627451, aver. viol. = 0.429804
+----- Add fac. cuts : CAP(1) R1C(258), max.viol = 0.627451, aver.viol = 0.302748, sep/add took 0.289681/0.0597593 sec. -----
+2419 columns (1479 active), 410 dyn. constrs. (312 active), 515 art. vars. (417 active)
+<DWph=2> <it=  1> <et=2.66> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1141.9195> <Mlp= 1141.9195> <PB=1166.334> 
+<DWph=1> <it=  2> <et=2.66> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1141.9195> <Mlp= 1141.9195> <PB=1166.334> 
+    TT = 0.000367, performed by inspection with 3592 solutions, nbR1C = 78, nbDiscC = 0
+    TT = 0.003212, performed by inspection with 17577 solutions, nbR1C = 78, nbDiscC = 0
+    TT = 0.008275, performed by inspection with 34310 solutions, nbR1C = 78, nbDiscC = 0
+<DWph=0> <it=  3> <et=2.68> <Mt= 0.00> <Spt= 0.02> <nCl= 58> <al=0.30> <DB= 1141.7892> <Mlp= 1141.9195> <PB=1166.334> 
+    TT = 0.000362, performed by inspection with 3592 solutions, nbR1C = 79, nbDiscC = 0
+    TT = 0.003168, performed by inspection with 17577 solutions, nbR1C = 79, nbDiscC = 0
+    TT = 0.008266, performed by inspection with 34310 solutions, nbR1C = 79, nbDiscC = 0
+    TT = 0.000336, performed by inspection with 3592 solutions, nbR1C = 65, nbDiscC = 0
+    TT = 0.002811, performed by inspection with 17577 solutions, nbR1C = 65, nbDiscC = 0
+    TT = 0.007015, performed by inspection with 34310 solutions, nbR1C = 65, nbDiscC = 0
+<DWph=0> <it=  4> <et=2.72> <Mt= 0.00> <Spt= 0.04> <nCl= 10> <al=0.00> <DB= 1141.9195> <Mlp= 1141.9195> <PB=1166.334> 
+Dynamic params and stats :  aver.obdmd = 16.3077 aver.buck.num. = 21 nbR1C = 65 with avMem = 3.87692
+@@ 1 2 1141.92 0.000355 0.000367 0 2.72
+Dynamic params and stats :  aver.obdmd = 19.8269 aver.buck.num. = 23 nbR1C = 65 with avMem = 3.87692
+@@ 1 2 1141.92 0.00306367 0.003212 0 2.72
+Dynamic params and stats :  aver.obdmd = 21.8269 aver.buck.num. = 24 nbR1C = 65 with avMem = 3.87692
+@@ 1 2 1141.92 0.007852 0.008275 0 2.72
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 3592 solutions, remains 3001 (83.5%)
+Reduced cost fixing for graph G_2...  took 0 sec., done by inspection with 17577 solutions, remains 13536 (77%)
+Reduced cost fixing for graph G_3...  took 0 sec., done by inspection with 34310 solutions, remains 29162 (85%)
+Removed 16 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.911675)
+ColGenEvalAlg final dual bound: 1141.92 (rounded: 1141.92)
+Gap improvement since the last cut separation : 0.0816865 (1139.75)
+Current active cuts : R1C(65,127.424) 3rowPackR1C(51) 4rowPackR1C(9) 5rowPackR1C(5)
+Shrinking heuristic shrunk 7 edges
+26 Rank-1 3-rows pack. cuts added ,  max viol. = 0.288744, aver. viol. = 0.137282
+Building structures for heuristic rank-1 packing cut separation...done!
+36 Rank-1 4-rows pack. cuts added ,  max viol. = 0.406199, aver. viol. = 0.209398
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.406199, aver. viol. = 0.275506
+----- Add fac. cuts : R1C(162), max.viol = 0.487765, aver.viol = 0.254708, sep/add took 0.384208/0.0411725 sec. -----
+1547 columns (1531 active), 474 dyn. constrs. (227 active), 677 art. vars. (332 active)
+<DWph=2> <it=  1> <et=3.21> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1142.7156> <Mlp= 1142.7156> <PB=1166.334> 
+<DWph=1> <it=  2> <et=3.22> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1142.7156> <Mlp= 1142.7156> <PB=1166.334> 
+    TT = 0.00034, performed by inspection with 3001 solutions, nbR1C = 78, nbDiscC = 0
+    TT = 0.002401, performed by inspection with 13536 solutions, nbR1C = 78, nbDiscC = 0
+    TT = 0.0067, performed by inspection with 29162 solutions, nbR1C = 78, nbDiscC = 0
+<DWph=0> <it=  3> <et=3.24> <Mt= 0.00> <Spt= 0.02> <nCl= 53> <al=0.30> <DB= 1140.0582> <Mlp= 1142.7156> <PB=1166.334> 
+    TT = 0.000346, performed by inspection with 3001 solutions, nbR1C = 80, nbDiscC = 0
+    TT = 0.002381, performed by inspection with 13536 solutions, nbR1C = 80, nbDiscC = 0
+    TT = 0.006697, performed by inspection with 29162 solutions, nbR1C = 80, nbDiscC = 0
+    TT = 0.000318, performed by inspection with 3001 solutions, nbR1C = 67, nbDiscC = 0
+    TT = 0.002176, performed by inspection with 13536 solutions, nbR1C = 67, nbDiscC = 0
+    TT = 0.005954, performed by inspection with 29162 solutions, nbR1C = 67, nbDiscC = 0
+<DWph=0> <it=  4> <et=3.27> <Mt= 0.00> <Spt= 0.03> <nCl=  6> <al=0.00> <DB= 1142.7156> <Mlp= 1142.7156> <PB=1166.334> 
+Dynamic params and stats :  aver.obdmd = 16.3077 aver.buck.num. = 21 nbR1C = 67 with avMem = 3.98507
+@@ 1 3 1142.72 0.000334667 0.000346 0 3.27
+Dynamic params and stats :  aver.obdmd = 19.8269 aver.buck.num. = 23 nbR1C = 67 with avMem = 3.98507
+@@ 1 3 1142.72 0.00231933 0.002401 0 3.27
+Dynamic params and stats :  aver.obdmd = 21.8269 aver.buck.num. = 24 nbR1C = 67 with avMem = 3.98507
+@@ 1 3 1142.72 0.00645033 0.0067 0 3.27
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 3001 solutions, remains 2886 (96.2%)
+Reduced cost fixing for graph G_2...  took 0 sec., done by inspection with 13536 solutions, remains 12188 (90%)
+Reduced cost fixing for graph G_3...  took 0 sec., done by inspection with 29162 solutions, remains 26214 (89.9%)
+Removed 7 columns (not in the enumerated set) from the formulation
+ColGenEvalAlg final dual bound: 1142.72 (rounded: 1142.72)
+Gap improvement since the last cut separation : 0.0326102 (1141.92)
+Current active cuts : R1C(67,147.846) 3rowPackR1C(47) 4rowPackR1C(10) 5rowPackR1C(10)
+Shrinking heuristic shrunk 6 edges
+46 Rank-1 3-rows pack. cuts added ,  max viol. = 0.187942, aver. viol. = 0.0467146
+Building structures for heuristic rank-1 packing cut separation...done!
+81 Rank-1 4-rows pack. cuts added ,  max viol. = 0.187942, aver. viol. = 0.0627388
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.187942, aver. viol. = 0.115643
+----- Add fac. cuts : R1C(227), max.viol = 0.274166, aver.viol = 0.108782, sep/add took 0.455891/0.0628901 sec. -----
+1590 columns (1583 active), 454 dyn. constrs. (294 active), 904 art. vars. (399 active)
+<DWph=2> <it=  1> <et=3.85> <Mt= 0.02> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1143.6736> <Mlp= 1143.6736> <PB=1166.334> 
+<DWph=1> <it=  2> <et=3.85> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1143.6736> <Mlp= 1143.6736> <PB=1166.334> 
+    TT = 0.000343, performed by inspection with 2886 solutions, nbR1C = 81, nbDiscC = 0
+    TT = 0.002142, performed by inspection with 12188 solutions, nbR1C = 81, nbDiscC = 0
+    TT = 0.006337, performed by inspection with 26214 solutions, nbR1C = 81, nbDiscC = 0
+    TT = 0.00034, performed by inspection with 2886 solutions, nbR1C = 81, nbDiscC = 0
+    TT = 0.002101, performed by inspection with 12188 solutions, nbR1C = 81, nbDiscC = 0
+    TT = 0.006286, performed by inspection with 26214 solutions, nbR1C = 81, nbDiscC = 0
+<DWph=0> <it=  3> <et=3.89> <Mt= 0.00> <Spt= 0.03> <nCl= 33> <al=0.00> <DB= 1143.6736> <Mlp= 1143.6736> <PB=1166.334> 
+Dynamic params and stats :  aver.obdmd = 16.3077 aver.buck.num. = 21 nbR1C = 81 with avMem = 4.04938
+@@ 1 4 1143.67 0.0003415 0.000343 0 3.89
+Dynamic params and stats :  aver.obdmd = 19.8269 aver.buck.num. = 23 nbR1C = 81 with avMem = 4.04938
+@@ 1 4 1143.67 0.0021215 0.002142 0 3.89
+Dynamic params and stats :  aver.obdmd = 21.8269 aver.buck.num. = 24 nbR1C = 81 with avMem = 4.04938
+@@ 1 4 1143.67 0.0063115 0.006337 0 3.89
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 2886 solutions, remains 2798 (97%)
+Reduced cost fixing for graph G_2...  took 0 sec., done by inspection with 12188 solutions, remains 11384 (93.4%)
+Reduced cost fixing for graph G_3...  took 0 sec., done by inspection with 26214 solutions, remains 23681 (90.3%)
+Removed 7 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.959438)
+ColGenEvalAlg final dual bound: 1143.67 (rounded: 1143.67)
+Gap improvement since the last cut separation : 0.0405621 (1142.72)
+Current active cuts : R1C(81,163.632) 3rowPackR1C(45) 4rowPackR1C(18) 5rowPackR1C(18)
+Shrinking heuristic shrunk 10 edges
+9 Rank-1 3-rows pack. cuts added ,  max viol. = 0.075, aver. viol. = 0.0361111
+Building structures for heuristic rank-1 packing cut separation...done!
+27 Rank-1 4-rows pack. cuts added ,  max viol. = 0.15, aver. viol. = 0.0453704
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.15, aver. viol. = 0.066
+----- Add fac. cuts : R1C(136), max.viol = 0.175, aver.viol = 0.0821691, sep/add took 0.303935/0.0402314 sec. -----
+1616 columns (1609 active), 430 dyn. constrs. (217 active), 1040 art. vars. (322 active)
+<DWph=2> <it=  1> <et=4.29> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1143.8335> <Mlp= 1143.8335> <PB=1166.334> 
+<DWph=1> <it=  2> <et=4.29> <Mt= 0.01> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1143.8335> <Mlp= 1143.8335> <PB=1166.334> 
+    TT = 0.00035, performed by inspection with 2798 solutions, nbR1C = 77, nbDiscC = 0
+    TT = 0.001986, performed by inspection with 11384 solutions, nbR1C = 77, nbDiscC = 0
+    TT = 0.005713, performed by inspection with 23681 solutions, nbR1C = 77, nbDiscC = 0
+    TT = 0.000339, performed by inspection with 2798 solutions, nbR1C = 77, nbDiscC = 0
+    TT = 0.00191, performed by inspection with 11384 solutions, nbR1C = 77, nbDiscC = 0
+    TT = 0.00568, performed by inspection with 23681 solutions, nbR1C = 77, nbDiscC = 0
+<DWph=0> <it=  3> <et=4.32> <Mt= 0.00> <Spt= 0.02> <nCl= 29> <al=0.00> <DB= 1143.8335> <Mlp= 1143.8335> <PB=1166.334> 
+Dynamic params and stats :  aver.obdmd = 16.3077 aver.buck.num. = 21 nbR1C = 77 with avMem = 4.15584
+@@ 1 5 1143.83 0.0003445 0.00035 0 4.32
+Dynamic params and stats :  aver.obdmd = 19.8269 aver.buck.num. = 23 nbR1C = 77 with avMem = 4.15584
+@@ 1 5 1143.83 0.001948 0.001986 0 4.32
+Dynamic params and stats :  aver.obdmd = 21.8269 aver.buck.num. = 24 nbR1C = 77 with avMem = 4.15584
+@@ 1 5 1143.83 0.0056965 0.005713 0 4.32
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 2798 solutions, remains 2757 (98.5%)
+Reduced cost fixing for graph G_2...  took 0 sec., done by inspection with 11384 solutions, remains 11140 (97.9%)
+Reduced cost fixing for graph G_3...  took 0 sec., done by inspection with 23681 solutions, remains 22564 (95.3%)
+Removed 4 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.952669)
+ColGenEvalAlg final dual bound: 1143.83 (rounded: 1143.83)
+Gap improvement since the last cut separation : 0.00705463 (1143.67)
+Cut generation tailing off counter increased to 1
+Current active cuts : R1C(77,173.956) 3rowPackR1C(41) 4rowPackR1C(14) 5rowPackR1C(22)
+Shrinking heuristic shrunk 4 edges
+7 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0378486, aver. viol. = 0.0345286
+Building structures for heuristic rank-1 packing cut separation...done!
+25 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0398406, aver. viol. = 0.0328021
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0464807, aver. viol. = 0.038413
+----- Add fac. cuts : R1C(132), max.viol = 0.0929615, aver.viol = 0.042874, sep/add took 0.488765/0.034045 sec. -----
+1638 columns (1634 active), 349 dyn. constrs. (209 active), 1172 art. vars. (314 active)
+<DWph=2> <it=  1> <et=4.90> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1144.0137> <Mlp= 1144.0137> <PB=1166.334> 
+<DWph=1> <it=  2> <et=4.90> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1144.0137> <Mlp= 1144.0137> <PB=1166.334> 
+    TT = 0.000353, performed by inspection with 2757 solutions, nbR1C = 78, nbDiscC = 0
+    TT = 0.001923, performed by inspection with 11140 solutions, nbR1C = 78, nbDiscC = 0
+    TT = 0.005553, performed by inspection with 22564 solutions, nbR1C = 78, nbDiscC = 0
+    TT = 0.000347, performed by inspection with 2757 solutions, nbR1C = 78, nbDiscC = 0
+    TT = 0.001868, performed by inspection with 11140 solutions, nbR1C = 78, nbDiscC = 0
+    TT = 0.00546, performed by inspection with 22564 solutions, nbR1C = 78, nbDiscC = 0
+<DWph=0> <it=  3> <et=4.93> <Mt= 0.01> <Spt= 0.03> <nCl= 31> <al=0.00> <DB= 1144.0137> <Mlp= 1144.0137> <PB=1166.334> 
+Dynamic params and stats :  aver.obdmd = 16.3077 aver.buck.num. = 21 nbR1C = 78 with avMem = 4.16667
+@@ 1 6 1144.01 0.00035 0.000353 0 4.93
+Dynamic params and stats :  aver.obdmd = 19.8269 aver.buck.num. = 23 nbR1C = 78 with avMem = 4.16667
+@@ 1 6 1144.01 0.0018955 0.001923 0 4.93
+Dynamic params and stats :  aver.obdmd = 21.8269 aver.buck.num. = 24 nbR1C = 78 with avMem = 4.16667
+@@ 1 6 1144.01 0.0055065 0.005553 0 4.93
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 2757 solutions, remains 2719 (98.6%)
+Reduced cost fixing for graph G_2...  took 0 sec., done by inspection with 11140 solutions, remains 10788 (96.8%)
+Reduced cost fixing for graph G_3...  took 0 sec., done by inspection with 22564 solutions, remains 20955 (92.9%)
+Removed 6 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.94504)
+ColGenEvalAlg final dual bound: 1144.01 (rounded: 1144.01)
+Gap improvement since the last cut separation : 0.0080089 (1143.83)
+Cut generation tailing off counter increased to 2
+Current active cuts : R1C(78,174.336) 3rowPackR1C(37) 4rowPackR1C(17) 5rowPackR1C(24)
+Shrinking heuristic shrunk 24 edges
+Building structures for heuristic rank-1 packing cut separation...done!
+----- Add fac. cuts : sep. took 0.19632 sec.----- no cuts found  -----
+Current active cuts : R1C(78,174.336) 3rowPackR1C(37) 4rowPackR1C(17) 5rowPackR1C(24)
+**** Strong branching phase 1 is started *****
+SB phase 1 cand.  1 branch on VNB[0] (lhs=8.7500)     : [ 1144.5728,  1161.3149], score = 9.67      <et=5.21>
+SB phase 1 cand.  2 branch on VNB[2] (lhs=3.7500)     : [ 1144.5513,  1546.6113], score = 12.00      <et=5.24>
+SB phase 1 cand.  3 branch on EDGE[2,20] (lhs=0.5000) : [ 1144.5695,  1145.2711], score = 0.70      <et=5.26>
+SB phase 1 cand.  4 branch on EDGE[2,32] (lhs=0.5000) : [ 1144.5358,  1145.0102], score = 0.52      <et=5.28>
+SB phase 1 cand.  5 branch on EDGE[3,28] (lhs=0.5000) : [ 1144.7337,  1144.8773], score = 0.62      <et=5.3>
+SB phase 1 cand.  6 branch on EDGE[0,2] (lhs=0.5000)  : [ 1144.4929,  1145.2038], score = 0.57      <et=5.31>
+SB phase 1 cand.  7 branch on EDGE[0,3] (lhs=0.5000)  : [ 1144.1329,  1151.3183], score = 0.87      <et=5.34>
+SB phase 1 cand.  8 branch on EDGE[0,4] (lhs=0.5000)  : [ 1144.2508,  1145.0480], score = 0.25      <et=5.35>
+SB phase 1 cand.  9 branch on EDGE[0,6] (lhs=0.5000)  : [ 1144.1943,  1145.5277], score = 0.27      <et=5.37>
+SB phase 1 cand. 10 branch on EDGE[0,8] (lhs=0.5000)  : [ 1144.4392,  1144.6416], score = 0.27      <et=5.38>
+SB phase 1 cand. 11 branch on EDGE[0,13] (lhs=0.5000) : [ 1144.5100,  1145.1671], score = 0.57      <et=5.4>
+SB phase 1 cand. 12 branch on EDGE[0,17] (lhs=0.5000) : [ 1144.5968,  1144.7389], score = 0.42      <et=5.42>
+SB phase 1 cand. 13 branch on EDGE[0,18] (lhs=0.5000) : [ 1144.5593,  1144.5994], score = 0.32      <et=5.44>
+SB phase 1 cand. 14 branch on EDGE[0,25] (lhs=0.5000) : [ 1144.1943,  1145.3343], score = 0.24      <et=5.46>
+SB phase 1 cand. 15 branch on EDGE[0,37] (lhs=0.5000) : [ 1144.4727,  1144.7114], score = 0.32      <et=5.47>
+SB phase 1 cand. 16 branch on EDGE[0,38] (lhs=0.5000) : [ 1144.6778,  1144.7504], score = 0.49      <et=5.49>
+SB phase 1 cand. 17 branch on EDGE[0,40] (lhs=0.5000) : [ 1144.2167,  1146.3223], score = 0.47      <et=5.51>
+SB phase 1 cand. 18 branch on EDGE[0,42] (lhs=0.5000) : [ 1144.4454,  1144.8344], score = 0.35      <et=5.52>
+SB phase 1 cand. 19 branch on EDGE[2,29] (lhs=0.5000) : [ 1144.5582,  1144.5779], score = 0.31      <et=5.54>
+SB phase 1 cand. 20 branch on EDGE[4,17] (lhs=0.5000) : [ 1144.5770,  1145.1863], score = 0.66      <et=5.56>
+SB phase 1 cand. 21 branch on EDGE[4,19] (lhs=0.5000) : [ 1144.4428,  1144.7596], score = 0.32      <et=5.57>
+SB phase 1 cand. 22 branch on EDGE[4,47] (lhs=0.5000) : [ 1144.2508,  1145.0750], score = 0.25      <et=5.59>
+SB phase 1 cand. 23 branch on EDGE[6,27] (lhs=0.5000) : [ 1144.1945,  1145.4584], score = 0.26      <et=5.61>
+SB phase 1 cand. 24 branch on EDGE[7,48] (lhs=0.5000) : [ 1144.2951,  1145.3354], score = 0.37      <et=5.62>
+SB phase 1 cand. 25 branch on EDGE[8,27] (lhs=0.5000) : [ 1144.5626,  1144.7714], score = 0.42      <et=5.64>
+SB phase 1 cand. 26 branch on EDGE[9,30] (lhs=0.5000) : [ 1144.7128,  1144.8347], score = 0.57      <et=5.66>
+SB phase 1 cand. 27 branch on EDGE[9,50] (lhs=0.5000) : [ 1144.8347,  1144.9360], score = 0.76      <et=5.67>
+SB phase 1 cand. 28 branch on EDGE[12,37] (lhs=0.5000): [ 1144.3739,  1145.8614], score = 0.67      <et=5.69>
+SB phase 1 cand. 29 branch on EDGE[12,46] (lhs=0.5000): [ 1144.3938,  1144.8625], score = 0.32      <et=5.71>
+SB phase 1 cand. 30 branch on EDGE[13,18] (lhs=0.5000): [ 1144.2977,  1144.9360], score = 0.26      <et=5.73>
+SB phase 1 cand. 31 branch on EDGE[15,33] (lhs=0.5000): [ 1144.5919,  1144.8463], score = 0.48      <et=5.74>
+SB phase 1 cand. 32 branch on EDGE[15,45] (lhs=0.5000): [ 1144.6061,  1144.8463], score = 0.49      <et=5.76>
+SB phase 1 cand. 33 branch on EDGE[16,21] (lhs=0.5000): [ 1144.4774,  1145.2182], score = 0.56      <et=5.77>
+SB phase 1 cand. 34 branch on EDGE[16,29] (lhs=0.5000): [ 1144.1930,  1145.7022], score = 0.30      <et=5.79>
+SB phase 1 cand. 35 branch on EDGE[18,25] (lhs=0.5000): [ 1144.3503,  1144.4563], score = 0.15      <et=5.8>
+SB phase 1 cand. 36 branch on EDGE[18,47] (lhs=0.5000): [ 1144.5593,  1144.5728], score = 0.31      <et=5.82>
+SB phase 1 cand. 37 branch on EDGE[19,40] (lhs=0.5000): [ 1144.2689,  1146.7496], score = 0.70      <et=5.84>
+SB phase 1 cand. 38 branch on EDGE[19,41] (lhs=0.5000): [ 1144.2689,  1144.7060], score = 0.18      <et=5.85>
+SB phase 1 cand. 39 branch on EDGE[19,42] (lhs=0.5000): [ 1144.5392,  1144.6579], score = 0.34      <et=5.87>
+SB phase 1 cand. 40 branch on EDGE[20,32] (lhs=0.5000): [ 1144.1329,  1149.8099], score = 0.69      <et=5.88>
+SB phase 1 cand. 41 branch on EDGE[21,50] (lhs=0.5000): [ 1144.4572,  1144.9443], score = 0.41      <et=5.9>
+SB phase 1 cand. 42 branch on EDGE[23,43] (lhs=0.5000): [ 1144.2951,  1145.3822], score = 0.39      <et=5.92>
+SB phase 1 cand. 43 branch on EDGE[26,31] (lhs=0.5000): [ 1144.4157,  1145.1308], score = 0.45      <et=5.93>
+SB phase 1 cand. 44 branch on EDGE[28,31] (lhs=0.5000): [ 1144.2951,  1145.4680], score = 0.41      <et=5.95>
+SB phase 1 cand. 45 branch on EDGE[30,39] (lhs=0.5000): [ 1144.6009,  1144.8463], score = 0.49      <et=5.96>
+SB phase 1 cand. 46 branch on EDGE[33,39] (lhs=0.5000): [ 1144.6038,  1144.8463], score = 0.49      <et=5.98>
+SB phase 1 cand. 47 branch on EDGE[38,46] (lhs=0.5000): [ 1144.4721,  1144.8631], score = 0.39      <et=5.99>
+SB phase 1 cand. 48 branch on EDGE[40,41] (lhs=0.5000): [ 1144.6579,  1144.6931], score = 0.44      <et=6.01>
+SB phase 1 cand. 49 branch on EDGE[40,42] (lhs=0.5000): [ 1144.4858,  1144.6579], score = 0.30      <et=6.03>
+SB phase 1 cand. 50 branch on EDGE[42,44] (lhs=0.5000): [ 1144.4120,  1145.9657], score = 0.78      <et=6.04>
+SB phase 1 cand. 51 branch on EDGE[44,45] (lhs=0.5000): [ 1144.5919,  1144.8463], score = 0.48      <et=6.06>
+SB phase 1 cand. 52 branch on ASB[3,1] (lhs=0.5000)   : [ 1144.6873,  1144.7937], score = 0.53      <et=6.08>
+SB phase 1 cand. 53 branch on ASB[3,2] (lhs=0.5000)   : [ 1144.5738,  1146.3824], score = 1.33      <et=6.09>
+SB phase 1 cand. 54 branch on ASB[3,3] (lhs=0.5000)   : [ 1144.4839,  1147.1582], score = 1.48      <et=6.12>
+SB phase 1 cand. 55 branch on ASB[3,20] (lhs=0.5000)  : [ 1144.4839,  1147.1582], score = 1.48      <et=6.14>
+SB phase 1 cand. 56 branch on ASB[3,22] (lhs=0.5000)  : [ 1144.5199,  1145.4134], score = 0.71      <et=6.15>
+SB phase 1 cand. 57 branch on ASB[3,28] (lhs=0.5000)  : [ 1144.7337,  1144.8773], score = 0.62      <et=6.17>
+SB phase 1 cand. 58 branch on ASB[3,32] (lhs=0.5000)  : [ 1144.5620,  1146.0146], score = 1.10      <et=6.19>
+SB phase 1 cand. 59 branch on ASB[3,35] (lhs=0.5000)  : [ 1144.4839,  1146.7275], score = 1.28      <et=6.21>
+SB phase 1 cand. 60 branch on ASB[3,36] (lhs=0.5000)  : [ 1144.4839,  1146.7275], score = 1.28      <et=6.23>
+SB phase 1 cand. 61 branch on ASB[1,12] (lhs=0.5000)  : [ 1144.4016,  1144.9360], score = 0.36      <et=6.24>
+SB phase 1 cand. 62 branch on ASB[1,17] (lhs=0.5000)  : [ 1144.2743,  1144.9185], score = 0.24      <et=6.26>
+SB phase 1 cand. 63 branch on ASB[1,23] (lhs=0.5000)  : [ 1144.3091,  1144.5342], score = 0.15      <et=6.27>
+SB phase 1 cand. 64 branch on ASB[1,40] (lhs=0.5000)  : [ 1144.5764,  1144.7052], score = 0.39      <et=6.29>
+SB phase 1 cand. 65 branch on ASB[1,42] (lhs=0.5000)  : [ 1144.5764,  1144.7586], score = 0.42      <et=6.31>
+SB phase 1 cand. 66 branch on ASB[1,44] (lhs=0.5000)  : [ 1144.2614,  1144.9297], score = 0.23      <et=6.32>
+SB phase 1 cand. 67 branch on ASB[1,46] (lhs=0.5000)  : [ 1144.3162,  1144.8886], score = 0.26      <et=6.34>
+SB phase 1 cand. 68 branch on ASB[2,2] (lhs=0.5000)   : [ 1144.5738,  1146.3824], score = 1.33      <et=6.36>
+SB phase 1 cand. 69 branch on ASB[2,3] (lhs=0.5000)   : [ 1144.4839,  1147.1582], score = 1.48      <et=6.38>
+SB phase 1 cand. 70 branch on ASB[2,4] (lhs=0.5000)   : [ 1144.6400,  1144.8509], score = 0.52      <et=6.4>
+SB phase 1 cand. 71 branch on ASB[2,6] (lhs=0.5000)   : [ 1144.3760,  1144.4553], score = 0.16      <et=6.41>
+SB phase 1 cand. 72 branch on ASB[2,11] (lhs=0.5000)  : [ 1144.9344,  1144.9360], score = 0.85      <et=6.43>
+SB phase 1 cand. 73 branch on ASB[2,13] (lhs=0.5000)  : [ 1144.5010,  1145.0609], score = 0.51      <et=6.45>
+SB phase 1 cand. 74 branch on ASB[2,14] (lhs=0.5000)  : [ 1144.1945,  1145.1535], score = 0.21      <et=6.46>
+SB phase 1 cand. 75 branch on ASB[2,15] (lhs=0.5000)  : [ 1144.5844,  1145.0428], score = 0.59      <et=6.48>
+SB phase 1 cand. 76 branch on ASB[2,16] (lhs=0.5000)  : [ 1144.5514,  1144.9360], score = 0.50      <et=6.49>
+SB phase 1 cand. 77 branch on ASB[2,17] (lhs=0.5000)  : [ 1144.4225,  1144.8945], score = 0.36      <et=6.51>
+SB phase 1 cand. 78 branch on ASB[2,19] (lhs=0.5000)  : [ 1144.5833,  1144.8168], score = 0.46      <et=6.53>
+SB phase 1 cand. 79 branch on ASB[2,20] (lhs=0.5000)  : [ 1144.4839,  1147.1582], score = 1.48      <et=6.55>
+SB phase 1 cand. 80 branch on ASB[2,21] (lhs=0.5000)  : [ 1144.3906,  1145.8164], score = 0.68      <et=6.57>
+SB phase 1 cand. 81 branch on ASB[2,23] (lhs=0.5000)  : [ 1144.3091,  1144.5342], score = 0.15      <et=6.58>
+SB phase 1 cand. 82 branch on ASB[2,25] (lhs=0.5000)  : [ 1144.1943,  1145.1841], score = 0.21      <et=6.6>
+SB phase 1 cand. 83 branch on ASB[2,29] (lhs=0.5000)  : [ 1144.5486,  1144.9758], score = 0.51      <et=6.62>
+SB phase 1 cand. 84 branch on ASB[2,32] (lhs=0.5000)  : [ 1144.5521,  1146.2798], score = 1.22      <et=6.63>
+SB phase 1 cand. 85 branch on ASB[2,33] (lhs=0.5000)  : [ 1144.5844,  1145.6635], score = 0.94      <et=6.65>
+SB phase 1 cand. 86 branch on ASB[2,35] (lhs=0.5000)  : [ 1144.4787,  1147.0493], score = 1.41      <et=6.67>
+SB phase 1 cand. 87 branch on ASB[2,36] (lhs=0.5000)  : [ 1144.4787,  1147.0493], score = 1.41      <et=6.69>
+SB phase 1 cand. 88 branch on ASB[2,37] (lhs=0.5000)  : [ 1144.6945,  1144.7971], score = 0.53      <et=6.71>
+SB phase 1 cand. 89 branch on ASB[2,40] (lhs=0.5000)  : [ 1144.5825,  1144.8168], score = 0.46      <et=6.73>
+SB phase 1 cand. 90 branch on ASB[2,41] (lhs=0.5000)  : [ 1144.5833,  1144.8106], score = 0.45      <et=6.75>
+SB phase 1 cand. 91 branch on ASB[2,42] (lhs=0.5000)  : [ 1144.5833,  1144.8168], score = 0.46      <et=6.77>
+SB phase 1 cand. 92 branch on ASB[2,44] (lhs=0.5000)  : [ 1144.5517,  1144.8931], score = 0.47      <et=6.78>
+SB phase 1 cand. 93 branch on ASB[2,45] (lhs=0.5000)  : [ 1144.5844,  1145.6635], score = 0.94      <et=6.81>
+SB phase 1 cand. 94 branch on ASB[3,4] (lhs=0.5000)   : [ 1144.2871,  1145.5881], score = 0.43      <et=6.82>
+SB phase 1 cand. 95 branch on ASB[3,6] (lhs=0.5000)   : [ 1144.4553,  1144.7148], score = 0.31      <et=6.84>
+SB phase 1 cand. 96 branch on ASB[3,11] (lhs=0.5000)  : [ 1144.9360,  1144.9565], score = 0.87      <et=6.86>
+SB phase 1 cand. 97 branch on ASB[3,12] (lhs=0.5000)  : [ 1144.4357,  1145.7664], score = 0.74      <et=6.87>
+SB phase 1 cand. 98 branch on ASB[3,13] (lhs=0.5000)  : [ 1144.5100,  1145.0609], score = 0.52      <et=6.89>
+SB phase 1 cand. 99 branch on ASB[3,14] (lhs=0.5000)  : [ 1144.1945,  1145.1535], score = 0.21      <et=6.91>
+SB phase 1 cand. 100 branch on ASB[3,15] (lhs=0.5000)  : [ 1144.5844,  1146.0896], score = 1.18      <et=6.93>
+**** Strong branching phase 2 is started *****
+# Artificial variables in the solution : decreasing phase of stage 
+# Artificial variables in the solution : decreasing phase of stage 
+#    TT = 0.000255, performed by inspection with 2719 solutions, nbR1C = 25, nbDiscC = 0
+    TT = 0.001168, performed by inspection with 10788 solutions, nbR1C = 25, nbDiscC = 0
+    TT = 0.003116, performed by inspection with 20955 solutions, nbR1C = 25, nbDiscC = 0
+Dynamic params and stats :  aver.obdmd = 16.3077 aver.buck.num. = 21 nbR1C = 25 with avMem = 3.72
+Dynamic params and stats :  aver.obdmd = 19.8269 aver.buck.num. = 23 nbR1C = 25 with avMem = 3.72
+Dynamic params and stats :  aver.obdmd = 21.8269 aver.buck.num. = 24 nbR1C = 25 with avMem = 3.72
+<DWph=0> <it=  3> <et=6.96> <Mt= 0.00> <Spt= 0.02> <nCl=312> <al=0.00> <DB= 1334.0776> <Mlp= 1546.6113> <PB=1166.334> 
+    TT = 0.000365, performed by inspection with 2719 solutions, nbR1C = 79, nbDiscC = 0
+    TT = 0.001861, performed by inspection with 10788 solutions, nbR1C = 79, nbDiscC = 0
+    TT = 0.00523, performed by inspection with 20955 solutions, nbR1C = 79, nbDiscC = 0
+    TT = 0.000328, performed by inspection with 2719 solutions, nbR1C = 72, nbDiscC = 0
+    TT = 0.001694, performed by inspection with 10788 solutions, nbR1C = 72, nbDiscC = 0
+    TT = 0.004874, performed by inspection with 20955 solutions, nbR1C = 72, nbDiscC = 0
+Dynamic params and stats :  aver.obdmd = 16.3077 aver.buck.num. = 21 nbR1C = 72 with avMem = 4.125
+Dynamic params and stats :  aver.obdmd = 19.8269 aver.buck.num. = 23 nbR1C = 72 with avMem = 4.125
+Dynamic params and stats :  aver.obdmd = 21.8269 aver.buck.num. = 24 nbR1C = 72 with avMem = 4.125
+<DWph=0> <it=  3> <et=7.04> <Mt= 0.02> <Spt= 0.03> <nCl= 23> <al=0.00> <DB= 1144.5513> <Mlp= 1144.5513> <PB=1166.334> 
+SB phase 2 cand.  1 branch on VNB[2] (lhs=3.7500)   : [ 1144.5513, 1000000000000.0000], score = 537621.01      <et=7.05>
+    TT = 0.000295, performed by inspection with 2719 solutions, nbR1C = 45, nbDiscC = 0
+    TT = 0.001413, performed by inspection with 10788 solutions, nbR1C = 45, nbDiscC = 0
+    TT = 0.003865, performed by inspection with 20955 solutions, nbR1C = 45, nbDiscC = 0
+    TT = 0.000289, performed by inspection with 2719 solutions, nbR1C = 54, nbDiscC = 0
+    TT = 0.001482, performed by inspection with 10788 solutions, nbR1C = 54, nbDiscC = 0
+    TT = 0.004201, performed by inspection with 20955 solutions, nbR1C = 54, nbDiscC = 0
+    TT = 0.000272, performed by inspection with 2719 solutions, nbR1C = 50, nbDiscC = 0
+    TT = 0.001393, performed by inspection with 10788 solutions, nbR1C = 50, nbDiscC = 0
+    TT = 0.003914, performed by inspection with 20955 solutions, nbR1C = 50, nbDiscC = 0
+Dynamic params and stats :  aver.obdmd = 16.3077 aver.buck.num. = 21 nbR1C = 50 with avMem = 4.12
+Dynamic params and stats :  aver.obdmd = 19.8269 aver.buck.num. = 23 nbR1C = 50 with avMem = 4.12
+Dynamic params and stats :  aver.obdmd = 21.8269 aver.buck.num. = 24 nbR1C = 50 with avMem = 4.12
+<DWph=0> <it=  4> <et=7.11> <Mt= 0.01> <Spt= 0.04> <nCl=281> <al=0.00> <DB= 1160.0378> <Mlp= 1160.0378> <PB=1166.334> 
+    TT = 0.000354, performed by inspection with 2719 solutions, nbR1C = 79, nbDiscC = 0
+    TT = 0.001869, performed by inspection with 10788 solutions, nbR1C = 79, nbDiscC = 0
+    TT = 0.005242, performed by inspection with 20955 solutions, nbR1C = 79, nbDiscC = 0
+    TT = 0.000312, performed by inspection with 2719 solutions, nbR1C = 68, nbDiscC = 0
+    TT = 0.001615, performed by inspection with 10788 solutions, nbR1C = 68, nbDiscC = 0
+    TT = 0.004607, performed by inspection with 20955 solutions, nbR1C = 68, nbDiscC = 0
+Dynamic params and stats :  aver.obdmd = 16.3077 aver.buck.num. = 21 nbR1C = 68 with avMem = 4.10294
+Dynamic params and stats :  aver.obdmd = 19.8269 aver.buck.num. = 23 nbR1C = 68 with avMem = 4.10294
+Dynamic params and stats :  aver.obdmd = 21.8269 aver.buck.num. = 24 nbR1C = 68 with avMem = 4.10294
+<DWph=0> <it=  3> <et=7.16> <Mt= 0.01> <Spt= 0.03> <nCl= 24> <al=0.00> <DB= 1144.5728> <Mlp= 1144.5728> <PB=1166.334> 
+SB phase 2 cand.  2 branch on VNB[0] (lhs=8.7500)   : [ 1144.5728,  1160.0378], score = 8.96      <et=7.17>
+    TT = 0.000361, performed by inspection with 2719 solutions, nbR1C = 78, nbDiscC = 0
+    TT = 0.001835, performed by inspection with 10788 solutions, nbR1C = 78, nbDiscC = 0
+    TT = 0.005204, performed by inspection with 20955 solutions, nbR1C = 78, nbDiscC = 0
+    TT = 0.000347, performed by inspection with 2719 solutions, nbR1C = 78, nbDiscC = 0
+    TT = 0.001795, performed by inspection with 10788 solutions, nbR1C = 78, nbDiscC = 0
+    TT = 0.005161, performed by inspection with 20955 solutions, nbR1C = 78, nbDiscC = 0
+    TT = 0.00028, performed by inspection with 2719 solutions, nbR1C = 53, nbDiscC = 0
+    TT = 0.001424, performed by inspection with 10788 solutions, nbR1C = 53, nbDiscC = 0
+    TT = 0.004144, performed by inspection with 20955 solutions, nbR1C = 53, nbDiscC = 0
+Dynamic params and stats :  aver.obdmd = 16.3077 aver.buck.num. = 21 nbR1C = 53 with avMem = 4.15094
+Dynamic params and stats :  aver.obdmd = 19.8269 aver.buck.num. = 23 nbR1C = 53 with avMem = 4.15094
+Dynamic params and stats :  aver.obdmd = 21.8269 aver.buck.num. = 24 nbR1C = 53 with avMem = 4.15094
+<DWph=0> <it=  4> <et=7.22> <Mt= 0.01> <Spt= 0.04> <nCl= 65> <al=0.00> <DB= 1147.1582> <Mlp= 1147.1582> <PB=1166.334> 
+    TT = 0.000325, performed by inspection with 2719 solutions, nbR1C = 68, nbDiscC = 0
+    TT = 0.001691, performed by inspection with 10788 solutions, nbR1C = 68, nbDiscC = 0
+    TT = 0.004709, performed by inspection with 20955 solutions, nbR1C = 68, nbDiscC = 0
+    TT = 0.000315, performed by inspection with 2719 solutions, nbR1C = 68, nbDiscC = 0
+    TT = 0.001617, performed by inspection with 10788 solutions, nbR1C = 68, nbDiscC = 0
+    TT = 0.004642, performed by inspection with 20955 solutions, nbR1C = 68, nbDiscC = 0
+Dynamic params and stats :  aver.obdmd = 16.3077 aver.buck.num. = 21 nbR1C = 68 with avMem = 4.11765
+Dynamic params and stats :  aver.obdmd = 19.8269 aver.buck.num. = 23 nbR1C = 68 with avMem = 4.11765
+Dynamic params and stats :  aver.obdmd = 21.8269 aver.buck.num. = 24 nbR1C = 68 with avMem = 4.11765
+<DWph=0> <it=  3> <et=7.28> <Mt= 0.02> <Spt= 0.03> <nCl= 23> <al=0.00> <DB= 1144.4839> <Mlp= 1144.4839> <PB=1166.334> 
+SB phase 2 cand.  3 branch on ASB[2,20] (lhs=0.5000): [ 1144.4839,  1147.1582], score = 1.48      <et=7.29>
+**** Strong branching phase 3 is started *****
+**** SB phase 3 evaluation of candidate 1, branch 1 ( VNB[2] <= 3 ), value = 1e+12
+Branch is already conquered!
+**** SB phase 3 evaluation of candidate 1, branch 2 ( VNB[2] >= 4 ), value = 1144.55
+<DWph=2> <it=  1> <et=7.33> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1144.5513> <Mlp= 1144.5513> <PB=1166.334> 
+<DWph=1> <it=  2> <et=7.33> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1144.5513> <Mlp= 1144.5513> <PB=1166.334> 
+    TT = 0.000343, performed by inspection with 2719 solutions, nbR1C = 72, nbDiscC = 0
+    TT = 0.001764, performed by inspection with 10788 solutions, nbR1C = 72, nbDiscC = 0
+    TT = 0.004956, performed by inspection with 20955 solutions, nbR1C = 72, nbDiscC = 0
+    TT = 0.000323, performed by inspection with 2719 solutions, nbR1C = 69, nbDiscC = 0
+    TT = 0.001664, performed by inspection with 10788 solutions, nbR1C = 69, nbDiscC = 0
+    TT = 0.004723, performed by inspection with 20955 solutions, nbR1C = 69, nbDiscC = 0
+<DWph=0> <it=  3> <et=7.35> <Mt= 0.01> <Spt= 0.02> <nCl= 11> <al=0.00> <DB= 1144.5513> <Mlp= 1144.5513> <PB=1166.334> 
+Dynamic params and stats :  aver.obdmd = 16.3077 aver.buck.num. = 21 nbR1C = 69 with avMem = 4.10145
+@@ 208 0 1144.55 0.000333 0.000343 0 7.35
+Dynamic params and stats :  aver.obdmd = 19.8269 aver.buck.num. = 23 nbR1C = 69 with avMem = 4.10145
+@@ 208 0 1144.55 0.001714 0.001764 0 7.35
+Dynamic params and stats :  aver.obdmd = 21.8269 aver.buck.num. = 24 nbR1C = 69 with avMem = 4.10145
+@@ 208 0 1144.55 0.0048395 0.004956 0 7.35
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 2719 solutions, remains 2661 (97.9%)
+Reduced cost fixing for graph G_2...  took 0 sec., done by inspection with 10788 solutions, remains 10188 (94.4%)
+Reduced cost fixing for graph G_3...  took 0 sec., done by inspection with 20955 solutions, remains 18816 (89.8%)
+Removed 6 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.922277)
+ColGenEvalAlg final dual bound: 1144.55 (rounded: 1144.55)
+Current active cuts : R1C(69,176.846) 3rowPackR1C(34) 4rowPackR1C(16) 5rowPackR1C(19)
+13 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0605095, aver. viol. = 0.032827
+Building structures for heuristic rank-1 packing cut separation...done!
+51 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0987261, aver. viol. = 0.031972
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0987261, aver. viol. = 0.041258
+Shrinking heuristic shrunk 6 edges
+----- Add fac. cuts : R1C(164), max.viol = 0.0987261, aver.viol = 0.0480426, sep/add took 0.49463/0.0491033 sec. -----
+1693 columns (1687 active), 245 dyn. constrs. (234 active), 354 art. vars. (339 active)
+<DWph=2> <it=  1> <et=7.93> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1144.6692> <Mlp= 1144.6692> <PB=1166.334> 
+<DWph=1> <it=  2> <et=7.94> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1144.6692> <Mlp= 1144.6692> <PB=1166.334> 
+    TT = 0.000388, performed by inspection with 2661 solutions, nbR1C = 84, nbDiscC = 0
+    TT = 0.001943, performed by inspection with 10188 solutions, nbR1C = 84, nbDiscC = 0
+    TT = 0.005436, performed by inspection with 18816 solutions, nbR1C = 84, nbDiscC = 0
+    TT = 0.000376, performed by inspection with 2661 solutions, nbR1C = 84, nbDiscC = 0
+    TT = 0.001895, performed by inspection with 10188 solutions, nbR1C = 84, nbDiscC = 0
+    TT = 0.00535, performed by inspection with 18816 solutions, nbR1C = 84, nbDiscC = 0
+<DWph=0> <it=  3> <et=7.96> <Mt= 0.00> <Spt= 0.03> <nCl= 11> <al=0.00> <DB= 1144.6692> <Mlp= 1144.6692> <PB=1166.334> 
+Dynamic params and stats :  aver.obdmd = 16.3077 aver.buck.num. = 21 nbR1C = 84 with avMem = 4.25
+@@ 208 1 1144.67 0.000382 0.000388 0 7.96
+Dynamic params and stats :  aver.obdmd = 19.8269 aver.buck.num. = 23 nbR1C = 84 with avMem = 4.25
+@@ 208 1 1144.67 0.001919 0.001943 0 7.96
+Dynamic params and stats :  aver.obdmd = 21.8269 aver.buck.num. = 24 nbR1C = 84 with avMem = 4.25
+@@ 208 1 1144.67 0.005393 0.005436 0 7.96
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 2661 solutions, remains 2643 (99.3%)
+Reduced cost fixing for graph G_2...  took 0 sec., done by inspection with 10188 solutions, remains 10071 (98.9%)
+Reduced cost fixing for graph G_3...  took 0 sec., done by inspection with 18816 solutions, remains 18341 (97.5%)
+    Full reduced cost fixing is not called (gap ratio is 0.917285)
+ColGenEvalAlg final dual bound: 1144.67 (rounded: 1144.67)
+Gap improvement since the last cut separation : 0.00541264 (1144.55)
+Cut generation tailing off counter increased to 1
+Current active cuts : R1C(84,189.535) 3rowPackR1C(32) 4rowPackR1C(20) 5rowPackR1C(32)
+9 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0526316, aver. viol. = 0.0430622
+Building structures for heuristic rank-1 packing cut separation...done!
+27 Rank-1 4-rows pack. cuts added ,  max viol. = 0.076555, aver. viol. = 0.0450115
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.100478, aver. viol. = 0.0478947
+Shrinking heuristic shrunk 6 edges
+----- Add fac. cuts : R1C(136), max.viol = 0.15311, aver.viol = 0.0658598, sep/add took 0.467452/0.0449954 sec. -----
+1704 columns (1698 active), 381 dyn. constrs. (221 active), 490 art. vars. (326 active)
+<DWph=2> <it=  1> <et=8.51> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1144.6877> <Mlp= 1144.6877> <PB=1166.334> 
+<DWph=1> <it=  2> <et=8.51> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1144.6877> <Mlp= 1144.6877> <PB=1166.334> 
+    TT = 0.000395, performed by inspection with 2643 solutions, nbR1C = 87, nbDiscC = 0
+    TT = 0.001958, performed by inspection with 10071 solutions, nbR1C = 87, nbDiscC = 0
+    TT = 0.005465, performed by inspection with 18341 solutions, nbR1C = 87, nbDiscC = 0
+    TT = 0.000375, performed by inspection with 2643 solutions, nbR1C = 83, nbDiscC = 0
+    TT = 0.001836, performed by inspection with 10071 solutions, nbR1C = 83, nbDiscC = 0
+    TT = 0.005073, performed by inspection with 18341 solutions, nbR1C = 83, nbDiscC = 0
+<DWph=0> <it=  3> <et=8.54> <Mt= 0.00> <Spt= 0.02> <nCl=  6> <al=0.00> <DB= 1144.6877> <Mlp= 1144.6877> <PB=1166.334> 
+Dynamic params and stats :  aver.obdmd = 16.3077 aver.buck.num. = 21 nbR1C = 83 with avMem = 4.22892
+@@ 208 2 1144.69 0.000385 0.000395 0 8.54
+Dynamic params and stats :  aver.obdmd = 19.8269 aver.buck.num. = 23 nbR1C = 83 with avMem = 4.22892
+@@ 208 2 1144.69 0.001897 0.001958 0 8.54
+Dynamic params and stats :  aver.obdmd = 21.8269 aver.buck.num. = 24 nbR1C = 83 with avMem = 4.22892
+@@ 208 2 1144.69 0.005269 0.005465 0 8.54
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 2643 solutions, remains 2639 (99.8%)
+Reduced cost fixing for graph G_2...  took 0 sec., done by inspection with 10071 solutions, remains 10027 (99.6%)
+Reduced cost fixing for graph G_3...  took 0 sec., done by inspection with 18341 solutions, remains 18164 (99%)
+    Full reduced cost fixing is not called (gap ratio is 0.916502)
+ColGenEvalAlg final dual bound: 1144.69 (rounded: 1144.69)
+Gap improvement since the last cut separation : 0.000854469 (1144.67)
+Cut generation tailing off counter increased to 2
+Current active cuts : R1C(83,189.219) 3rowPackR1C(32) 4rowPackR1C(20) 5rowPackR1C(31)
+15 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0588235, aver. viol. = 0.0588235
+Building structures for heuristic rank-1 packing cut separation...done!
+27 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0588235, aver. viol. = 0.0588235
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0588235, aver. viol. = 0.0588235
+Shrinking heuristic shrunk 11 edges
+----- Add fac. cuts : R1C(142), max.viol = 0.0588235, aver.viol = 0.0588235, sep/add took 0.287729/0.0381409 sec. -----
+1710 columns (1704 active), 380 dyn. constrs. (226 active), 632 art. vars. (331 active)
+<DWph=2> <it=  1> <et=8.91> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1144.7288> <Mlp= 1144.7288> <PB=1166.334> 
+<DWph=1> <it=  2> <et=8.91> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1144.7288> <Mlp= 1144.7288> <PB=1166.334> 
+    TT = 0.000399, performed by inspection with 2639 solutions, nbR1C = 84, nbDiscC = 0
+    TT = 0.001839, performed by inspection with 10027 solutions, nbR1C = 84, nbDiscC = 0
+    TT = 0.005042, performed by inspection with 18164 solutions, nbR1C = 84, nbDiscC = 0
+    TT = 0.000365, performed by inspection with 2639 solutions, nbR1C = 84, nbDiscC = 0
+    TT = 0.001799, performed by inspection with 10027 solutions, nbR1C = 84, nbDiscC = 0
+    TT = 0.00495, performed by inspection with 18164 solutions, nbR1C = 84, nbDiscC = 0
+<DWph=0> <it=  3> <et=8.94> <Mt= 0.00> <Spt= 0.02> <nCl=  6> <al=0.00> <DB= 1144.7288> <Mlp= 1144.7288> <PB=1166.334> 
+Dynamic params and stats :  aver.obdmd = 16.3077 aver.buck.num. = 21 nbR1C = 84 with avMem = 4.21429
+@@ 208 3 1144.73 0.000382 0.000399 0 8.94
+Dynamic params and stats :  aver.obdmd = 19.8269 aver.buck.num. = 23 nbR1C = 84 with avMem = 4.21429
+@@ 208 3 1144.73 0.001819 0.001839 0 8.94
+Dynamic params and stats :  aver.obdmd = 21.8269 aver.buck.num. = 24 nbR1C = 84 with avMem = 4.21429
+@@ 208 3 1144.73 0.004996 0.005042 0 8.94
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 2639 solutions, remains 2637 (99.9%)
+Reduced cost fixing for graph G_2...  took 0 sec., done by inspection with 10027 solutions, remains 9985 (99.6%)
+Reduced cost fixing for graph G_3...  took 0 sec., done by inspection with 18164 solutions, remains 18028 (99.3%)
+Removed 2 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.914763)
+ColGenEvalAlg final dual bound: 1144.73 (rounded: 1144.73)
+Gap improvement since the last cut separation : 0.0018968 (1144.69)
+----- Cut generation is stopped due to tailing off -----
+Current active cuts : R1C(84,191.086) 3rowPackR1C(33) 4rowPackR1C(20) 5rowPackR1C(31)
+SB exact phase 3 branch on VNB[2] (lhs=3.75) : [1e+12, 1144.7288], tree depth = 3.674, tree size = 23.53, score = -0.1646
+SB with phases chosed candidate VNB[2] (lhs=3.75)
+************************************************************************************************
+**** BaB tree node (N° 3, parent N° 1, depth 1, treatOrderId 208)
+**** Local DB = 1144.73, global bounds : [ 1144.73 , 1166.33 ], TIME = 0h0m8s98t = 898
+**** 2 open nodes, ETS : 6, 1716 columns (1708 active), 105 dyn. constrs. (85 active), 210 art. vars. (190 active)
+************************************************************************************************
+Estimated subtree size of the father is 23.5275
+**** Strong branching phase 1 is started *****
+SB phase 1 cand.  1 branch on VNB[0] (lhs=8.8571)   : [ 1144.7813,  1162.0811], score = 0.91 (h)  <et=9.02>
+SB phase 1 cand.  2 branch on VNB[3] (lhs=2.8571)   : [ 1144.7813,  2149.0444], score = 1.13      <et=9.06>
+SB phase 1 cand.  3 branch on ASB[2,20] (lhs=0.5714): [ 1144.8284,  1147.7266], score = 0.30 (h)  <et=9.08>
+SB phase 1 cand.  4 branch on ASB[2,2] (lhs=0.5714) : [ 1144.9360,  1146.3824], score = 0.34      <et=9.1>
+SB phase 1 cand.  5 branch on ASB[3,3] (lhs=0.4286) : [ 1144.8284,  1147.7266], score = 0.30 (h)  <et=9.12>
+SB phase 1 cand.  6 branch on EDGE[0,2] (lhs=0.5714): [ 1144.9130,  1145.7130], score = 0.18      <et=9.14>
+SB phase 1 cand.  7 branch on ASB[2,3] (lhs=0.5714) : [ 1144.8284,  1147.7266], score = 0.30 (h)  <et=9.16>
+SB phase 1 cand.  8 branch on EDGE[0,3] (lhs=0.5714): [ 1144.8073,  1151.2596], score = 0.51      <et=9.19>
+**** Strong branching phase 2 is started *****
+# Artificial variables in the solution : decreasing phase of stage 
+# Artificial variables in the solution : decreasing phase of stage 
+#    TT = 0.000279, performed by inspection with 2637 solutions, nbR1C = 34, nbDiscC = 0
+    TT = 0.001189, performed by inspection with 9985 solutions, nbR1C = 34, nbDiscC = 0
+    TT = 0.003265, performed by inspection with 18028 solutions, nbR1C = 34, nbDiscC = 0
+Dynamic params and stats :  aver.obdmd = 16.3077 aver.buck.num. = 21 nbR1C = 34 with avMem = 4.02941
+Dynamic params and stats :  aver.obdmd = 19.8269 aver.buck.num. = 23 nbR1C = 34 with avMem = 4.02941
+Dynamic params and stats :  aver.obdmd = 21.8269 aver.buck.num. = 24 nbR1C = 34 with avMem = 4.02941
+<DWph=0> <it=  3> <et=9.22> <Mt= 0.00> <Spt= 0.03> <nCl=286> <al=0.00> <DB= 2011.9400> <Mlp= 2149.0444> <PB=1166.334> 
+    TT = 0.000346, performed by inspection with 2637 solutions, nbR1C = 70, nbDiscC = 0
+    TT = 0.001614, performed by inspection with 9985 solutions, nbR1C = 70, nbDiscC = 0
+    TT = 0.004436, performed by inspection with 18028 solutions, nbR1C = 70, nbDiscC = 0
+    TT = 0.000333, performed by inspection with 2637 solutions, nbR1C = 70, nbDiscC = 0
+    TT = 0.001566, performed by inspection with 9985 solutions, nbR1C = 70, nbDiscC = 0
+    TT = 0.004376, performed by inspection with 18028 solutions, nbR1C = 70, nbDiscC = 0
+Dynamic params and stats :  aver.obdmd = 16.3077 aver.buck.num. = 21 nbR1C = 70 with avMem = 4.17143
+Dynamic params and stats :  aver.obdmd = 19.8269 aver.buck.num. = 23 nbR1C = 70 with avMem = 4.17143
+Dynamic params and stats :  aver.obdmd = 21.8269 aver.buck.num. = 24 nbR1C = 70 with avMem = 4.17143
+<DWph=0> <it=  3> <et=9.28> <Mt= 0.01> <Spt= 0.02> <nCl=  4> <al=0.00> <DB= 1144.7813> <Mlp= 1144.7813> <PB=1166.334> 
+SB phase 2 cand.  1 branch on VNB[3] (lhs=2.8571)   : [ 1144.7813, 1000000000000.0000], score = 52478.20      <et=9.29>
+    TT = 0.000288, performed by inspection with 2637 solutions, nbR1C = 46, nbDiscC = 0
+    TT = 0.001273, performed by inspection with 9985 solutions, nbR1C = 46, nbDiscC = 0
+    TT = 0.003487, performed by inspection with 18028 solutions, nbR1C = 46, nbDiscC = 0
+    TT = 0.000298, performed by inspection with 2637 solutions, nbR1C = 52, nbDiscC = 0
+    TT = 0.001337, performed by inspection with 9985 solutions, nbR1C = 52, nbDiscC = 0
+    TT = 0.00363, performed by inspection with 18028 solutions, nbR1C = 52, nbDiscC = 0
+    TT = 0.000266, performed by inspection with 2637 solutions, nbR1C = 47, nbDiscC = 0
+    TT = 0.001222, performed by inspection with 9985 solutions, nbR1C = 47, nbDiscC = 0
+    TT = 0.003395, performed by inspection with 18028 solutions, nbR1C = 47, nbDiscC = 0
+Dynamic params and stats :  aver.obdmd = 16.3077 aver.buck.num. = 21 nbR1C = 47 with avMem = 4.14894
+Dynamic params and stats :  aver.obdmd = 19.8269 aver.buck.num. = 23 nbR1C = 47 with avMem = 4.14894
+Dynamic params and stats :  aver.obdmd = 21.8269 aver.buck.num. = 24 nbR1C = 47 with avMem = 4.14894
+<DWph=0> <it=  4> <et=9.36> <Mt= 0.02> <Spt= 0.05> <nCl=259> <al=0.00> <DB= 1160.3098> <Mlp= 1160.3098> <PB=1166.334> 
+    TT = 0.000356, performed by inspection with 2637 solutions, nbR1C = 76, nbDiscC = 0
+    TT = 0.001684, performed by inspection with 9985 solutions, nbR1C = 76, nbDiscC = 0
+    TT = 0.00459, performed by inspection with 18028 solutions, nbR1C = 76, nbDiscC = 0
+    TT = 0.000344, performed by inspection with 2637 solutions, nbR1C = 76, nbDiscC = 0
+    TT = 0.001629, performed by inspection with 9985 solutions, nbR1C = 76, nbDiscC = 0
+    TT = 0.004508, performed by inspection with 18028 solutions, nbR1C = 76, nbDiscC = 0
+Dynamic params and stats :  aver.obdmd = 16.3077 aver.buck.num. = 21 nbR1C = 76 with avMem = 4.17105
+Dynamic params and stats :  aver.obdmd = 19.8269 aver.buck.num. = 23 nbR1C = 76 with avMem = 4.17105
+Dynamic params and stats :  aver.obdmd = 21.8269 aver.buck.num. = 24 nbR1C = 76 with avMem = 4.17105
+<DWph=0> <it=  3> <et=9.41> <Mt= 0.01> <Spt= 0.02> <nCl=  4> <al=0.00> <DB= 1144.7813> <Mlp= 1144.7813> <PB=1166.334> 
+SB phase 2 cand.  2 branch on VNB[0] (lhs=8.8571)   : [ 1144.7813,  1160.3098], score = 0.82 (h)  <et=9.42>
+    TT = 0.000284, performed by inspection with 2637 solutions, nbR1C = 46, nbDiscC = 0
+    TT = 0.001274, performed by inspection with 9985 solutions, nbR1C = 46, nbDiscC = 0
+    TT = 0.003386, performed by inspection with 18028 solutions, nbR1C = 46, nbDiscC = 0
+    TT = 0.000294, performed by inspection with 2637 solutions, nbR1C = 54, nbDiscC = 0
+    TT = 0.00135, performed by inspection with 9985 solutions, nbR1C = 54, nbDiscC = 0
+    TT = 0.003722, performed by inspection with 18028 solutions, nbR1C = 54, nbDiscC = 0
+    TT = 0.000289, performed by inspection with 2637 solutions, nbR1C = 55, nbDiscC = 0
+    TT = 0.00136, performed by inspection with 9985 solutions, nbR1C = 55, nbDiscC = 0
+    TT = 0.003723, performed by inspection with 18028 solutions, nbR1C = 55, nbDiscC = 0
+    TT = 0.000282, performed by inspection with 2637 solutions, nbR1C = 51, nbDiscC = 0
+    TT = 0.001309, performed by inspection with 9985 solutions, nbR1C = 51, nbDiscC = 0
+    TT = 0.003599, performed by inspection with 18028 solutions, nbR1C = 51, nbDiscC = 0
+Dynamic params and stats :  aver.obdmd = 16.3077 aver.buck.num. = 21 nbR1C = 51 with avMem = 4.15686
+Dynamic params and stats :  aver.obdmd = 19.8269 aver.buck.num. = 23 nbR1C = 51 with avMem = 4.15686
+Dynamic params and stats :  aver.obdmd = 21.8269 aver.buck.num. = 24 nbR1C = 51 with avMem = 4.15686
+<DWph=0> <it=  5> <et=9.49> <Mt= 0.01> <Spt= 0.06> <nCl=253> <al=0.00> <DB= 1149.7327> <Mlp= 1149.7327> <PB=1166.334> 
+    TT = 0.000375, performed by inspection with 2637 solutions, nbR1C = 84, nbDiscC = 0
+    TT = 0.001814, performed by inspection with 9985 solutions, nbR1C = 84, nbDiscC = 0
+    TT = 0.004993, performed by inspection with 18028 solutions, nbR1C = 84, nbDiscC = 0
+    TT = 0.000336, performed by inspection with 2637 solutions, nbR1C = 74, nbDiscC = 0
+    TT = 0.0016, performed by inspection with 9985 solutions, nbR1C = 74, nbDiscC = 0
+    TT = 0.004452, performed by inspection with 18028 solutions, nbR1C = 74, nbDiscC = 0
+Dynamic params and stats :  aver.obdmd = 16.3077 aver.buck.num. = 21 nbR1C = 74 with avMem = 4.2027
+Dynamic params and stats :  aver.obdmd = 19.8269 aver.buck.num. = 23 nbR1C = 74 with avMem = 4.2027
+Dynamic params and stats :  aver.obdmd = 21.8269 aver.buck.num. = 24 nbR1C = 74 with avMem = 4.2027
+<DWph=0> <it=  3> <et=9.53> <Mt= 0.00> <Spt= 0.02> <nCl=  6> <al=0.00> <DB= 1144.8073> <Mlp= 1144.8073> <PB=1166.334> 
+SB phase 2 cand.  3 branch on EDGE[0,3] (lhs=0.5714): [ 1144.8073,  1149.7327], score = 0.39      <et=9.54>
+**** Strong branching phase 3 is started *****
+**** SB phase 3 evaluation of candidate 1, branch 1 ( VNB[3] <= 2 ), value = 1e+12
+Branch is already conquered!
+**** SB phase 3 evaluation of candidate 1, branch 2 ( VNB[3] >= 3 ), value = 1144.78
+<DWph=2> <it=  1> <et=9.57> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1144.7813> <Mlp= 1144.7813> <PB=1166.334> 
+<DWph=1> <it=  2> <et=9.57> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1144.7813> <Mlp= 1144.7813> <PB=1166.334> 
+    TT = 0.000348, performed by inspection with 2637 solutions, nbR1C = 70, nbDiscC = 0
+    TT = 0.00162, performed by inspection with 9985 solutions, nbR1C = 70, nbDiscC = 0
+    TT = 0.004444, performed by inspection with 18028 solutions, nbR1C = 70, nbDiscC = 0
+    TT = 0.000332, performed by inspection with 2637 solutions, nbR1C = 70, nbDiscC = 0
+    TT = 0.001575, performed by inspection with 9985 solutions, nbR1C = 70, nbDiscC = 0
+    TT = 0.004345, performed by inspection with 18028 solutions, nbR1C = 70, nbDiscC = 0
+<DWph=0> <it=  3> <et=9.59> <Mt= 0.00> <Spt= 0.02> <nCl=  0> <al=0.00> <DB= 1144.7813> <Mlp= 1144.7813> <PB=1166.334> 
+Dynamic params and stats :  aver.obdmd = 16.3077 aver.buck.num. = 21 nbR1C = 70 with avMem = 4.17143
+@@ 231 0 1144.78 0.00034 0.000348 0 9.59
+Dynamic params and stats :  aver.obdmd = 19.8269 aver.buck.num. = 23 nbR1C = 70 with avMem = 4.17143
+@@ 231 0 1144.78 0.0015975 0.00162 0 9.59
+Dynamic params and stats :  aver.obdmd = 21.8269 aver.buck.num. = 24 nbR1C = 70 with avMem = 4.17143
+@@ 231 0 1144.78 0.0043945 0.004444 0 9.59
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 2637 solutions, remains 2621 (99.4%)
+Reduced cost fixing for graph G_2...  took 0 sec., done by inspection with 9985 solutions, remains 9871 (98.9%)
+Reduced cost fixing for graph G_3...  took 0 sec., done by inspection with 18028 solutions, remains 17743 (98.4%)
+Removed 2 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.912541)
+ColGenEvalAlg final dual bound: 1144.78 (rounded: 1144.78)
+Current active cuts : R1C(70,180.367) 3rowPackR1C(30) 4rowPackR1C(14) 5rowPackR1C(26)
+23 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0569853, aver. viol. = 0.0306706
+Building structures for heuristic rank-1 packing cut separation...done!
+47 Rank-1 4-rows pack. cuts added ,  max viol. = 0.089614, aver. viol. = 0.0393852
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0942096, aver. viol. = 0.06446
+Shrinking heuristic shrunk 7 edges
+----- Add fac. cuts : R1C(170), max.viol = 0.0942096, aver.viol = 0.0532331, sep/add took 0.514202/0.0534461 sec. -----
+1712 columns (1710 active), 257 dyn. constrs. (242 active), 366 art. vars. (347 active)
+<DWph=2> <it=  1> <et=10.20> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1144.8834> <Mlp= 1144.8834> <PB=1166.334> 
+<DWph=1> <it=  2> <et=10.20> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1144.8834> <Mlp= 1144.8834> <PB=1166.334> 
+    TT = 0.00037, performed by inspection with 2621 solutions, nbR1C = 85, nbDiscC = 0
+    TT = 0.001782, performed by inspection with 9871 solutions, nbR1C = 85, nbDiscC = 0
+    TT = 0.005029, performed by inspection with 17743 solutions, nbR1C = 85, nbDiscC = 0
+    TT = 0.00035, performed by inspection with 2621 solutions, nbR1C = 81, nbDiscC = 0
+    TT = 0.001667, performed by inspection with 9871 solutions, nbR1C = 81, nbDiscC = 0
+    TT = 0.004754, performed by inspection with 17743 solutions, nbR1C = 81, nbDiscC = 0
+<DWph=0> <it=  3> <et=10.23> <Mt= 0.00> <Spt= 0.02> <nCl= 10> <al=0.00> <DB= 1144.8834> <Mlp= 1144.8834> <PB=1166.334> 
+Dynamic params and stats :  aver.obdmd = 16.3077 aver.buck.num. = 21 nbR1C = 81 with avMem = 4.20988
+@@ 231 1 1144.88 0.00036 0.00037 0 10.23
+Dynamic params and stats :  aver.obdmd = 19.8269 aver.buck.num. = 23 nbR1C = 81 with avMem = 4.20988
+@@ 231 1 1144.88 0.0017245 0.001782 0 10.23
+Dynamic params and stats :  aver.obdmd = 21.8269 aver.buck.num. = 24 nbR1C = 81 with avMem = 4.20988
+@@ 231 1 1144.88 0.0048915 0.005029 0 10.23
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 2621 solutions, remains 2612 (99.7%)
+Reduced cost fixing for graph G_2...  took 0 sec., done by inspection with 9871 solutions, remains 9695 (98.2%)
+Reduced cost fixing for graph G_3...  took 0 sec., done by inspection with 17743 solutions, remains 17413 (98.1%)
+Removed 1 columns (not in the enumerated set) from the formulation
+    Full reduced cost fixing is not called (gap ratio is 0.908216)
+ColGenEvalAlg final dual bound: 1144.88 (rounded: 1144.88)
+Gap improvement since the last cut separation : 0.00474019 (1144.78)
+Cut generation tailing off counter increased to 1
+Current active cuts : R1C(81,181.055) 3rowPackR1C(31) 4rowPackR1C(18) 5rowPackR1C(32)
+5 Rank-1 3-rows pack. cuts added ,  max viol. = 0.0413223, aver. viol. = 0.0396694
+Building structures for heuristic rank-1 packing cut separation...done!
+25 Rank-1 4-rows pack. cuts added ,  max viol. = 0.0909091, aver. viol. = 0.0439669
+100 Rank-1 5-rows pack. cuts added ,  max viol. = 0.0909091, aver. viol. = 0.0449174
+Shrinking heuristic shrunk 5 edges
+----- Add fac. cuts : R1C(130), max.viol = 0.14876, aver.viol = 0.0522568, sep/add took 0.454476/0.0405051 sec. -----
+1722 columns (1719 active), 387 dyn. constrs. (213 active), 496 art. vars. (318 active)
+<DWph=2> <it=  1> <et=10.76> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1144.9061> <Mlp= 1144.9061> <PB=1166.334> 
+<DWph=1> <it=  2> <et=10.76> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1144.9061> <Mlp= 1144.9061> <PB=1166.334> 
+    TT = 0.000382, performed by inspection with 2612 solutions, nbR1C = 86, nbDiscC = 0
+    TT = 0.001761, performed by inspection with 9695 solutions, nbR1C = 86, nbDiscC = 0
+    TT = 0.00498, performed by inspection with 17413 solutions, nbR1C = 86, nbDiscC = 0
+    TT = 0.000364, performed by inspection with 2612 solutions, nbR1C = 84, nbDiscC = 0
+    TT = 0.001696, performed by inspection with 9695 solutions, nbR1C = 84, nbDiscC = 0
+    TT = 0.004844, performed by inspection with 17413 solutions, nbR1C = 84, nbDiscC = 0
+<DWph=0> <it=  3> <et=10.79> <Mt= 0.00> <Spt= 0.02> <nCl=  0> <al=0.00> <DB= 1144.9061> <Mlp= 1144.9061> <PB=1166.334> 
+Dynamic params and stats :  aver.obdmd = 16.3077 aver.buck.num. = 21 nbR1C = 84 with avMem = 4.25
+@@ 231 2 1144.91 0.000373 0.000382 0 10.79
+Dynamic params and stats :  aver.obdmd = 19.8269 aver.buck.num. = 23 nbR1C = 84 with avMem = 4.25
+@@ 231 2 1144.91 0.0017285 0.001761 0 10.79
+Dynamic params and stats :  aver.obdmd = 21.8269 aver.buck.num. = 24 nbR1C = 84 with avMem = 4.25
+@@ 231 2 1144.91 0.004912 0.00498 0 10.79
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 2612 solutions, remains 2607 (99.8%)
+Reduced cost fixing for graph G_2...  took 0 sec., done by inspection with 9695 solutions, remains 9660 (99.6%)
+Reduced cost fixing for graph G_3...  took 0 sec., done by inspection with 17413 solutions, remains 17351 (99.6%)
+    Full reduced cost fixing is not called (gap ratio is 0.907254)
+ColGenEvalAlg final dual bound: 1144.91 (rounded: 1144.91)
+Gap improvement since the last cut separation : 0.0010587 (1144.88)
+Cut generation tailing off counter increased to 2
+Current active cuts : R1C(84,180.848) 3rowPackR1C(31) 4rowPackR1C(17) 5rowPackR1C(36)
+Building structures for heuristic rank-1 packing cut separation...done!
+17 Rank-1 5-rows pack. cuts added ,  max viol. = 0.166667, aver. viol. = 0.166667
+Shrinking heuristic shrunk 19 edges
+----- Add fac. cuts : R1C(17), max.viol = 0.333333, aver.viol = 0.333333, sep/add took 0.210659/0.00617866 sec. -----
+1722 columns (1719 active), 249 dyn. constrs. (103 active), 513 art. vars. (208 active)
+<DWph=2> <it=  1> <et=11.05> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <al=0.00> <DB= 1144.9360> <Mlp= 1144.9360> <PB=1144.936> 
+<DWph=1> <it=  2> <et=11.05> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <al=0.00> <DB= 1144.9360> <Mlp= 1144.9360> <PB=1144.936> 
+    TT = 0.000376, performed by inspection with 2607 solutions, nbR1C = 85, nbDiscC = 0
+    TT = 0.001759, performed by inspection with 9660 solutions, nbR1C = 85, nbDiscC = 0
+    TT = 0.004941, performed by inspection with 17351 solutions, nbR1C = 85, nbDiscC = 0
+    TT = 0.000351, performed by inspection with 2607 solutions, nbR1C = 79, nbDiscC = 0
+    TT = 0.00164, performed by inspection with 9660 solutions, nbR1C = 79, nbDiscC = 0
+    TT = 0.00469, performed by inspection with 17351 solutions, nbR1C = 79, nbDiscC = 0
+<DWph=0> <it=  3> <et=11.07> <Mt= 0.00> <Spt= 0.02> <nCl=  6> <al=0.00> <DB= 1144.9360> <Mlp= 1144.9360> <PB=1144.936> 
+Dynamic params and stats :  aver.obdmd = 16.3077 aver.buck.num. = 21 nbR1C = 79 with avMem = 4.26582
+@@ 231 3 1144.94 0.0003635 0.000376 0 11.07
+Dynamic params and stats :  aver.obdmd = 19.8269 aver.buck.num. = 23 nbR1C = 79 with avMem = 4.26582
+@@ 231 3 1144.94 0.0016995 0.001759 0 11.07
+Dynamic params and stats :  aver.obdmd = 21.8269 aver.buck.num. = 24 nbR1C = 79 with avMem = 4.26582
+@@ 231 3 1144.94 0.0048155 0.004941 0 11.07
+ColGenEvalAlg final dual bound: 1144.94 (rounded: 1144.94)
+Gap improvement since the last cut separation : 1 (1144.91)
+Current active cuts : R1C(79,178.189) 3rowPackR1C(30) 4rowPackR1C(14) 5rowPackR1C(35)
+ SB phase 3 candidate 1 is conquered !
+SB with phases chosed candidate VNB[3] (lhs=2.85714)
+New model incumbent solution 1144.94, TIME = 0h0m11s10t = 1110
+************************************************************************************************
+Search is finished, global bounds : [ 1144.94 , 1144.94 ], TIME = 0h0m11s10t = 1110
+************************************************************************************************
+instance_name solver_name ext_heuristic solution_value solution_time best_lb root_lb root_time nb_branch_and_bound_nodes status
+/home/logis/Downloads/VRPSolverEasy/VRPSolverEasy/demos/data/HFVRP/c50_16hd CLP False 1144.9359940188224 11.108479397000002 1144.9359940016147 1144.0137036796064 5.171457441 5 0
+
